@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Alisa Selezneva](https://up.htmlacademy.ru/htmlcss/26/user/1099671).
-* Наставник: `Неизвестно`.
+* Наставник: [Irina Shasheva](https://htmlacademy.ru/profile/loyso).
 
 ---
 
