@@ -12,8 +12,12 @@
       <a href="index.html">
         <img src="img/logo.svg" width="220" height="47" alt="Логотип Техномарта">
       </a>
-      <p>Поиск</p>
-      <!--Здесь будет форма-->
+      <form class="search">
+        <p>
+          <label for="search-field">Поиск:</label>
+          <input type="text" id="search-field" name="search" aria-label="Поиск по сайту">
+        </p>
+      </form>
       <a href="#">Закладки:</a>
       <a href="#">Корзина:</a>
       <a href="#">Оформить заказ</a>
@@ -59,26 +63,59 @@
     <h2>Перфораторы</h2>
     <p>Фильтр:</p>
     <h3>Цена:</h3>
-    <!--Здесь будет форма-->
-    <section>
-      <h3>Производители</h3>
-      <ul>
-        <li><input type="checkbox" checked>BOSCH</li>
-        <li><input type="checkbox">ИНТЕРСКОЛ</li>
-        <li><input type="checkbox" checked>MAKITA</li>
-        <li><input type="checkbox">DEWALT</li>
-        <li><input type="checkbox">HITACHI</li>
-      </ul>
-    </section>
-    <section>
-      <h3>Питание</h3>
-      <ul>
-        <li><input type="radio" checked>Аккумуляторные</li>
-        <li><input type="radio">Сетевые</li>
-      </ul>
-    </section>
-    <a href="#">Показать</a>
-    <!--Здесь будет форма-->
+    <form class="filter" method="get" action="#">
+      <fieldset>
+        <legend>Производители:</legend>
+        <ul>
+          <li>
+            <input type="checkbox" name="bosch" id="filter-bosh" checked>
+            <label for="filter-bosh">
+              Bosch
+            </label>
+          </li>
+          <li>
+            <input type="checkbox" name="interskol" id="filter-interskol">
+            <label for="filter-interskol">
+              Интерскол
+            </label>
+          </li>
+          <li><input type="checkbox" name="makita" id="filter-makita" checked>
+            <label for="filter-makita">
+              Makita</label>
+          </li>
+          <li>
+            <input type="checkbox" name="dewalt" id="filter-dewalt">
+            <label for="filter-dewalt">
+              Dewalt
+            </label>
+          </li>
+          <li>
+            <input type="checkbox" name="hitachi" id="filter-hitachi">
+            <label for="filter-hitachi">
+              Hitachi
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Питание</legend>
+        <ul>
+          <li>
+            <input type="radio" name="power" value="accumulator-powered" id="filter-accumulator" checked>
+            <label for="filter-accumulator">
+              Аккумуляторные
+            </label>
+          </li>
+          <li>
+            <input type="radio" name="power" value="mains-powered" id="filter-mains">
+            <label for="filter-mains">
+              Сетевые
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <button type="submit">Показать</button>
+    </form>
     <p>Сортировка:</p>
     <ul>
       <li><a>По цене</a></li>
