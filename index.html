@@ -12,7 +12,7 @@
       <a>
         <img src="img/logo.svg" width="220" height="47" alt="Логотип Техномарта">
       </a>
-      <form class="search" action="#" method="post">
+      <form class="search" action="#" method="get">
         <p>
           <label for="search-field">Поиск:</label>
           <input type="text" id="search-field" name="search" aria-label="Поиск по сайту">
@@ -252,7 +252,7 @@
         </p>
         <p>
           <label for="text-field">Текст письма:</label>
-          <input id="text-field" type="text" name="letter" value="" placeholder="В свободной форме">
+          <textarea id="text-field" rows="5" cols="30" name="letter" placeholder="В свободной форме"></textarea>
         </p>
         <button type="submit">Отправить</button>
       </form>
