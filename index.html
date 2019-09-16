@@ -12,7 +12,7 @@
       <a>
         <img src="img/logo.svg" width="220" height="47" alt="Логотип Техномарта">
       </a>
-      <form class="search">
+      <form class="search" action="#" method="post">
         <p>
           <label for="search-field">Поиск:</label>
           <input type="text" id="search-field" name="search" aria-label="Поиск по сайту">
@@ -58,7 +58,7 @@
     <ul>
       <li>
         <h3>Материалы</h3>
-        <a href="#" alt="На любой вкус">На любой вкус</a>
+        <a href="#">На любой вкус</a>
       </li>
       <li>
         <h3>Инструмент</h3>
@@ -250,8 +250,10 @@
           <label for="e-mail-field">Ваш e-mail:</label>
           <input id="e-mail-field" type="email" name="e-mail" value="" placeholder="email@example.com">
         </p>
-        <p>Текст письма:</p>
-          <p><textarea rows="5" cols="30" name="letter" placeholder="В свободной форме"></textarea></p>
+        <p>
+          <label for="text-field">Текст письма:</label>
+          <input id="text-field" type="text" name="letter" value="" placeholder="В свободной форме">
+        </p>
         <button type="submit">Отправить</button>
       </form>
     </section>
