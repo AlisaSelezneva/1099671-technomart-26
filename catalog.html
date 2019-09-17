@@ -62,11 +62,21 @@
     </ul>
     <h2>Перфораторы</h2>
     <p>Фильтр:</p>
-    <h3>Цена:</h3>
     <form method="get" action="#">
-      <input type="range" min="0" max="30000" value="50" id="filter-price" name="price">
-      <label for="filter-price"></label>
-        <!-- Поля для ввода значений диапазона -->
+      <fieldset>
+        <legend>Цена:</legend>
+        <div>
+          <progress id="progressbar" value="50" max="30000"></progress>
+        </div>
+        <p>
+          <label for="low-price"></label>
+          <input id="low-price" type="text" name="price" value="" placeholder="0">
+        </p>
+        <p>
+          <label for="high-price"></label>
+          <input id="high-price" type="text" name="price" value="" placeholder="30000">
+        </p>
+      </fieldset>
     </form>
     <form class="filter" method="get" action="#">
       <fieldset>
@@ -146,6 +156,8 @@
               <img src="img/perforator_1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
             </a>
           </p>
+          <a href="#">Купить</a>
+          <a href="#">В закладки</a>
           <p class="old-price">22500</p>
           <p>15500</p>
         </li>
@@ -160,6 +172,8 @@
               <img src="img/perforator_2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
             </a>
           </p>
+          <a href="#">Купить</a>
+          <a href="#">В закладки</a>
           <p class="old-price">30500</p>
           <p>25500</p>
         </li>
@@ -175,7 +189,6 @@
             </a>
           </p>
           <a href="#">Купить</a>
-          <!--при клике на эту кнопку появляется модальное окно с сообщением о добавлении в корзину-->
           <a href="#">В закладки</a>
           <p>12500</p>
         </li>
@@ -190,6 +203,8 @@
               <img src="img/perforator_1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
             </a>
           </p>
+          <a href="#">Купить</a>
+          <a href="#">В закладки</a>
           <p class="old-price">22500</p>
           <p>15500</p>
         </li>
@@ -204,6 +219,8 @@
               <img src="img/perforator_2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
             </a>
           </p>
+          <a href="#">Купить</a>
+          <a href="#">В закладки</a>
           <p class="old-price">30500</p>
           <p>25500</p>
         </li>
@@ -218,6 +235,8 @@
               <img src="img/perforator_1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
             </a>
           </p>
+          <a href="#">Купить</a>
+          <a href="#">В закладки</a>
           <p>12500</p>
         </li>
         <li class="new-item">
@@ -231,6 +250,8 @@
               <img src="img/perforator_1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
             </a>
           </p>
+          <a href="#">Купить</a>
+          <a href="#">В закладки</a>
           <p class="old-price">22500</p>
           <p>15500</p>
         </li>
@@ -245,6 +266,8 @@
               <img src="img/perforator_2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
             </a>
           </p>
+          <a href="#">Купить</a>
+          <a href="#">В закладки</a>
           <p class="old-price">30500</p>
           <p>25500</p>
         </li>
@@ -259,6 +282,8 @@
               <img src="img/perforator_1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
             </a>
           </p>
+          <a href="#">Купить</a>
+          <a href="#">В закладки</a>
           <p>12500</p>
         </li>
       </ul>
