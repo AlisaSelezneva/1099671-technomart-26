@@ -4,6 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i&display=swap" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -31,9 +34,11 @@
         <a href="tel:+78125550555">+7 (812) 555-05-55</a>
         <p>г. Санкт-Петербург, ул. Б. Конюшенная , д.19/8</p>
       </div>
-      <a href="#">Равшан Джамшутович</a>
-      <button type="button">Разлогиниться</button>
-      <ul>
+      <div class="btn-account">
+        <a href="#">Равшан Джамшутович</a>
+        <button type="button">Равшан Джамшутович</button>
+      </div>
+      <ul class="account">
         <li>
           <a href="#">Мои заказы</a>
         </li>
@@ -78,10 +83,10 @@
         </p>
       </fieldset>
     </form>
-    <form class="filter" method="get" action="#">
+    <form method="get" action="#">
       <fieldset>
-        <legend>Производители:</legend>
-        <ul>
+        <legend class="filter">Производители:</legend>
+        <ul class="filter">
           <li>
             <input type="checkbox" name="bosch" id="filter-bosh" checked>
             <label for="filter-bosh">
@@ -114,8 +119,8 @@
         </ul>
       </fieldset>
       <fieldset>
-        <legend>Питание</legend>
-        <ul>
+        <legend class="filter">Питание</legend>
+        <ul class="filter">
           <li>
             <input type="radio" name="power" value="accumulator-powered" id="filter-accumulator" checked>
             <label for="filter-accumulator">
@@ -159,7 +164,9 @@
           <a href="#">Купить</a>
           <a href="#">В закладки</a>
           <p class="old-price">22500</p>
-          <p>15500</p>
+          <p>
+            <a href="#" class="new-price">15500</a>
+          </p>
         </li>
         <li>
           <h3>
@@ -175,7 +182,9 @@
           <a href="#">Купить</a>
           <a href="#">В закладки</a>
           <p class="old-price">30500</p>
-          <p>25500</p>
+          <p>
+            <a href="#" class="new-price">25500</a>
+          </p>
         </li>
         <li>
           <h3>
@@ -190,7 +199,9 @@
           </p>
           <a href="#">Купить</a>
           <a href="#">В закладки</a>
-          <p>12500</p>
+          <p>
+            <a href="#" class="new-price">12500</a>
+          </p>
         </li>
         <li>
           <h3>
@@ -206,7 +217,9 @@
           <a href="#">Купить</a>
           <a href="#">В закладки</a>
           <p class="old-price">22500</p>
-          <p>15500</p>
+          <p>
+            <a href="#" class="new-price">15500</a>
+          </p>
         </li>
         <li class="new-item">
           <h3>
@@ -222,7 +235,9 @@
           <a href="#">Купить</a>
           <a href="#">В закладки</a>
           <p class="old-price">30500</p>
-          <p>25500</p>
+          <p>
+            <a href="#" class="new-price">25500</a>
+          </p>
         </li>
         <li>
           <h3>
@@ -237,7 +252,9 @@
           </p>
           <a href="#">Купить</a>
           <a href="#">В закладки</a>
-          <p>12500</p>
+          <p>
+            <a href="#" class="new-price">12500</a>
+          </p>
         </li>
         <li class="new-item">
           <h3>
@@ -253,7 +270,9 @@
           <a href="#">Купить</a>
           <a href="#">В закладки</a>
           <p class="old-price">22500</p>
-          <p>15500</p>
+          <p>
+            <a href="#" class="new-price">15500</a>
+          </p>
         </li>
         <li>
           <h3>
@@ -269,7 +288,9 @@
           <a href="#">Купить</a>
           <a href="#">В закладки</a>
           <p class="old-price">30500</p>
-          <p>25500</p>
+          <p>
+            <a href="#" class="new-price">25500</a>
+          </p>
         </li>
         <li>
           <h3>
@@ -284,7 +305,9 @@
           </p>
           <a href="#">Купить</a>
           <a href="#">В закладки</a>
-          <p>12500</p>
+          <p>
+            <a href="#" class="new-price">12500</a>
+          </p>
         </li>
       </ul>
       <ul class="pagination">
@@ -333,13 +356,13 @@
         <li><a href="#">Фейсбук</a></li>
         <li><a href="#">Инстаграм</a></li>
       </ul>
-      <p>
+      <p class="footer-navigation-second">
         Обратная связь:
-        <a href="mailto:mail@htmlacademy.ru" class="footer-navigation-second">mail@htmlacademy.ru</a>
+        <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
       </p>
-      <p>
+      <p class="footer-navigation-second">
         Разработано:
-        <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer-navigation-second">HTML Academy</a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
       </p>
     </div>
   </footer>
