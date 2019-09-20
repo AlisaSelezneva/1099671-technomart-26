@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 13px;
   line-height: 24px;
   color: #000000;
@@ -14,10 +14,18 @@ a {
 }
 
 /* Header styles start */
+
+.logo-header {
+  background-color: #ee3643;
+}
+
 .menu-header {
-  background-color: #293449;
-  color: #ffffff;
   font-family: "Cuprum", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 17px;
+  color: #ffffff;
+
+  background-color: #293449;
 }
 
 .menu-header a {
@@ -29,8 +37,9 @@ a {
 }
 
 .contacts-header a {
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 21px;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 21px;
   border: 3px solid #ffffff;
   color: #ee3643;
@@ -39,20 +48,24 @@ a {
 .account a {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 16px;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 18px;
   text-decoration: underline;
   color: #32425c;
 }
 
-.search {
+.search input {
   background-color: #293449;
 }
 
+.search label {
+  font-size: 17px;
+  line-height: 18px;
+}
+
 .contacts-header {
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 24px;
   color: #32425c;
 }
@@ -64,26 +77,25 @@ a {
 .btn-account button {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 21px;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 21px;
   color: #000000;
   background-color: #ffffff;
 }
 
 .navigation {
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 17px;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 17px;
   color: #ffffff;
+
   background-color: #293449;
 }
 
 .main-title {
-  font-family: "Cuprum-Italic", Arial, sans-serif;
   font-style: italic;
   font-size: 16px;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 23px;
   color: #ee3643;
 }
@@ -103,7 +115,7 @@ a {
 .popular {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 30px;
   text-transform: uppercase;
   color: #32425c;
@@ -112,22 +124,22 @@ a {
 .caption {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 30px;
   text-transform: uppercase;
   color: #000000;
 }
 
 .subtitle {
+  width: 111px;
+  height: 22px;
   font-family: "PTSans", Arial, sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
-  color: #000000;
 }
 
 .old-price {
-  font-family: "PTSans", Arial, sans-serif;
   font-size: 17px;
   font-weight: 700;
   line-height: 18px;
@@ -136,7 +148,6 @@ a {
 }
 
 .new-price {
-  font-family: "PTSans", Arial, sans-serif;
   font-size: 17px;
   font-weight: 700;
   line-height: 18px;
@@ -146,9 +157,8 @@ a {
 }
 
 .about-company {
-  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 24px;
   color: #000000;
 }
@@ -156,7 +166,7 @@ a {
 .list-of-partners {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 20px;
   color: #000000;
 }
@@ -164,7 +174,7 @@ a {
 .button-more {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
   color: #ffffff;
@@ -173,22 +183,18 @@ a {
 
 /* Footer styles start */
 .footer {
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 24px;
   background-color: #32425c;
 }
 
 .nav-footer {
-  font-size: 18px;
-  font-weight: normal;
-  line-height: 24px;
-  color: #f1f5f7;
+  color: #f3f7f9;
 }
 
 .nav-footer a {
-  color: #ffffff;
+  color: #f1f5f7;
 }
 
 .footer-navigation-second a {
@@ -197,57 +203,53 @@ a {
 
 .footer-social {
   font-size: 16px;
-  font-weight: normal;
   line-height: 24px;
   color: #ffffff;
   background-color: #293449;
 }
 
 .footer-social a {
-  color: #ffffff;
+  color: #ffd180;
 }
 
 .footer-social li {
   background-color: #212a3a;
 }
 
-/* Footer styles end */
-
-.logo {
+.logo-footer {
   width: 220px;
   height: 47px;
   font-size: 19px;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 19px;
   background-color: #ee3643;
 }
 
-.breadcrumb a {
-  font-family: "PT Sans", Arial, sans-serif;
-  font-size: 13px;
-  font-weight: normal;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: #000000;
-  background-color: #ffffff;
-}
 
-legend .filter {
-  font-family: "PT Sans", Arial, sans-serif;
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 30px;
+/* Footer styles end */
+
+
+
+
+.breadcrumb a {
+  font-size: 13px;
+  line-height: 18px;
   text-transform: uppercase;
   color: #000000;
 }
 
 .filter {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.filter li {
   font-size: 15px;
-  font-weight: normal;
+  font-weight:400;
   line-height: 20px;
   text-transform: uppercase;
-  color: #000000;
 }
 
 .modal {
