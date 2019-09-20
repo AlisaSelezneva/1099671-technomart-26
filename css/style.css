@@ -1,111 +1,43 @@
 body {
-  font-family: "Cuprum", sans-serif, Arial, sans-serif;
-  font-family: "PT Sans", sans-serif, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+  background-color: #ffffff;
 }
 
 a {
   text-decoration: none;
 }
 
+/* Header styles start */
 .menu-header {
   background-color: #293449;
   color: #ffffff;
-  font-family: "Cuprum", sans-serif, Arial, sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
 }
 
-.search {
-  background-color: #293449;
-}
-
-h1 {
-  font-family: "Cuprum", sans-serif, Arial, sans-serif;
-  font-style: italic;
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 23px;
-  color: #ee3643;
-}
-
-h2 {
-  font-family: "Cuprum", sans-serif, Arial, sans-serif;
-  font-size: 30px;
-  font-weight: normal;
-  line-height: 30px;
-  text-transform: uppercase;
-  color: #000000;
-}
-
-h3 a {
-  font-family: "PTSans-Bold", sans-serif, Arial, sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 20px;
-  color: #000000;
-}
-
-.old-price {
-  font-family: "PTSans-Bold", sans-serif, Arial, sans-serif;
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 18px;
-  text-decoration: line-through;
-  color: #999999;
-}
-
-.new-price {
-  font-family: "PTSans-Bold", sans-serif, Arial, sans-serif;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 18px;
-  text-transform: uppercase;
+.menu-header a {
   color: #ffffff;
-  background-color: #ee3643;
 }
 
-.contacts-header {
-  font-family: "Cuprum", sans-serif, Arial, sans-serif;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 24px;
-  color: #32425c;
-  background-color: #f4f7f9;
+.navigation a {
+  color: #ffffff;
 }
 
 .contacts-header a {
-  font-family: "Cuprum", sans-serif, Arial, sans-serif;
   font-size: 21px;
   font-weight: normal;
   line-height: 21px;
   border: 3px solid #ffffff;
   color: #ee3643;
-  background-color: #f4f7f9;
-}
-
-.info-header {
-  background-color: #f4f7f9;
-}
-
-.btn-account button {
-  font-family: "Cuprum", sans-serif, Arial, sans-serif;
-  font-size: 21px;
-  font-weight: normal;
-  line-height: 21px;
-  color: #000000;
-  background-color: #ffffff;
-}
-
-button {
-  font-family: "PT Sans", sans-serif, Arial, sans-serif;
-  font-size: 13px;
-  font-weight: normal;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: #000000;
-  background-color: #ffffff;
 }
 
 .account a {
-  font-family: "Cuprum", sans-serif, Arial, sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 16px;
   font-weight: normal;
   line-height: 18px;
@@ -113,8 +45,33 @@ button {
   color: #32425c;
 }
 
-header nav {
-  font-family: "Cuprum", sans-serif, Arial, sans-serif;
+.search {
+  background-color: #293449;
+}
+
+.contacts-header {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+  color: #32425c;
+}
+
+.info-header {
+  background-color: #f4f7f9;
+}
+
+.btn-account button {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 21px;
+  font-weight: normal;
+  line-height: 21px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.navigation {
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 17px;
   font-weight: normal;
   line-height: 17px;
@@ -122,21 +79,82 @@ header nav {
   background-color: #293449;
 }
 
-a {
-  color: #ffffff;
+.main-title {
+  font-family: "Cuprum-Italic", Arial, sans-serif;
+  font-style: italic;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 23px;
+  color: #ee3643;
+}
+
+/* Header styles end */
+
+.title {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+  /*Временно черный*/
+}
+
+.popular {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #32425c;
+}
+
+.caption {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.subtitle {
+  font-family: "PTSans", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #000000;
+}
+
+.old-price {
+  font-family: "PTSans", Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+  text-decoration: line-through;
+  color: #999999;
+}
+
+.new-price {
+  font-family: "PTSans", Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+  /*Временно черный, заменить потом на белый*/
 }
 
 .about-company {
-  font-family: "PT Sans", sans-serif, Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   font-weight: normal;
   line-height: 24px;
   color: #000000;
-  background-color: #ffffff;
 }
 
 .list-of-partners {
-  font-family: "Cuprum", sans-serif, Arial, sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   font-weight: normal;
   line-height: 20px;
@@ -144,7 +162,7 @@ a {
 }
 
 .button-more {
-  font-family: "Cuprum", sans-serif, Arial, sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   font-weight: normal;
   line-height: 18px;
@@ -153,22 +171,24 @@ a {
   background-color: #ee3643;
 }
 
-footer {
-  font-family: "Cuprum", sans-serif, Arial, sans-serif;
+/* Footer styles start */
+.footer {
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   font-weight: normal;
   line-height: 24px;
-  color: #f1f5f7;
   background-color: #32425c;
 }
 
 .nav-footer {
-  font-family: "Cuprum", sans-serif, Arial, sans-serif;
   font-size: 18px;
   font-weight: normal;
   line-height: 24px;
   color: #f1f5f7;
-  background-color: #32425c;
+}
+
+.nav-footer a {
+  color: #ffffff;
 }
 
 .footer-navigation-second a {
@@ -176,7 +196,6 @@ footer {
 }
 
 .footer-social {
-  font-family: "Cuprum", sans-serif, Arial, sans-serif;
   font-size: 16px;
   font-weight: normal;
   line-height: 24px;
@@ -184,9 +203,15 @@ footer {
   background-color: #293449;
 }
 
+.footer-social a {
+  color: #ffffff;
+}
+
 .footer-social li {
   background-color: #212a3a;
 }
+
+/* Footer styles end */
 
 .logo {
   width: 220px;
@@ -198,7 +223,7 @@ footer {
 }
 
 .breadcrumb a {
-  font-family: "PT Sans", sans-serif, Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   font-weight: normal;
   line-height: 18px;
@@ -208,16 +233,16 @@ footer {
 }
 
 legend .filter {
-  font-family: "PT Sans-Bold", sans-serif, Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
   color: #000000;
 }
 
 .filter {
-  font-family: "PT Sans", sans-serif, Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 15px;
   font-weight: normal;
   line-height: 20px;
@@ -230,5 +255,9 @@ legend .filter {
 }
 
 .letter {
+  display: none;
+}
+
+.title-hidden {
   display: none;
 }
