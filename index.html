@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <header>
+  <header class="page-header">
     <div class="menu-header">
       <a class="logo-header">
         <img src="img/logo.svg" width="109" height="19" alt="Логотип Техномарта">
@@ -36,11 +36,11 @@
       </div>
       <ul>
         <li class="btn-account">
-          <button type="button">Войти</button>
+          <a href="#">Войти</a>
           <!--Здесь будет форма-->
         </li>
         <li class="btn-account">
-          <button type="button">Регистрация</button>
+          <a href="#">Регистрация</a>
           <!--Здесь будет форма-->
         </li>
       </ul>
@@ -58,30 +58,30 @@
     </nav>
   </header>
   <main>
-    <ul>
-      <li>
-        <h3 class="subtitle-index">Материалы</h3>
-        <a href="#">На любой вкус</a>
+    <ul class="offer">
+      <li class="offer-item">
+        <h3 class="offer-title">Материалы</h3>
+        <a href="#" class="offer-button">На любой вкус</a>
       </li>
-      <li>
-        <h3 class="subtitle-index">Инструмент</h3>
-        <a href="#">На все случаи</a>
+      <li class="offer-item">
+        <h3 class="offer-title">Инструмент</h3>
+        <a href="#" class="offer-button">На все случаи</a>
       </li>
-      <li>
-        <h3 class="subtitle-index">Техника</h3>
-        <a href="#">Для стройки</a>
+      <li class="offer-item">
+        <h3 class="offer-title">Техника</h3>
+        <a href="#" class="offer-button">Для стройки</a>
       </li>
     </ul>
     <ul>
       <!--Здесь слайдер будет оживать-->
       <li>
-        <h2 class="title">Дрели</h2>
+        <h2 class="slider-title">Дрели</h2>
         <p>Соседям на радость!</p>
         <img src="img/slider-image.jpg" width="620" height="266" alt="Дрели">
         <a class="button-more" href="#">Открыть каталог</a>
       </li>
       <li>
-        <h2 class="title">Перфораторы</h2>
+        <h2 class="slider-title">Перфораторы</h2>
         <p>Настоящие мужские игрушки</p>
         <img src="img/slider-image2.jpg" width="620" height="266" alt="Дрели">
         <a class="button-more" href="#">Открыть каталог</a>
@@ -89,95 +89,94 @@
     </ul>
     <ul>
       <li>
-        <h3 class="subtitle-index">Скидки 50%</h3>
+        <h3 class="offer-title">Скидки 50%</h3>
         <a href="#">На 350 товаров</a>
       </li>
       <li>
-        <h3 class="subtitle-index">Доставка</h3>
+        <h3 class="offer-title">Доставка</h3>
         <a href="#">Бесплатно</a>
       </li>
     </ul>
     <section>
-      <h2 class="popular">Популярные товары:</h2>
+      <h2 class="popular-title">Популярные товары:</h2>
       <a class="button-more" href="#">Все популярные товары</a>
       <ul>
-        <li>
+        <li class="product-item">
           <p>
             <a href="catalog-item.html">
               <img src="img/perforator_1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
             </a>
           </p>
           <h3>
-            <a href="catalog-item.html" class="subtitle-item">
+            <a href="catalog-item.html" class="product-title">
               Перфоратор BOSCH BFG 9000
             </a>
           </h3>
-          <a href="#">Купить</a>
-          <a href="#">В закладки</a>
-          <p class="old-price">32500 Р.</p>
-          <p>
-            <a href="#" class="new-price">25500 Р.</a>
+          <a href="#" class="product-buy-button">Купить</a>
+          <a href="#" class="product-bookmarks-button">В закладки</a>
+          <p class="product-old-price">32500 Р.</p>
+            <a href="#" class="product-new-price">25500 Р.</a>
             <img src="img/red-button.svg" width="141" height="38" alt="Дрели">
-          </p>
         </li>
-        <li>
+        <li class="product-item">
           <p>
             <a href="catalog-item.html">
               <img src="img/perforator_2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
             </a>
           </p>
           <h3>
-            <a href="catalog-item.html" class="subtitle-item">
+            <a href="catalog-item.html" class="product-title">
               Перфоратор BOSCH BFG 3000
             </a>
           </h3>
-          <a href="#">Купить</a>
-          <a href="#">В закладки</a>
-          <p class="old-price">22500 Р.</p>
+          <a href="#" class="product-buy-button">Купить</a>
+          <a href="#" class="product-bookmarks-button">В закладки</a>
+          <p class="product-old-price">22500 Р.</p>
           <p>
-            <a href="#" class="new-price">15500 Р.</a>
+            <a href="#" class="product-new-price">15500 Р.</a>
             <img src="img/red-button.svg" width="141" height="38" alt="Дрели">
           </p>
         </li>
-        <li>
+        <li class="product-item">
           <p>
             <a href="catalog-item.html">
               <img src="img/perforator_3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
             </a>
           </p>
           <h3>
-            <a href="catalog-item.html" class="subtitle-item">
+            <a href="catalog-item.html" class="product-title">
               Перфоратор BOSCH BFG 6000
             </a>
           </h3>
-          <a href="#">Купить</a>
-          <a href="#">В закладки</a>
-          <p class="old-price">30500 Р.</p>
+          <a href="#" class="product-buy-button">Купить</a>
+          <a href="#" class="product-bookmarks-button">В закладки</a>
+          <p class="product-old-price">30500 Р.</p>
           <p>
-            <a href="#" class="new-price">25500 Р.</a>
+            <a href="#" class="product-new-price">25500 Р.</a>
             <img src="img/red-button.svg" width="141" height="38" alt="Дрели">
           </p>
         </li>
-        <li class="subtitle-item">
+        <li class="product-item">
           <p>
             <a href="catalog-item.html">
               <img src="img/perforator_2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
             </a>
           </p>
           <h3>
-            <a href="catalog-item.html">
+            <a href="catalog-item.html" class="product-title">
               Перфоратор BOSCH BFG 2000
             </a>
           </h3>
+          <a href="#" class="product-buy-button">Купить</a>
+          <a href="#" class="product-bookmarks-button">В закладки</a>
           <p>
-            <a href="#" class="new-price">12500 Р.</a>
-            <img src="img/red-button.svg" width="141" height="38" alt="Дрели">
+            <a href="#" class="product-new-price">12500 Р.</a>
           </p>
         </li>
       </ul>
     </section>
     <section>
-      <h2 class="popular">Популярные производители:</h2>
+      <h2 class="popular-title">Популярные производители:</h2>
       <a class="button-more" href="#">Все производители</a>
       <ul>
         <li>
@@ -245,7 +244,7 @@
         Кредитные консультанты придут вам на помощь.</p>
       <a href="#">Отправить заявку</a>
     </section>
-    <section class="about-company">
+    <section>
       <h2 class="caption">Компания Техномарт</h2>
       <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
         строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
@@ -253,7 +252,7 @@
       <p>Мы можем доставить ваш товар в самые отдаленные точки России!
         Техномарт работает со многими транспортными компаниями:
       </p>
-      <ul class="list-of-partners">
+      <ul class="partners-list">
         <li>Деловые Линии</li>
         <li>Автотрейдинг</li>
         <li>ЖелДорЭкспедиция</li>
