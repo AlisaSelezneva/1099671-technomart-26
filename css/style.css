@@ -6,6 +6,7 @@ body {
   font-size: 13px;
   line-height: 24px;
   color: #000000;
+
   background-color: #ffffff;
 }
 
@@ -17,6 +18,13 @@ a {
 
 .logo-header {
   background-color: #ee3643;
+}
+
+.main-title {
+  font-style: italic;
+  font-size: 16px;
+  line-height: 23px;
+  color: #ee3643;
 }
 
 .menu-header {
@@ -32,8 +40,11 @@ a {
   color: #ffffff;
 }
 
-.navigation a {
-  color: #ffffff;
+.contacts-header p {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
 }
 
 .contacts-header a {
@@ -63,12 +74,6 @@ a {
   line-height: 18px;
 }
 
-.contacts-header {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  color: #32425c;
-}
 
 .info-header {
   background-color: #f4f7f9;
@@ -80,28 +85,27 @@ a {
   font-weight: 400;
   line-height: 21px;
   color: #000000;
+
   background-color: #ffffff;
 }
 
 .navigation {
   font-size: 17px;
-  font-weight: 400;
   line-height: 17px;
   color: #ffffff;
 
   background-color: #293449;
 }
 
-.main-title {
-  font-style: italic;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 23px;
-  color: #ee3643;
+.navigation a {
+  font-family: "Cuprum", Arial, sans-serif;
+  color: #ffffff;
 }
 
 /* Header styles end */
 
+
+/*Promo-block and items styles start*/
 .title {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 36px;
@@ -110,33 +114,6 @@ a {
   text-transform: uppercase;
   color: #000000;
   /*Временно черный*/
-}
-
-.popular {
-  font-family: "Cuprum", Arial, sans-serif;
-  font-size: 30px;
-  font-weight: 400;
-  line-height: 30px;
-  text-transform: uppercase;
-  color: #32425c;
-}
-
-.caption {
-  font-family: "Cuprum", Arial, sans-serif;
-  font-size: 30px;
-  font-weight: 400;
-  line-height: 30px;
-  text-transform: uppercase;
-  color: #000000;
-}
-
-.subtitle {
-  width: 111px;
-  height: 22px;
-  font-family: "PTSans", Arial, sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 20px;
 }
 
 .old-price {
@@ -151,11 +128,32 @@ a {
   font-size: 17px;
   font-weight: 700;
   line-height: 18px;
-  text-transform: uppercase;
   color: #000000;
   /*Временно черный, заменить потом на белый*/
 }
 
+.popular {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #32425c;
+}
+
+.subtitle-index {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #000000;
+  /*Временно черный, заменить потом на белый*/
+}
+
+/*Promo-block and items styles end*/
+
+
+/*About company styles start */
 .about-company {
   font-size: 13px;
   font-weight: 400;
@@ -171,22 +169,33 @@ a {
   color: #000000;
 }
 
-.button-more {
+.caption {
   font-family: "Cuprum", Arial, sans-serif;
-  font-size: 14px;
+  font-size: 30px;
   font-weight: 400;
-  line-height: 18px;
+  line-height: 30px;
   text-transform: uppercase;
-  color: #ffffff;
-  background-color: #ee3643;
+  color: #000000;
 }
 
+
+
+/*About company styles end */
+
+
 /* Footer styles start */
+
 .footer {
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
+
   background-color: #32425c;
+}
+
+.logo-footer {
+  background-color: #ee3643;
 }
 
 .nav-footer {
@@ -197,40 +206,38 @@ a {
   color: #f1f5f7;
 }
 
+.socials a {
+  color: #ffffff;
+  background-color: #212a3a;
+}
+
+
 .footer-navigation-second a {
   color: #ffd180;
 }
+
+.footer-navigation-second li {
+  color: #ffd180;
+}
+
 
 .footer-social {
   font-size: 16px;
   line-height: 24px;
   color: #ffffff;
+
   background-color: #293449;
 }
 
-.footer-social a {
-  color: #ffd180;
+.copyright {
+  font-size: 16px;
+  line-height: 18px;
 }
-
-.footer-social li {
-  background-color: #212a3a;
-}
-
-.logo-footer {
-  width: 220px;
-  height: 47px;
-  font-size: 19px;
-  font-weight: 400;
-  line-height: 19px;
-  background-color: #ee3643;
-}
-
 
 /* Footer styles end */
 
 
-
-
+/* Catalog styles start */
 .breadcrumb a {
   font-size: 13px;
   line-height: 18px;
@@ -247,11 +254,28 @@ a {
 
 .filter li {
   font-size: 15px;
-  font-weight:400;
+  font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
 }
 
+.filter-button {
+  font-family: "PTSans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: #ffffff;
+}
+
+.subtitle-item li {
+  font-family: "PTSans", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+/* Catalog styles end */
 .modal {
   display: none;
 }
@@ -262,4 +286,15 @@ a {
 
 .title-hidden {
   display: none;
+}
+
+.button-more {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  background-color: #ee3643;
 }
