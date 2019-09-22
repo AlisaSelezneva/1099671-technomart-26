@@ -24,6 +24,14 @@ a {
   background-color: #ee3643;
 }
 
+.logo-header:hover {
+  background-color: #ca2c37;
+}
+
+.logo-header:active {
+  background-color: #ba2732;
+}
+
 .main-title {
   font-style: italic;
   font-size: 16px;
@@ -37,6 +45,15 @@ a {
   color: #ffffff;
 
   background-color: #293449;
+}
+
+.menu-header:hover {
+  background-color: #212a3a;
+}
+
+.menu-header a:active {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #161d29;
 }
 
 .menu-header a {
@@ -69,6 +86,15 @@ a {
   background-color: #293449;
 }
 
+.search input:hover {
+  background-color: #212a3a;
+}
+
+.search input:active {
+  color: #000000;
+  background-color: #ffffff;
+}
+
 .search label {
   font-size: 17px;
   line-height: 18px;
@@ -88,6 +114,14 @@ a {
   background-color: #ffffff;
 }
 
+.account a:hover, .btn-account a:hover {
+  color: #ee3643;
+}
+
+.account a:active, .btn-account a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .navigation {
   font-size: 17px;
   line-height: 17px;
@@ -96,8 +130,18 @@ a {
   background-color: #293449;
 }
 
+
 .navigation a {
   color: #ffffff;
+}
+
+.navigation a:hover {
+  background-color: #1d2739;
+}
+
+.navigation a:active {
+  color:rgba(255, 255, 255, 0.5);
+  background-color: #1d2739;
 }
 
 /* Header styles end */
@@ -127,8 +171,9 @@ a {
   font-weight: 700;
   line-height: 18px;
   background-image: url("img/red-button.svg");
+  background-size: 100px 82px;
+  color: #ffffff;
   background-color: #ee3643;
-  /*Временно черный, заменить потом на белый*/
 }
 
 .popular-title {
@@ -195,9 +240,23 @@ a {
   color: #f1f5f7;
 }
 
+.nav-footer a:hover {
+  color: #f1f5f7;
+  text-decoration: underline;
+}
+
+.nav-footer  a:active {
+  color: rgba(241, 245, 247, 0.5);
+}
+
 .socials a {
   color: #ffffff;
   background-color: #212a3a;
+}
+
+.socials a:hover, .socials a:active {
+  color: #ffffff;
+  background-color: #ee3643;
 }
 
 
@@ -205,7 +264,14 @@ a {
   color: #ffd180;
 }
 
+.footer-navigation-second a:hover {
+  color: #ffd180;
+  text-decoration: underline;
+}
 
+.footer-navigation-second  a:active {
+  color: rgba(255, 209, 128, 0.5);
+}
 
 
 .footer-social {
@@ -214,6 +280,19 @@ a {
   color: #ffffff;
 
   background-color: #293449;
+}
+
+.contacts-footer a {
+  color: #ffd180;
+}
+
+.contacts-footer a:hover {
+  color: #ffd180;
+  text-decoration: underline;
+}
+
+.contacts-footer a:active {
+  color: #ee3643;
 }
 
 .copyright {
@@ -253,12 +332,45 @@ a {
   background-color: #ffffff;
 }
 
+.product-item {
+  font-family: "Cuprum", Arial, sans-serif;
+  text-transform: uppercase;
+}
+
 .product-title {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
   color: #000000;
+}
+
+.product-buy-button {
+  color: #ffffff;
+  background-color: #63a63e;
+}
+
+.product-buy-button:hover {
+  background-color: #5fbb2d;
+}
+
+.product-buy-button:active {
+  background-color: #518534;
+}
+
+.product-bookmarks-button {
+  color: #32425c;
+  border: 3px solid #63a63e;
+}
+
+.product-bookmarks-button:hover {
+  border: 3px solid #32425c;
+}
+
+.product-bookmarks-button:active {
+  color: rgba(50, 66, 92, 0.3);
+  opacity: 0.3;
+  border: 3px solid #32425c;
 }
 
 /* Catalog styles end */
@@ -283,4 +395,12 @@ a {
   color: #ffffff;
 
   background-color: #ee3643;
+}
+
+.button-more:hover {
+  background-color: #ca2c37;
+}
+
+.button-more:active {
+  background-color: #ba2732;
 }
