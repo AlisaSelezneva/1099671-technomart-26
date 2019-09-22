@@ -32,6 +32,13 @@ a {
   background-color: #ba2732;
 }
 
+.logo-header.active:hover,
+.logo-header.active:focus,
+.logo-header.active:active {
+  background-color: #ee3643;
+}
+
+
 .main-title {
   font-style: italic;
   font-size: 16px;
@@ -47,17 +54,32 @@ a {
   background-color: #293449;
 }
 
-.menu-header:hover {
-  background-color: #212a3a;
+.menu-header a {
+  color: #ffffff;
 }
 
-.menu-header a:active {
-  color: rgba(255, 255, 255, 0.6);
+.header-bookmarks:hover,
+.header-basket:hover {
   background-color: #161d29;
 }
 
-.menu-header a {
-  color: #ffffff;
+.header-bookmarks:active,
+.header-basket:active {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #212a3a;
+}
+
+.order {
+  background-color: #63a63e;
+}
+
+.order:hover {
+  background-color: #5fbb2d;
+}
+
+.order:active {
+  color: rgba(255, 255, 255, 0.5);
+  background-color: #518534;
 }
 
 .contacts-header p {
@@ -130,6 +152,12 @@ a {
   background-color: #293449;
 }
 
+.navigation.active:hover,
+.navigation.active:focus,
+.navigation.active:active {
+  background-color: #293449;
+}
+
 
 .navigation a {
   color: #ffffff;
@@ -167,11 +195,11 @@ a {
 }
 
 .product-new-price {
+
   font-size: 17px;
   font-weight: 700;
   line-height: 18px;
-  background-image: url("img/red-button.svg");
-  background-size: 100px 82px;
+  background-image: url("../img/red-button.svg");
   color: #ffffff;
   background-color: #ee3643;
 }
@@ -211,7 +239,6 @@ a {
   font-weight: 400;
   line-height: 30px;
   text-transform: uppercase;
-  color: #000000;
 }
 
 /*About company styles end */
@@ -236,6 +263,12 @@ a {
   color: #f3f7f9;
 }
 
+.nav-footer.active:hover,
+.nav-footer.active:focus,
+.nav-footer.active:active {
+  text-decoration: none;
+}
+
 .nav-footer a {
   color: #f1f5f7;
 }
@@ -245,7 +278,7 @@ a {
   text-decoration: underline;
 }
 
-.nav-footer  a:active {
+.nav-footer a:active {
   color: rgba(241, 245, 247, 0.5);
 }
 
@@ -269,7 +302,7 @@ a {
   text-decoration: underline;
 }
 
-.footer-navigation-second  a:active {
+.footer-navigation-second a:active {
   color: rgba(255, 209, 128, 0.5);
 }
 
@@ -333,7 +366,6 @@ a {
 }
 
 .product-item {
-  font-family: "Cuprum", Arial, sans-serif;
   text-transform: uppercase;
 }
 
@@ -346,6 +378,7 @@ a {
 }
 
 .product-buy-button {
+  font-family: "Cuprum", Arial, sans-serif;
   color: #ffffff;
   background-color: #63a63e;
 }
@@ -359,6 +392,7 @@ a {
 }
 
 .product-bookmarks-button {
+  font-family: "Cuprum", Arial, sans-serif;
   color: #32425c;
   border: 3px solid #63a63e;
 }
