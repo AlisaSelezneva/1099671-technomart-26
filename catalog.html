@@ -59,13 +59,13 @@
     </nav>
   </header>
   <main>
-    <ul class="breadcrumb">
-      <li><a href="#" class="catalog-mini-title">Каталог</a></li>
-      <li><a href="#" class="catalog-mini-title">Инструмент</a></li>
-      <li><a class="catalog-mini-title">Перфораторы</a></li>
+    <ul class="breadcrumbs">
+      <li><a href="#" class="breadcrumbs-link">Каталог</a></li>
+      <li><a href="#" class="breadcrumbs-link">Инструмент</a></li>
+      <li><a class="breadcrumbs-link">Перфораторы</a></li>
     </ul>
     <h2 class="popular-title">Перфораторы</h2>
-    <p class="catalog-mini-title">Фильтр:</p>
+    <p class="catalog-subtitle">Фильтр:</p>
     <form method="get" action="#">
       <fieldset>
         <legend class="filter-list">Цена:</legend>
@@ -86,30 +86,30 @@
       <fieldset>
         <legend class="filter-legend">Производители:</legend>
         <ul class="filter">
-          <li class="checkbox">
+          <li class="checkbox-item">
             <input type="checkbox" name="bosch" id="filter-bosh" checked>
             <label for="filter-bosh">
               Bosch
             </label>
           </li>
-          <li class="checkbox">
+          <li class="checkbox-item">
             <input type="checkbox" name="interskol" id="filter-interskol">
             <label for="filter-interskol">
               Интерскол
             </label>
           </li>
-          <li class="checkbox">
+          <li class="checkbox-item">
             <input type="checkbox" name="makita" id="filter-makita" checked>
             <label for="filter-makita">
               Makita</label>
           </li>
-          <li class="checkbox">
+          <li class="checkbox-item">
             <input type="checkbox" name="dewalt" id="filter-dewalt">
             <label for="filter-dewalt">
               Dewalt
             </label>
           </li>
-          <li class="checkbox">
+          <li class="checkbox-item">
             <input type="checkbox" name="hitachi" id="filter-hitachi">
             <label for="filter-hitachi">
               Hitachi
@@ -120,13 +120,13 @@
       <fieldset>
         <legend class="filter-legend">Питание</legend>
         <ul class="filter">
-          <li class="radio-button">
+          <li class="radio-button-item">
             <input type="radio" name="power" value="accumulator-powered" id="filter-accumulator" checked>
             <label for="filter-accumulator">
               Аккумуляторные
             </label>
           </li>
-          <li class="radio-button">
+          <li class="radio-button-item">
             <input type="radio" name="power" value="mains-powered" id="filter-mains">
             <label for="filter-mains">
               Сетевые
@@ -136,11 +136,11 @@
       </fieldset>
       <button type="submit" class="filter-button">Показать</button>
     </form>
-    <p class="catalog-mini-title">Сортировка:</p>
-    <ul class="catalog-mini-title">
-      <li><a class="sort">По цене</a></li>
-      <li><a href="#" class="sort">По типу</a></li>
-      <li><a href="#" class="sort">По функционалу</a></li>
+    <p class="catalog-subtitle">Сортировка:</p>
+    <ul class="sort">
+      <li><a class="sort-link active">По цене</a></li>
+      <li><a href="#" class="sort-link">По типу</a></li>
+      <li><a href="#" class="sort-link">По функционалу</a></li>
     </ul>
     <ul>
       <li><a>Стрелка по возрастанию</a></li>
@@ -163,9 +163,7 @@
           <a href="#" class="product-buy-button">Купить</a>
           <a href="#" class="product-bookmarks-button">В закладки</a>
           <p class="product-old-price">22500 Р.</p>
-          <p>
-            <a href="#" class="product-new-price">15500 Р.</a>
-          </p>
+          <p class="product-new-price">15500 Р.</p>
         </li>
         <li class="product-item">
           <p>
@@ -181,9 +179,7 @@
           <a href="#" class="product-buy-button">Купить</a>
           <a href="#" class="product-bookmarks-button">В закладки</a>
           <p class="product-old-price">30500 Р.</p>
-          <p>
-            <a href="#" class="product-new-price">25500 Р.</a>
-          </p>
+          <p class="product-new-price">25500 Р.</p>
         </li>
         <li class="product-item">
           <p>
@@ -198,9 +194,7 @@
           </h3>
           <a href="#" class="product-buy-button">Купить</a>
           <a href="#" class="product-bookmarks-button">В закладки</a>
-          <p>
-            <a href="#" class="product-new-price">12500 Р.</a>
-          </p>
+          <p class="product-new-price">12500 Р.</p>
         </li>
         <li class="product-item">
           <p>
@@ -216,9 +210,7 @@
           <a href="#" class="product-buy-button">Купить</a>
           <a href="#" class="product-bookmarks-button">В закладки</a>
           <p class="product-old-price">22500 Р.</p>
-          <p>
-            <a href="#" class="product-new-price">15500 Р.</a>
-          </p>
+          <p class="product-new-price">15500 Р.</p>
         </li>
         <li class="product-item">
           <p>
@@ -234,9 +226,7 @@
           <a href="#" class="product-buy-button">Купить</a>
           <a href="#" class="product-bookmarks-button">В закладки</a>
           <p class="product-old-price">30500 Р.</p>
-          <p>
-            <a href="#" class="product-new-price">25500 Р.</a>
-          </p>
+          <p class="product-new-price">25500 Р.</p>
         </li>
         <li class="product-item">
           <p>
@@ -251,9 +241,7 @@
           </h3>
           <a href="#" class="product-buy-button">Купить</a>
           <a href="#" class="product-bookmarks-button">В закладки</a>
-          <p>
-            <a href="#" class="product-new-price">12500 Р.</a>
-          </p>
+          <p class="product-new-price">12500 Р.</p>
         </li>
         <li class="product-item">
           <p>
@@ -269,9 +257,7 @@
           <a href="#" class="product-buy-button">Купить</a>
           <a href="#" class="product-bookmarks-button">В закладки</a>
           <p class="product-old-price">22500 Р.</p>
-          <p>
-            <a href="#" class="product-new-price">15500 Р.</a>
-          </p>
+          <p class="product-new-price">15500 Р.</p>
         </li>
         <li class="product-item">
           <p>
@@ -287,9 +273,7 @@
           <a href="#" class="product-buy-button">Купить</a>
           <a href="#" class="product-bookmarks-button">В закладки</a>
           <p class="product-old-price">30500 Р.</p>
-          <p>
-            <a href="#" class="product-new-price">25500 Р.</a>
-          </p>
+          <p class="product-new-price">25500 Р.</p>
         </li>
         <li class="product-item">
           <p>
@@ -304,9 +288,7 @@
           </h3>
           <a href="#" class="product-buy-button">Купить</a>
           <a href="#" class="product-bookmarks-button">В закладки</a>
-          <p>
-            <a href="#" class="product-new-price">12500 Р.</a>
-          </p>
+          <p class="product-new-price">12500 Р.</p>
         </li>
       </ul>
       <ul class="pagination">

@@ -190,7 +190,7 @@ a {
   text-transform: uppercase;
 }
 
-.slider-mini-tittle {
+.slider-subtitle {
   font-size: 18px;
   line-height: 24px;
 }
@@ -208,7 +208,7 @@ a {
   font-size: 17px;
   font-weight: 700;
   line-height: 18px;
-  background-image: url("../img/red-button.svg");
+  background: url("../img/red-button.svg") no-repeat;
   color: #ffffff;
 }
 
@@ -223,8 +223,8 @@ a {
 
 .product-item {
   width: 220px;
-  height: 318px;
   border: 1px solid #e5e5e5;
+  text-transform: uppercase;
 }
 
 .product-item:hover {
@@ -235,11 +235,14 @@ a {
   font-family: "Cuprum", Arial, sans-serif;
 }
 
-.offer-services:first-child {
+.offer-services-discounts {
+  background: url("../img/discounts.svg") no-repeat right center;
+  object-fit: contain;
   background-color: #8ed78f;
 }
 
-.offer-services:last-child {
+.offer-services-delivery {
+  background: url("../img/delivery.svg") no-repeat right center;
   background-color: #ffc047;
 }
 
@@ -250,15 +253,18 @@ a {
   color: #ffffff;
 }
 
-.offer-item:first-child {
+.offer-item-material {
+  background: url("../img/materials.svg") no-repeat right center;
   background-color: #ffbf47;
 }
 
-.offer-item:nth-child(2) {
+.offer-item-tool {
+  background: url("../img/tool.svg") no-repeat right center;
   background-color: #3bbce3;
 }
 
-.offer-item:last-child {
+.offer-item-technics {
+  background: url("../img/technics.svg") no-repeat right center;
   background-color: #dc91d8;
 }
 
@@ -267,8 +273,7 @@ a {
   line-height: 18px;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: #000000;
-  opacity: 0.1;
+  background-color: rgba(0,0,0,0.1);
 }
 
 .offer-button:hover {
@@ -281,7 +286,6 @@ a {
 
 .catalog-item {
   width: 220px;
-  height: 145px;
   border: 1px solid #e5e5e5;
 }
 
@@ -316,7 +320,7 @@ a {
   text-transform: uppercase;
 }
 
-.service-item {
+.service-subtitle {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 36px;
   line-height: 36px;
@@ -443,17 +447,10 @@ a {
 
 /* Catalog styles start */
 
-.catalog-mini-title {
+.breadcrumbs-link {
   line-height: 18px;
   text-transform: uppercase;
   color: #000000;
-  background-color: #f7f3ec;
-}
-
-
-.breadcrumb .catalog-mini-title {
-  background-color: #ffffff;
-
 }
 
 .filter-legend, .filter-list {
@@ -478,38 +475,53 @@ a {
   background-color: #ffffff;
 }
 
-.checkbox {
+.catalog-subtitle {
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: #f7f3ec;
 }
 
-.checkbox:hover {
+.checkbox-item {
+}
+
+.checkbox-item:hover {
 }
 /* Это я пока не поняла как правильно сделать :(
 
-.checkbox:block {
+.checkbox-item: {
   color: rgba(0, 0, 0, 0.4);
 }
 
-.radio-button:block {
+.radio-button-item:block {
   color: rgba(0, 0, 0, 0.4);
 }
 */
+
 .sort {
+  text-transform: uppercase;
+}
+
+.sort-link {
   color: rgba(0, 0, 0, 0.18);
   border-bottom: 1px dashed #ee3643;
 }
 
-.sort:hover {
+.sort-link:hover {
   color: #000000;
   border-bottom: 1px solid #ee3643;
 }
 
-.sort:active {
+.sort-link:active {
   color: #ee3643;
   border-bottom: none;
 }
+.sort-link.active,
+.sort-link.active:hover,
+.sort-link.active:focus,
+.sort-link.active:active{
+  color: #ee3643;
+  border-bottom: none;
 
-.product-item {
-  text-transform: uppercase;
 }
 
 .product-title {
