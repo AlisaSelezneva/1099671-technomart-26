@@ -176,14 +176,23 @@ a {
 
 
 /*Promo-block and items styles start*/
-.slider-title {
+
+.slider {
   font-family: "Cuprum", Arial, sans-serif;
+  color: #000000;
+  /*Временно черный*/
+}
+
+.slider-title {
   font-size: 36px;
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
-  color: #000000;
-  /*Временно черный*/
+}
+
+.slider-mini-tittle {
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .product-old-price {
@@ -201,7 +210,6 @@ a {
   line-height: 18px;
   background-image: url("../img/red-button.svg");
   color: #ffffff;
-  background-color: #ee3643;
 }
 
 .popular-title {
@@ -213,13 +221,77 @@ a {
   color: #32425c;
 }
 
-.offer-title {
+.product-item {
+  width: 220px;
+  height: 318px;
+  border: 1px solid #e5e5e5;
+}
+
+.product-item:hover {
+  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.offer {
   font-family: "Cuprum", Arial, sans-serif;
+}
+
+.offer-services:first-child {
+  background-color: #8ed78f;
+}
+
+.offer-services:last-child {
+  background-color: #ffc047;
+}
+
+.offer-title {
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
-  color: #000000;
-  /*Временно черный, заменить потом на белый*/
+  color: #ffffff;
+}
+
+.offer-item:first-child {
+  background-color: #ffbf47;
+}
+
+.offer-item:nth-child(2) {
+  background-color: #3bbce3;
+}
+
+.offer-item:last-child {
+  background-color: #dc91d8;
+}
+
+.offer-button {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #000000;
+  opacity: 0.1;
+}
+
+.offer-button:hover {
+  opacity: 0.2;
+}
+
+.offer-button:active {
+  opacity: 0.3;
+}
+
+.catalog-item {
+  width: 220px;
+  height: 145px;
+  border: 1px solid #e5e5e5;
+}
+
+.catalog-item:hover {
+  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.catalog-item:active {
+  opacity: 0.3;
+  box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
 }
 
 /*Promo-block and items styles end*/
@@ -233,12 +305,45 @@ a {
   line-height: 20px;
 }
 
-.caption {
+.services {
+ background-color: #f4f7f9;
+}
+
+.services-title {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
-  font-weight: 400;
   line-height: 30px;
   text-transform: uppercase;
+}
+
+.service-item {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #32425c;
+}
+
+.services-menu {
+ font-family: "Cuprum", Arial, sans-serif;
+ font-size: 21px;
+ line-height: 30px;
+ font-weight: 700;
+ color: #32425c;
+ background-color: #32425c;
+}
+
+.services-menu a {
+ color: #ffffff;
+}
+
+.services-menu a:hover {
+ background-color: #293449;
+}
+
+.services-menu a:active {
+ color: #32425c;
+ background-color: #ffffff;
 }
 
 /*About company styles end */
@@ -337,10 +442,18 @@ a {
 
 
 /* Catalog styles start */
-.breadcrumb a {
+
+.catalog-mini-title {
   line-height: 18px;
   text-transform: uppercase;
   color: #000000;
+  background-color: #f7f3ec;
+}
+
+
+.breadcrumb .catalog-mini-title {
+  background-color: #ffffff;
+
 }
 
 .filter-legend, .filter-list {
@@ -363,6 +476,36 @@ a {
   line-height: 18px;
   text-transform: uppercase;
   background-color: #ffffff;
+}
+
+.checkbox {
+}
+
+.checkbox:hover {
+}
+/* Это я пока не поняла как правильно сделать :(
+
+.checkbox:block {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.radio-button:block {
+  color: rgba(0, 0, 0, 0.4);
+}
+*/
+.sort {
+  color: rgba(0, 0, 0, 0.18);
+  border-bottom: 1px dashed #ee3643;
+}
+
+.sort:hover {
+  color: #000000;
+  border-bottom: 1px solid #ee3643;
+}
+
+.sort:active {
+  color: #ee3643;
+  border-bottom: none;
 }
 
 .product-item {
@@ -405,6 +548,19 @@ a {
   color: rgba(50, 66, 92, 0.3);
   opacity: 0.3;
   border: 3px solid #32425c;
+}
+
+.pagination a {
+  border: 1px solid #e5e5e5;
+  color: #000000;
+}
+
+.pagination a:hover {
+  border: 1px solid #bdc6ca;
+}
+
+.pagination a:active {
+  border: 1px solid #ee3643;
 }
 
 /* Catalog styles end */

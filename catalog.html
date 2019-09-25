@@ -60,12 +60,12 @@
   </header>
   <main>
     <ul class="breadcrumb">
-      <li><a href="#">Каталог</a></li>
-      <li><a href="#">Инструмент</a></li>
-      <li><a>Перфораторы</a></li>
+      <li><a href="#" class="catalog-mini-title">Каталог</a></li>
+      <li><a href="#" class="catalog-mini-title">Инструмент</a></li>
+      <li><a class="catalog-mini-title">Перфораторы</a></li>
     </ul>
     <h2 class="popular-title">Перфораторы</h2>
-    <p>Фильтр:</p>
+    <p class="catalog-mini-title">Фильтр:</p>
     <form method="get" action="#">
       <fieldset>
         <legend class="filter-list">Цена:</legend>
@@ -86,30 +86,30 @@
       <fieldset>
         <legend class="filter-legend">Производители:</legend>
         <ul class="filter">
-          <li>
+          <li class="checkbox">
             <input type="checkbox" name="bosch" id="filter-bosh" checked>
             <label for="filter-bosh">
               Bosch
             </label>
           </li>
-          <li>
+          <li class="checkbox">
             <input type="checkbox" name="interskol" id="filter-interskol">
             <label for="filter-interskol">
               Интерскол
             </label>
           </li>
-          <li>
+          <li class="checkbox">
             <input type="checkbox" name="makita" id="filter-makita" checked>
             <label for="filter-makita">
               Makita</label>
           </li>
-          <li>
+          <li class="checkbox">
             <input type="checkbox" name="dewalt" id="filter-dewalt">
             <label for="filter-dewalt">
               Dewalt
             </label>
           </li>
-          <li>
+          <li class="checkbox">
             <input type="checkbox" name="hitachi" id="filter-hitachi">
             <label for="filter-hitachi">
               Hitachi
@@ -120,13 +120,13 @@
       <fieldset>
         <legend class="filter-legend">Питание</legend>
         <ul class="filter">
-          <li>
+          <li class="radio-button">
             <input type="radio" name="power" value="accumulator-powered" id="filter-accumulator" checked>
             <label for="filter-accumulator">
               Аккумуляторные
             </label>
           </li>
-          <li>
+          <li class="radio-button">
             <input type="radio" name="power" value="mains-powered" id="filter-mains">
             <label for="filter-mains">
               Сетевые
@@ -136,11 +136,11 @@
       </fieldset>
       <button type="submit" class="filter-button">Показать</button>
     </form>
-    <p>Сортировка:</p>
-    <ul>
-      <li><a>По цене</a></li>
-      <li><a href="#">По типу</a></li>
-      <li><a href="#">По функционалу</a></li>
+    <p class="catalog-mini-title">Сортировка:</p>
+    <ul class="catalog-mini-title">
+      <li><a class="sort">По цене</a></li>
+      <li><a href="#" class="sort">По типу</a></li>
+      <li><a href="#" class="sort">По функционалу</a></li>
     </ul>
     <ul>
       <li><a>Стрелка по возрастанию</a></li>
@@ -255,7 +255,7 @@
             <a href="#" class="product-new-price">12500 Р.</a>
           </p>
         </li>
-        <li class="new-item">
+        <li class="product-item">
           <p>
             <a href="catalog-item.html">
               <img src="img/perforator_1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
@@ -317,7 +317,7 @@
       </ul>
     </section>
     <section class="about_item">
-      <h2 class="caption">Пара слов о перфораторах</h2>
+      <h2 class="services-title">Пара слов о перфораторах</h2>
       <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
         Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный
         молоток и ударная дрель.
