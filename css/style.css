@@ -277,23 +277,26 @@ a {
 }
 
 .offer-button:hover {
-  opacity: 0.2;
+  background-color: rgba(0,0,0,0.2);
 }
 
 .offer-button:active {
   opacity: 0.3;
 }
 
-.catalog-item {
+.catalog-item,
+.brand-item {
   width: 220px;
   border: 1px solid #e5e5e5;
 }
 
-.catalog-item:hover {
+.catalog-item:hover,
+.brand-item:hover {
   box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
-.catalog-item:active {
+.catalog-item:active
+.brand-item:active {
   opacity: 0.3;
   box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
 }
@@ -502,7 +505,7 @@ a {
 }
 
 .sort-link {
-  color: rgba(0, 0, 0, 0.18);
+  color: rgba(0, 0, 0, 0.3);
   border-bottom: 1px dashed #ee3643;
 }
 
