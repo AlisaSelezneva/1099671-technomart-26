@@ -6,7 +6,6 @@ body {
   font-size: 13px;
   line-height: 24px;
   color: #000000;
-
   background-color: #ffffff;
 }
 
@@ -15,12 +14,40 @@ a {
 }
 
 /* Header styles start */
-
 .page-header {
   font-family: "Cuprum", Arial, sans-serif;
+  min-height: 320px;
+}
+
+.menu-header {
+  display: flex;
+  align-items: center;
+  min-height: 42px;
+  font-size: 17px;
+  line-height: 17px;
+  color: #ffffff;
+  background-color: #293449;
+}
+
+.menu-header a {
+  color: #ffffff;
+}
+
+.main-title {
+  width: 196px;
+  min-height: 60px;
+  padding-bottom: 22px;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 23px;
+  color: #ee3643;
 }
 
 .logo-header {
+  min-height: 42px;
+  margin: auto;
+  padding-left: 130px;
+  padding-right: 8px;
   background-color: #ee3643;
 }
 
@@ -38,24 +65,14 @@ a {
   background-color: #ee3643;
 }
 
-
-.main-title {
-  font-style: italic;
-  font-size: 16px;
-  line-height: 23px;
-  color: #ee3643;
+.header-bookmarks {
+  padding-left: 98px;
+  padding-right: 23px;
 }
 
-.menu-header {
-  font-size: 17px;
-  line-height: 17px;
-  color: #ffffff;
-
-  background-color: #293449;
-}
-
-.menu-header a {
-  color: #ffffff;
+.header-basket {
+  padding-left: 23px;
+  padding-right: 15px;
 }
 
 .header-bookmarks:hover,
@@ -70,6 +87,9 @@ a {
 }
 
 .order {
+  width: 150px;
+  padding-left: 15px;
+  padding-right: 130px;
   background-color: #63a63e;
 }
 
@@ -96,12 +116,26 @@ a {
   color: #ee3643;
 }
 
+.catalog-btn-account a {
+  display: flex;
+  align-items: center;
+}
+
+.account {
+  display: flex;
+}
+
 .account a {
+  padding: 16px;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
   text-decoration: underline;
   color: #32425c;
+}
+
+.search {
+  padding-left: 24px;
 }
 
 .search input {
@@ -122,17 +156,30 @@ a {
   line-height: 18px;
 }
 
-
 .info-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   background-color: #f4f7f9;
+  padding: 5px;
+}
+
+.container-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.btn-account {
+  padding: 5px;
 }
 
 .btn-account a {
+  padding: 5px;
   font-size: 21px;
   font-weight: 400;
   line-height: 21px;
   color: #000000;
-
   background-color: #ffffff;
 }
 
@@ -145,11 +192,18 @@ a {
 }
 
 .navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   font-size: 17px;
   line-height: 17px;
   color: #ffffff;
-
   background-color: #293449;
+}
+
+.navigation li {
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .navigation.active:hover,
@@ -157,7 +211,6 @@ a {
 .navigation.active:active {
   background-color: #293449;
 }
-
 
 .navigation a {
   color: #ffffff;
@@ -168,15 +221,12 @@ a {
 }
 
 .navigation a:active {
-  color:rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5);
   background-color: #1d2739;
 }
 
 /* Header styles end */
-
-
 /*Promo-block and items styles start*/
-
 .slider {
   font-family: "Cuprum", Arial, sans-serif;
   color: #000000;
@@ -204,7 +254,6 @@ a {
 }
 
 .product-new-price {
-
   font-size: 17px;
   font-weight: 700;
   line-height: 18px;
@@ -221,8 +270,17 @@ a {
   color: #32425c;
 }
 
+.container-products {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .product-item {
+  flex-basis: auto;
+  margin-right: 130px;
   width: 220px;
+  min-height: 318px;
   border: 1px solid #e5e5e5;
   text-transform: uppercase;
 }
@@ -273,11 +331,11 @@ a {
   line-height: 18px;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: rgba(0,0,0,0.1);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .offer-button:hover {
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .offer-button:active {
@@ -295,17 +353,13 @@ a {
   box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
-.catalog-item:active
-.brand-item:active {
+.catalog-item:active .brand-item:active {
   opacity: 0.3;
   box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
 }
 
 /*Promo-block and items styles end*/
-
-
 /*About company styles start */
-
 .partners-list {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
@@ -313,7 +367,7 @@ a {
 }
 
 .services {
- background-color: #f4f7f9;
+  background-color: #f4f7f9;
 }
 
 .services-title {
@@ -332,38 +386,42 @@ a {
 }
 
 .services-menu {
- font-family: "Cuprum", Arial, sans-serif;
- font-size: 21px;
- line-height: 30px;
- font-weight: 700;
- color: #32425c;
- background-color: #32425c;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #32425c;
+  background-color: #32425c;
 }
 
 .services-menu a {
- color: #ffffff;
+  color: #ffffff;
 }
 
 .services-menu a:hover {
- background-color: #293449;
+  background-color: #293449;
 }
 
 .services-menu a:active {
- color: #32425c;
- background-color: #ffffff;
+  color: #32425c;
+  background-color: #ffffff;
 }
 
 /*About company styles end */
-
-
 /* Footer styles start */
+
+.container {
+  display: flex;
+  align-items: center;
+  margin-left: 130px;
+  margin-right: 130px;
+}
 
 .footer {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
-
   background-color: #32425c;
 }
 
@@ -394,6 +452,12 @@ a {
   color: rgba(241, 245, 247, 0.5);
 }
 
+.socials {
+  display: flex;
+  align-content: center;
+  padding: 3px;
+}
+
 .socials a {
   color: #ffffff;
   background-color: #212a3a;
@@ -404,9 +468,37 @@ a {
   background-color: #ee3643;
 }
 
+.container-footer {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.container-footer p {
+  width: 322px;
+}
+
+.footer-navigation-first {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 130px;
+}
+
+.footer-navigation-first a {
+  padding: 30px;
+}
+
+.footer-navigation-second {
+  display: flex;
+  align-items: center;
+  margin-right: 130px;
+
+}
 
 .footer-navigation-second a {
   color: #ffd180;
+  padding: 30px;
 }
 
 .footer-navigation-second a:hover {
@@ -418,39 +510,57 @@ a {
   color: rgba(255, 209, 128, 0.5);
 }
 
-
 .footer-social {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 107px;
   font-size: 16px;
   line-height: 24px;
   color: #ffffff;
-
   background-color: #293449;
 }
 
-.contacts-footer a {
+.contacts-footer {
+  width: 135px;
+}
+
+.dev-contacts-footer {
+  width: 96px;
+}
+
+.contacts-footer a,
+.dev-contacts-footer a {
   color: #ffd180;
 }
 
-.contacts-footer a:hover {
+.contacts-footer a:hover,
+.dev-contacts-footer a:hover {
   color: #ffd180;
   text-decoration: underline;
 }
 
-.contacts-footer a:active {
+.contacts-footer a:active,
+.dev-contacts-footer a:active {
   color: #ee3643;
 }
 
 .copyright {
+  width: 220px;
   font-size: 16px;
   line-height: 18px;
 }
 
 /* Footer styles end */
-
-
 /* Catalog styles start */
 
+.breadcrumbs {
+  display: flex;
+}
+
 .breadcrumbs-link {
+  padding-left: 21px;
+  padding-right: 21px;
   line-height: 18px;
   text-transform: uppercase;
   color: #000000;
@@ -484,11 +594,10 @@ a {
   background-color: #f7f3ec;
 }
 
-.checkbox-item {
-}
+.checkbox-item {}
 
-.checkbox-item:hover {
-}
+.checkbox-item:hover {}
+
 /* Это я пока не поняла как правильно сделать :(
 
 .checkbox-item: {
@@ -499,7 +608,6 @@ a {
   color: rgba(0, 0, 0, 0.4);
 }
 */
-
 .sort {
   text-transform: uppercase;
 }
@@ -518,13 +626,13 @@ a {
   color: #ee3643;
   border-bottom: none;
 }
+
 .sort-link.active,
 .sort-link.active:hover,
 .sort-link.active:focus,
-.sort-link.active:active{
+.sort-link.active:active {
   color: #ee3643;
   border-bottom: none;
-
 }
 
 .product-title {
@@ -598,7 +706,6 @@ a {
   line-height: 18px;
   text-transform: uppercase;
   color: #ffffff;
-
   background-color: #ee3643;
 }
 

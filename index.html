@@ -34,7 +34,7 @@
         <a href="tel:+78125550555">+7 (812) 555-05-55</a>
         <p>г. Санкт-Петербург, ул. Б. Конюшенная , д.19/8</p>
       </div>
-      <ul>
+      <ul class="container-btn">
         <li class="btn-account">
           <a href="#">Войти</a>
           <!--Здесь будет форма-->
@@ -46,7 +46,7 @@
       </ul>
     </div>
     <nav class="navigation">
-      <ul>
+      <ul class="navigation">
         <li><a class="navigation active">Главная</a></li>
         <li><a href="#">Компания</a></li>
         <li><a href="catalog.html">Каталог</a></li>
@@ -235,67 +235,72 @@
         Кредитные консультанты придут вам на помощь.</p>
       <a href="#" class="button-more">Отправить заявку</a>
     </section>
-    <section>
-      <h2 class="caption">Компания Техномарт</h2>
-      <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
-        строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
-      </p>
-      <p>Мы можем доставить ваш товар в самые отдаленные точки России!
-        Техномарт работает со многими транспортными компаниями:
-      </p>
-      <ul class="partners-list">
-        <li>Деловые Линии</li>
-        <li>Автотрейдинг</li>
-        <li>ЖелДорЭкспедиция</li>
-      </ul>
-      <a class="button-more" href="#">Подробнее о компании</a>
-    </section>
-    <section>
-      <h2 class="caption">Контакты</h2>
-      <p>Вы можете забрать товар сами,
-        заехав в наш офис:
-      </p>
-      <a href="#">
-        <img src="img/map.jpg" width="300" height="158" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8">
-      </a>
-      <p><a class="button-more" href="#">Заблудились? Напишите нам!</a></p>
-      <form class="letter" action="#" method="post">
-        <p>
-          <label for="user-field">Ваше имя:</label>
-          <input id="user-field" type="text" name="user" value="" placeholder="Имя Фамилия">
+    <div class="container">
+      <section>
+        <h2 class="services-title">Компания Техномарт</h2>
+        <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
+          строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
         </p>
-        <p>
-          <label for="e-mail-field">Ваш e-mail:</label>
-          <input id="e-mail-field" type="email" name="e-mail" value="" placeholder="email@example.com">
+        <p>Мы можем доставить ваш товар в самые отдаленные точки России!
+          Техномарт работает со многими транспортными компаниями:
         </p>
-        <p>
-          <label for="text-field">Текст письма:</label>
-          <textarea id="text-field" rows="5" cols="30" name="text" placeholder="В свободной форме"></textarea>
+        <ul class="partners-list">
+          <li>Деловые Линии</li>
+          <li>Автотрейдинг</li>
+          <li>ЖелДорЭкспедиция</li>
+        </ul>
+        <a class="button-more" href="#">Подробнее о компании</a>
+      </section>
+      <section>
+        <h2 class="services-title">Контакты</h2>
+        <p>Вы можете забрать товар сами,
+          заехав в наш офис:
         </p>
-        <button type="submit">Отправить</button>
-      </form>
-    </section>
+        <a href="#">
+          <img src="img/map.jpg" width="300" height="158" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8">
+        </a>
+        <p><a class="button-more" href="#">Заблудились? Напишите нам!</a></p>
+        <form class="letter" action="#" method="post">
+          <p>
+            <label for="user-field">Ваше имя:</label>
+            <input id="user-field" type="text" name="user" value="" placeholder="Имя Фамилия">
+          </p>
+          <p>
+            <label for="e-mail-field">Ваш e-mail:</label>
+            <input id="e-mail-field" type="email" name="e-mail" value="" placeholder="email@example.com">
+          </p>
+          <p>
+            <label for="text-field">Текст письма:</label>
+            <textarea id="text-field" rows="5" cols="30" name="text" placeholder="В свободной форме"></textarea>
+          </p>
+          <button type="submit">Отправить</button>
+        </form>
+      </section>
+    </div>
   </main>
   <footer class="footer">
     <a class="logo-footer">
       <img src="img/logo.svg" width="138" height="23" alt="Логотип Техномарта">
     </a>
     <nav class="nav-footer">
-      <ul>
+      <ul class="footer-navigation-first">
         <li><a href="#">Компания</a></li>
         <li><a href="#">Новости</a></li>
         <li><a href="catalog.html">Каталог</a></li>
         <li><a href="#">Доставка</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
-      <p>г. Санкт-Петербург, Б. Конюшенная, д. 19/8</p>
-      <a href="tel:+78125550555">+7 (812) 555-05-55</a>
-      <ul class="footer-navigation-second">
-        <li><a href="#">Материалы</a></li>
-        <li><a href="#">Техника</a></li>
-        <li><a href="#">Инструмент</a></li>
-        <li><a href="#">Спецпредложения</a></li>
-      </ul>
+      <div class="container-footer">
+       <p>г. Санкт-Петербург, Б. Конюшенная, д. 19/8
+        <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+      </p>
+         <ul class="footer-navigation-second">
+           <li><a href="#">Материалы</a></li>
+           <li><a href="#">Техника</a></li>
+           <li><a href="#">Инструмент</a></li>
+           <li><a href="#">Спецпредложения</a></li>
+         </ul>
+       </div>
     </nav>
     <div class="footer-social">
       <p class="copyright">
@@ -311,8 +316,8 @@
         Обратная связь:
         <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
       </p>
-      <p class="contacts-footer">
-        Разработано:
+      <p class="dev-contacts-footer">
+        Разработано -
         <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
       </p>
     </div>
