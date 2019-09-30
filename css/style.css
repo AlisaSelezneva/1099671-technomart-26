@@ -13,6 +13,15 @@ a {
   text-decoration: none;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.container li {
+ list-style-type: none;
+}
+
 /* Header styles start */
 .page-header {
   font-family: "Cuprum", Arial, sans-serif;
@@ -22,7 +31,6 @@ a {
 .menu-header {
   display: flex;
   align-items: center;
-  min-height: 42px;
   font-size: 17px;
   line-height: 17px;
   color: #ffffff;
@@ -35,8 +43,6 @@ a {
 
 .main-title {
   width: 196px;
-  min-height: 60px;
-  padding-bottom: 22px;
   font-style: italic;
   font-size: 16px;
   line-height: 23px;
@@ -44,10 +50,7 @@ a {
 }
 
 .logo-header {
-  min-height: 42px;
-  margin: auto;
-  padding-left: 130px;
-  padding-right: 8px;
+  padding: 13px 55px 15px 55px;
   background-color: #ee3643;
 }
 
@@ -66,13 +69,11 @@ a {
 }
 
 .header-bookmarks {
-  padding-left: 98px;
-  padding-right: 23px;
+  padding: 13px 28px 13px 44px;
 }
 
 .header-basket {
-  padding-left: 23px;
-  padding-right: 15px;
+  padding: 14px 26px 14px 50px;
 }
 
 .header-bookmarks:hover,
@@ -87,9 +88,7 @@ a {
 }
 
 .order {
-  width: 150px;
-  padding-left: 15px;
-  padding-right: 130px;
+  padding: 14px 22px 14px 20px;
   background-color: #63a63e;
 }
 
@@ -117,8 +116,6 @@ a {
 }
 
 .catalog-btn-account a {
-  display: flex;
-  align-items: center;
 }
 
 .account {
@@ -126,7 +123,6 @@ a {
 }
 
 .account a {
-  padding: 16px;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -135,7 +131,6 @@ a {
 }
 
 .search {
-  padding-left: 24px;
 }
 
 .search input {
@@ -161,7 +156,6 @@ a {
   align-items: center;
   justify-content: space-around;
   background-color: #f4f7f9;
-  padding: 5px;
 }
 
 .container-btn {
@@ -171,11 +165,9 @@ a {
 }
 
 .btn-account {
-  padding: 5px;
 }
 
 .btn-account a {
-  padding: 5px;
   font-size: 21px;
   font-weight: 400;
   line-height: 21px;
@@ -201,10 +193,7 @@ a {
   background-color: #293449;
 }
 
-.navigation li {
-  padding-left: 32px;
-  padding-right: 32px;
-}
+
 
 .navigation.active:hover,
 .navigation.active:focus,
@@ -270,17 +259,19 @@ a {
   color: #32425c;
 }
 
+.container-popular {
+  display: flex;
+}
+
 .container-products {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 
 .product-item {
-  flex-basis: auto;
-  margin-right: 130px;
+  margin: 21px;
   width: 220px;
-  min-height: 318px;
   border: 1px solid #e5e5e5;
   text-transform: uppercase;
 }
@@ -342,18 +333,18 @@ a {
   opacity: 0.3;
 }
 
-.catalog-item,
 .brand-item {
+  min-height: 145px;
   width: 220px;
   border: 1px solid #e5e5e5;
 }
 
-.catalog-item:hover,
+
 .brand-item:hover {
   box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
-.catalog-item:active .brand-item:active {
+.brand-item:active {
   opacity: 0.3;
   box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
 }
@@ -410,11 +401,9 @@ a {
 /*About company styles end */
 /* Footer styles start */
 
-.container {
+.about {
   display: flex;
-  align-items: center;
-  margin-left: 130px;
-  margin-right: 130px;
+  align-items: flex-start;
 }
 
 .footer {
@@ -455,7 +444,6 @@ a {
 .socials {
   display: flex;
   align-content: center;
-  padding: 3px;
 }
 
 .socials a {
@@ -470,7 +458,7 @@ a {
 
 .container-footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 
 }
 
@@ -482,23 +470,18 @@ a {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-right: 130px;
 }
 
 .footer-navigation-first a {
-  padding: 30px;
 }
 
 .footer-navigation-second {
   display: flex;
   align-items: center;
-  margin-right: 130px;
-
 }
 
 .footer-navigation-second a {
   color: #ffd180;
-  padding: 30px;
 }
 
 .footer-navigation-second a:hover {
@@ -512,22 +495,13 @@ a {
 
 .footer-social {
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  min-height: 107px;
   font-size: 16px;
   line-height: 24px;
   color: #ffffff;
   background-color: #293449;
 }
 
-.contacts-footer {
-  width: 135px;
-}
-
-.dev-contacts-footer {
-  width: 96px;
-}
 
 .contacts-footer a,
 .dev-contacts-footer a {
@@ -546,7 +520,6 @@ a {
 }
 
 .copyright {
-  width: 220px;
   font-size: 16px;
   line-height: 18px;
 }
@@ -559,8 +532,6 @@ a {
 }
 
 .breadcrumbs-link {
-  padding-left: 21px;
-  padding-right: 21px;
   line-height: 18px;
   text-transform: uppercase;
   color: #000000;
