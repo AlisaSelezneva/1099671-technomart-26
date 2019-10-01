@@ -19,14 +19,10 @@ a {
   outline: 2px solid blue;/*временная рамка*/
 }
 
-.container li {
- list-style-type: none;
-}
 
 /* Header styles start */
 .page-header {
   font-family: "Cuprum", Arial, sans-serif;
-  min-height: 320px;
 }
 
 .menu-header {
@@ -122,6 +118,7 @@ a {
 
 .account {
   display: flex;
+  list-style-type: none;
 }
 
 .account a {
@@ -157,6 +154,8 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  padding-top: 46px;
+  padding-bottom: 44px;
   background-color: #f4f7f9;
 }
 
@@ -167,6 +166,7 @@ a {
 }
 
 .btn-account {
+  list-style-type: none;
 }
 
 .btn-account a {
@@ -193,6 +193,7 @@ a {
   line-height: 17px;
   color: #ffffff;
   background-color: #293449;
+  list-style-type: none;
   outline: 2px solid red;/*временная рамка*/
 }
 
@@ -222,6 +223,7 @@ a {
 .slider {
   font-family: "Cuprum", Arial, sans-serif;
   color: #000000;
+  list-style-type: none;
   /*Временно черный*/
 }
 
@@ -264,12 +266,14 @@ a {
 
 .container-popular-items {
   display: flex;
+  list-style-type: none;
   outline: 2px solid red;/*временная рамка*/
 }
 
 .container-popular-brands {
   display: flex;
   flex-wrap: wrap;
+  list-style-type: none;
   outline: 2px solid red;/*временная рамка*/
 }
 
@@ -281,10 +285,13 @@ a {
 }
 
 .product-item {
-  margin: 20px;
+  margin-top: 21px;
+  margin-right: 20px;
   width: 220px;
   border: 1px solid #e5e5e5;
   text-transform: uppercase;
+  list-style-type: none;
+
 }
 
 .product-item:hover {
@@ -293,6 +300,7 @@ a {
 
 .offer {
   font-family: "Cuprum", Arial, sans-serif;
+  list-style-type: none;
 }
 
 .offer-services-discounts {
@@ -346,7 +354,8 @@ a {
 
 .brand-item {
   min-height: 145px;
-  margin: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
   width: 220px;
   border: 1px solid #e5e5e5;
 }
@@ -368,6 +377,7 @@ a {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   line-height: 20px;
+  list-style-type: none;
 }
 
 .services {
@@ -421,7 +431,19 @@ a {
   outline: 2px solid red;/*временная рамка*/
 }
 
+.container-about {
+  width: 640px;
+  outline: 2px solid green;/*временная рамка*/
+}
+
+.container-about-contacts {
+  width: 300px;
+  outline: 2px solid green;/*временная рамка*/
+}
+
+
 .footer {
+  display: flex;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -435,6 +457,13 @@ a {
 
 .nav-footer {
   color: #f3f7f9;
+  display: flex;
+  outline: 2px solid green;/*временная рамка*/
+}
+
+.container-footer-info {
+  display: flex;
+  outline: 2px solid green;/*временная рамка*/
 }
 
 .nav-footer.active:hover,
@@ -459,6 +488,7 @@ a {
 .socials {
   display: flex;
   align-content: center;
+  list-style-type: none;
 }
 
 .socials a {
@@ -484,6 +514,7 @@ a {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  list-style-type: none;
 }
 
 .footer-navigation-first a {
@@ -492,6 +523,7 @@ a {
 .footer-navigation-second {
   display: flex;
   align-items: center;
+  list-style-type: none;
 }
 
 .footer-navigation-second a {
@@ -543,16 +575,17 @@ a {
 /* Catalog styles start */
 
 .container-catalog {
-
   outline: 2px solid red;/*временная рамка*/
 }
 
 .container-filter {
+  width: 220px;
   outline: 2px solid green;/*временная рамка*/
 }
 
 .breadcrumbs {
   display: flex;
+  list-style-type: none;
 }
 
 .breadcrumbs-link {
@@ -573,6 +606,7 @@ a {
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+  list-style-type: none;
 }
 
 .filter-button {
@@ -607,6 +641,7 @@ a {
 .sort {
   display: flex;
   text-transform: uppercase;
+  list-style-type: none;
   outline: 2px solid green;
 }
 
@@ -669,6 +704,10 @@ a {
   color: rgba(50, 66, 92, 0.3);
   opacity: 0.3;
   border: 3px solid #32425c;
+}
+
+.pagination {
+  list-style-type: none;
 }
 
 .pagination a {
