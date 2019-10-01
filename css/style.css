@@ -16,6 +16,7 @@ a {
 .container {
   width: 1200px;
   margin: 0 auto;
+  outline: 2px solid blue;/*временная рамка*/
 }
 
 .container li {
@@ -35,6 +36,7 @@ a {
   line-height: 17px;
   color: #ffffff;
   background-color: #293449;
+  outline: 2px solid red;/*временная рамка*/
 }
 
 .menu-header a {
@@ -191,6 +193,7 @@ a {
   line-height: 17px;
   color: #ffffff;
   background-color: #293449;
+  outline: 2px solid red;/*временная рамка*/
 }
 
 
@@ -259,18 +262,26 @@ a {
   color: #32425c;
 }
 
-.container-popular {
+.container-popular-items {
   display: flex;
+  outline: 2px solid red;/*временная рамка*/
+}
+
+.container-popular-brands {
+  display: flex;
+  flex-wrap: wrap;
+  outline: 2px solid red;/*временная рамка*/
 }
 
 .container-products {
   display: flex;
-  justify-content: flex-start;
   flex-wrap: wrap;
+  width: 700px;
+  outline: 2px solid green;/*временная рамка*/
 }
 
 .product-item {
-  margin: 21px;
+  margin: 20px;
   width: 220px;
   border: 1px solid #e5e5e5;
   text-transform: uppercase;
@@ -335,6 +346,7 @@ a {
 
 .brand-item {
   min-height: 145px;
+  margin: 20px;
   width: 220px;
   border: 1px solid #e5e5e5;
 }
@@ -350,6 +362,7 @@ a {
 }
 
 /*Promo-block and items styles end*/
+
 /*About company styles start */
 .partners-list {
   font-family: "Cuprum", Arial, sans-serif;
@@ -399,11 +412,13 @@ a {
 }
 
 /*About company styles end */
+
 /* Footer styles start */
 
 .about {
   display: flex;
   align-items: flex-start;
+  outline: 2px solid red;/*временная рамка*/
 }
 
 .footer {
@@ -459,7 +474,6 @@ a {
 .container-footer {
   display: flex;
   justify-content: space-between;
-
 }
 
 .container-footer p {
@@ -525,7 +539,17 @@ a {
 }
 
 /* Footer styles end */
+
 /* Catalog styles start */
+
+.container-catalog {
+
+  outline: 2px solid red;/*временная рамка*/
+}
+
+.container-filter {
+  outline: 2px solid green;/*временная рамка*/
+}
 
 .breadcrumbs {
   display: flex;
@@ -560,6 +584,7 @@ a {
 }
 
 .catalog-subtitle {
+
   line-height: 18px;
   text-transform: uppercase;
   background-color: #f7f3ec;
@@ -580,7 +605,9 @@ a {
 }
 */
 .sort {
+  display: flex;
   text-transform: uppercase;
+  outline: 2px solid green;
 }
 
 .sort-link {

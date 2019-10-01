@@ -66,89 +66,91 @@
       <li><a href="#" class="breadcrumbs-link">Инструмент</a></li>
       <li><a class="breadcrumbs-link">Перфораторы</a></li>
     </ul>
-    <h2 class="popular-title">Перфораторы</h2>
-    <p class="catalog-subtitle">Фильтр:</p>
-    <form method="get" action="#">
-      <fieldset>
-        <legend class="filter-list">Цена:</legend>
-        <div class=“progress”>
-          <div class=“progress-bar”></div>
-        </div>
-        <p>
-          <label for="low-price"></label>
-          <input id="low-price" type="text" name="price" value="" placeholder="0">
-        </p>
-        <p>
-          <label for="high-price"></label>
-          <input id="high-price" type="text" name="price" value="" placeholder="30000">
-        </p>
-      </fieldset>
-    </form>
-    <form method="get" action="#">
-      <fieldset>
-        <legend class="filter-legend">Производители:</legend>
-        <ul class="filter">
-          <li class="checkbox-item">
-            <input type="checkbox" name="bosch" id="filter-bosh" checked>
-            <label for="filter-bosh">
-              Bosch
-            </label>
-          </li>
-          <li class="checkbox-item">
-            <input type="checkbox" name="interskol" id="filter-interskol">
-            <label for="filter-interskol">
-              Интерскол
-            </label>
-          </li>
-          <li class="checkbox-item">
-            <input type="checkbox" name="makita" id="filter-makita" checked>
-            <label for="filter-makita">
-              Makita</label>
-          </li>
-          <li class="checkbox-item">
-            <input type="checkbox" name="dewalt" id="filter-dewalt">
-            <label for="filter-dewalt">
-              Dewalt
-            </label>
-          </li>
-          <li class="checkbox-item">
-            <input type="checkbox" name="hitachi" id="filter-hitachi">
-            <label for="filter-hitachi">
-              Hitachi
-            </label>
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset>
-        <legend class="filter-legend">Питание</legend>
-        <ul class="filter">
-          <li class="radio-button-item">
-            <input type="radio" name="power" value="accumulator-powered" id="filter-accumulator" checked>
-            <label for="filter-accumulator">
-              Аккумуляторные
-            </label>
-          </li>
-          <li class="radio-button-item">
-            <input type="radio" name="power" value="mains-powered" id="filter-mains">
-            <label for="filter-mains">
-              Сетевые
-            </label>
-          </li>
-        </ul>
-      </fieldset>
-      <button type="submit" class="filter-button">Показать</button>
-    </form>
-    <p class="catalog-subtitle">Сортировка:</p>
-    <ul class="sort">
-      <li><a class="sort-link active">По цене</a></li>
-      <li><a href="#" class="sort-link">По типу</a></li>
-      <li><a href="#" class="sort-link">По функционалу</a></li>
-    </ul>
-    <ul>
-      <li><a>Стрелка по возрастанию</a></li>
-      <li><a href="#">Стрелка по убыванию</a></li>
-    </ul>
-    <section>
+    <section class="container-catalog">
+      <h2 class="popular-title">Перфораторы</h2>
+      <div class="container-filter">
+        <p class="catalog-subtitle">Фильтр:</p>
+        <form method="get" action="#">
+          <fieldset>
+            <legend class="filter-list">Цена:</legend>
+            <div class=“progress”>
+              <div class=“progress-bar”></div>
+            </div>
+            <p>
+              <label for="low-price"></label>
+              <input id="low-price" type="text" name="price" value="" placeholder="0">
+            </p>
+            <p>
+              <label for="high-price"></label>
+              <input id="high-price" type="text" name="price" value="" placeholder="30000">
+            </p>
+          </fieldset>
+        </form>
+        <form method="get" action="#">
+          <fieldset>
+            <legend class="filter-legend">Производители:</legend>
+            <ul class="filter">
+              <li class="checkbox-item">
+                <input type="checkbox" name="bosch" id="filter-bosh" checked>
+                <label for="filter-bosh">
+                  Bosch
+                </label>
+              </li>
+              <li class="checkbox-item">
+                <input type="checkbox" name="interskol" id="filter-interskol">
+                <label for="filter-interskol">
+                  Интерскол
+                </label>
+              </li>
+              <li class="checkbox-item">
+                <input type="checkbox" name="makita" id="filter-makita" checked>
+                <label for="filter-makita">
+                  Makita</label>
+              </li>
+              <li class="checkbox-item">
+                <input type="checkbox" name="dewalt" id="filter-dewalt">
+                <label for="filter-dewalt">
+                  Dewalt
+                </label>
+              </li>
+              <li class="checkbox-item">
+                <input type="checkbox" name="hitachi" id="filter-hitachi">
+                <label for="filter-hitachi">
+                  Hitachi
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend class="filter-legend">Питание</legend>
+            <ul class="filter">
+              <li class="radio-button-item">
+                <input type="radio" name="power" value="accumulator-powered" id="filter-accumulator" checked>
+                <label for="filter-accumulator">
+                  Аккумуляторные
+                </label>
+              </li>
+              <li class="radio-button-item">
+                <input type="radio" name="power" value="mains-powered" id="filter-mains">
+                <label for="filter-mains">
+                  Сетевые
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit" class="filter-button">Показать</button>
+        </form>
+      </div>
+      <p class="catalog-subtitle">Сортировка:</p>
+      <ul class="sort">
+        <li><a class="sort-link active">По цене</a></li>
+        <li><a href="#" class="sort-link">По типу</a></li>
+        <li><a href="#" class="sort-link">По функционалу</a></li>
+      </ul>
+      <ul class="sort">
+        <li><a>вверх</a></li>
+        <li><a href="#">вниз</a></li>
+      </ul>
       <h2 class="title-hidden">Список перфораторов</h2>
       <ul class="container-products">
         <li class="product-item">
@@ -293,13 +295,13 @@
           <p class="product-new-price">12500 Р.</p>
         </li>
       </ul>
-      <ul class="pagination">
-        <li><a>1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">Следующая</a></li>
-      </ul>
     </section>
+    <ul class="pagination">
+      <li><a>1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">Следующая</a></li>
+    </ul>
     <section class="about_item">
       <h2 class="services-title">Пара слов о перфораторах</h2>
       <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
