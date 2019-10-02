@@ -21,8 +21,8 @@ a {
 
 
 /* Header styles start */
-.page-header {
-  margin: 0 auto;
+
+.header {
   font-family: "Cuprum", Arial, sans-serif;
 }
 
@@ -32,6 +32,11 @@ a {
   color: #ffffff;
   background-color: #293449;
   outline: 2px solid red;/*временная рамка*/
+}
+
+.menu-header-container {
+  display: flex;
+  margin: 0 auto;
 }
 
 .menu-header a {
@@ -156,9 +161,18 @@ a {
 }
 
 .info-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f4f7f9;
+}
+
+.middle-part {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding-top: 46px;
   padding-bottom: 44px;
-  background-color: #f4f7f9;
 }
 
 .container-btn {
@@ -189,17 +203,19 @@ a {
 
 .navigation {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   font-size: 17px;
   line-height: 17px;
   color: #ffffff;
   background-color: #293449;
-  list-style-type: none;
+
   outline: 2px solid red;/*временная рамка*/
 }
 
-
+.navigation ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
 
 .navigation.active:hover,
 .navigation.active:focus,
@@ -461,7 +477,7 @@ a {
   background-color: #32425c;
 }
 
-.top-footer {
+.footer-top-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -567,16 +583,19 @@ a {
 }
 
 .footer-social {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 35px;
-  padding-bottom: 30px;
   font-size: 16px;
   line-height: 24px;
   color: #ffffff;
   background-color: #293449;
   outline: 2px solid green;/*временная рамка*/
+}
+
+.container-footer-social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 35px;
+  padding-bottom: 30px;
 }
 
 
