@@ -22,12 +22,11 @@ a {
 
 /* Header styles start */
 .page-header {
+  margin: 0 auto;
   font-family: "Cuprum", Arial, sans-serif;
 }
 
 .menu-header {
-  display: flex;
-  align-items: center;
   font-size: 17px;
   line-height: 17px;
   color: #ffffff;
@@ -67,11 +66,13 @@ a {
 }
 
 .header-bookmarks {
-  padding: 13px 28px 13px 44px;
+  padding: 13px 10px 13px 10px;
+  min-width: 150px;
 }
 
 .header-basket {
-  padding: 14px 26px 14px 50px;
+  padding: 14px 10px 14px 10px;
+  min-width: 150px;
 }
 
 .header-bookmarks:hover,
@@ -86,7 +87,8 @@ a {
 }
 
 .order {
-  padding: 14px 22px 14px 20px;
+  padding: 14px 10px 14px 10px;
+  min-width: 150px;
   background-color: #63a63e;
 }
 
@@ -97,6 +99,9 @@ a {
 .order:active {
   color: rgba(255, 255, 255, 0.5);
   background-color: #518534;
+}
+
+.contacts-header {
 }
 
 .contacts-header p {
@@ -151,9 +156,6 @@ a {
 }
 
 .info-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
   padding-top: 46px;
   padding-bottom: 44px;
   background-color: #f4f7f9;
@@ -262,6 +264,11 @@ a {
   line-height: 30px;
   text-transform: uppercase;
   color: #32425c;
+}
+
+.container-catalog h2 {
+  padding: 32px 0px 34px 30px;
+  background-color: #f2f6f8;
 }
 
 .container-popular-items {
@@ -427,8 +434,12 @@ a {
 
 .about {
   display: flex;
-  align-items: flex-start;
+  justify-content: space-between;
   outline: 2px solid red;/*временная рамка*/
+}
+
+.about-item {
+  background-color: #f4f7f9;
 }
 
 .container-about {
@@ -443,7 +454,6 @@ a {
 
 
 .footer {
-  display: flex;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -451,37 +461,56 @@ a {
   background-color: #32425c;
 }
 
-.logo-footer {
-  background-color: #ee3643;
-}
-
-.nav-footer {
-  color: #f3f7f9;
+.top-footer {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   outline: 2px solid green;/*временная рамка*/
 }
 
 .container-footer-info {
   display: flex;
+  padding-bottom: 30px;
+  color: #f3f7f9;
   outline: 2px solid green;/*временная рамка*/
 }
 
-.nav-footer.active:hover,
-.nav-footer.active:focus,
-.nav-footer.active:active {
+.container-footer-info a {
+  color: #f3f7f9;
+}
+
+.container-footer-info p {
+  padding-top: 32px;
+}
+
+.logo-footer {
+  padding: 20px 41px 25px 41px;
+  background-color: #ee3643;
+}
+
+.menu-footer {
+  display: flex;
+  flex-wrap: wrap;
+  color: #f3f7f9;
+  outline: 2px solid green;/*временная рамка*/
+}
+
+.menu-footer.active:hover,
+.menu-footer.active:focus,
+.menu-footer.active:active {
   text-decoration: none;
 }
 
-.nav-footer a {
+.menu-footer a {
   color: #f1f5f7;
 }
 
-.nav-footer a:hover {
+.menu-footer a:hover {
   color: #f1f5f7;
   text-decoration: underline;
 }
 
-.nav-footer a:active {
+.menu-footer a:active {
   color: rgba(241, 245, 247, 0.5);
 }
 
@@ -513,7 +542,6 @@ a {
 .footer-navigation-first {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
   list-style-type: none;
 }
 
@@ -522,7 +550,6 @@ a {
 
 .footer-navigation-second {
   display: flex;
-  align-items: center;
   list-style-type: none;
 }
 
@@ -542,12 +569,20 @@ a {
 .footer-social {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding-top: 35px;
+  padding-bottom: 30px;
   font-size: 16px;
   line-height: 24px;
   color: #ffffff;
   background-color: #293449;
+  outline: 2px solid green;/*временная рамка*/
 }
 
+
+.contacts-footer {
+  display: flex;
+}
 
 .contacts-footer a,
 .dev-contacts-footer a {
