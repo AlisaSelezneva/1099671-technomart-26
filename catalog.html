@@ -72,14 +72,14 @@
     </div>
   </header>
   <main>
-    <div class="container">
+    <section class="container">
       <ul class="breadcrumbs">
         <li><a href="#" class="breadcrumbs-link">Каталог</a></li>
         <li><a href="#" class="breadcrumbs-link">Инструмент</a></li>
         <li><a class="breadcrumbs-link">Перфораторы</a></li>
       </ul>
-      <section class="container-catalog">
-        <h2 class="popular-title">Перфораторы</h2>
+      <h2 class="popular-title">Перфораторы</h2>
+      <div class="container-catalog">
         <div class="container-filter">
           <p class="catalog-subtitle">Фильтр:</p>
           <form method="get" action="#">
@@ -154,18 +154,19 @@
           </form>
         </div>
         <div class="container-products">
-          <p class="catalog-subtitle">Сортировка:</p>
-          <ul class="sort">
-            <li><a class="sort-link active">По цене</a></li>
-            <li><a href="#" class="sort-link">По типу</a></li>
-            <li><a href="#" class="sort-link">По функционалу</a></li>
-          </ul>
-          <ul class="sort">
-            <li><a>вверх</a></li>
-            <li><a href="#">вниз</a></li>
-          </ul>
-          <h2 class="title-hidden">Список перфораторов</h2>
-          <ul>
+          <div class="container-sort">
+            <p class="catalog-subtitle">Сортировка:</p>
+            <ul class="sort">
+              <li><a class="sort-link active">По цене</a></li>
+              <li><a href="#" class="sort-link">По типу</a></li>
+              <li><a href="#" class="sort-link">По функционалу</a></li>
+            </ul>
+            <ul class="sort">
+              <li><a>вверх</a></li>
+              <li><a href="#">вниз</a></li>
+            </ul>
+          </div>
+          <ul class="container-product-item">
             <li class="product-item">
               <p>
                 <a href="catalog-item.html">
@@ -315,8 +316,8 @@
             <li><a href="#">Следующая</a></li>
           </ul>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
     <section class="about-item">
       <div class="container">
         <h2 class="services-title">Пара слов о перфораторах</h2>
