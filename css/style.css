@@ -42,7 +42,6 @@ a {
 }
 
 .menu-header {
-
   font-size: 17px;
   line-height: 17px;
   color: #ffffff;
@@ -105,11 +104,28 @@ a {
   background-color: #ee3643;
 }
 
+.header-bookmarks {
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
 
+}
+
+.header-bookmarks {
+  padding: 14px 22px 13px 20px;
+}
+
+.header-bookmarks a {
+  padding-top: 14px;
+  padding-bottom: 13px;
+  text-align: center;
+  width: 15px;
+  height: 15px;
+}
 
 .header-bookmarks::before {
   top: 50%;
-  left: -20px;
+  left: 20px;
   margin-top: -7px;
 	width: 14px;
 	height: 16px;
@@ -119,13 +135,6 @@ a {
 	padding-left: 50px;
 }
 
-.header-basket a {
-  padding-top: 14px;
-  padding-bottom: 13px;
-  width: 15px;
-  height: 15px;
-}
-
 .header-basket::before {
   top: 50%;
 	left: 17px;
@@ -133,6 +142,10 @@ a {
 	height: 15px;
 	margin-top: -7.5px;
 	background: url("../img/icon-cart.svg") no-repeat;
+}
+
+.menu-header-container .header-bookmarks {
+	padding-left: 50px;
 }
 
 .header-bookmarks:hover,
@@ -147,8 +160,14 @@ a {
 }
 
 .order {
-  min-width: 150px;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
   background-color: #63a63e;
+}
+
+.order {
+  padding: 14px 22px 13px 20px;
 }
 
 .order:hover {
@@ -160,31 +179,25 @@ a {
   background-color: #518534;
 }
 
-.icon-search {
-  position: absolute;
-	top: 50%;
-	left: 17px;
-	margin-top: -10.5px;
-}
-
-.icon-search svg {
-  width: 17px;
-	color: #ffffff;
-	opacity: 0.3;
-}
-
-.search input {
+.search {
+  display: flex;
   width: 270px;
-  padding: 11px 10px 12px 43px;
-  box-sizing: border-box;
+}
+
+.search-field {
+  padding: 12px 5px 11px 10px;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #293449;
   border: none;
   outline: none;
-  background-color: #293449;
-  box-sizing: border-box;
 }
 
-.search input {
-  color: #ffffff;
+.search-svg {
+  margin: 12px 0px 0 19px;
+  opacity: 0.3;
 }
 
 .search input:hover {
@@ -196,12 +209,7 @@ a {
   background-color: #ffffff;
 }
 
-.search label {
-  font-size: 17px;
-  line-height: 18px;
-  background: url("../img/icon-search.svg") no-repeat;
-  background-position: 17px;
-}
+
 
 /*Информационный блок хедера*/
 
@@ -309,11 +317,13 @@ a {
 }
 
 .container-btn .login::before {
+  content: "";
+	position: absolute;
 	left: 14px;
 	width: 20px;
 	height: 17px;
 	margin-top: -8.5px;
-	background: url("../img/icon-login.svg") no-repeat;
+	background: url("../img/icon-login.svg") no-repeat 0 0;
 }
 
 .container-btn .btn-account:hover {
@@ -360,24 +370,26 @@ a {
 }
 
 .container-btn .user-name::before {
+  content: "";
+	position: absolute;
   left: 13px;
 	width: 20px;
 	height: 18px;
-	margin-top: -9px;
-	background-image: url("../img/icon-user.svg");
+	margin-top: 0px;
+	background: url("../img/icon-user.svg") no-repeat 0 0;
 }
 
 .container-btn .user-name::after {
+  content: "";
+	position: absolute;
   right: 10px;
-	width: 21px;
-	height: 17px;
-	margin-top: -8.5px;
-	background-image: url("../img/icon-logout.svg");
+	width: 20px;
+	height: 18px;
+  margin-right: 10px;
+	background: url("../img/icon-logout.svg") no-repeat 0 0;
 }
 
-.container-btn .user-name:hover {
-  color: #000000;
-}
+
 
 .container-btn .user-name:active {
   color: rgba(0, 0, 0, 0.3);
@@ -757,17 +769,37 @@ a {
 /*Promo-block and items styles end*/
 
 /*About company styles start */
+
+
 .partners-list {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
+  margin: 0;
+  margin-bottom: 36px;
   padding: 0px;
   line-height: 20px;
   list-style-type: none;
 }
 
 .partners-list li {
-  padding-bottom: 24px;
+  position: relative;
+  margin: 0;
+  margin-bottom: 21px;
   padding-left: 36px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.partners-list li::before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 9px;
+  left: 0;
+  width: 25px;
+  height: 2px;
+  background-color: #ee3643;
 }
 
 .services {
@@ -1037,23 +1069,32 @@ a {
 .contacts-footer {
   display: flex;
   justify-content: space-between;
-  width: 35%;
-  outline: 2px solid red;/*временная рамка*/
-}
-
-.mail-contacts-footer {
-  padding: 0px;
   margin: 0px;
+  padding: 0px;
+  width: 35%;
+
 }
 
-.dev-contacts-footer {
-  padding-left: 53px;
+.mail-contacts-footer a {
+  padding: 0px;
   margin: 0px;
 }
 
 .contacts-footer a,
 .dev-contacts-footer a {
+  padding: 0px;
+  margin: 0px;
   color: #ffd180;
+}
+
+.dev-contacts-footer {
+  width: 111px;
+  margin-left: auto;
+}
+
+.mail-contacts-footer {
+
+  text-decoration: none;
 }
 
 .contacts-footer a:hover,
@@ -1068,10 +1109,18 @@ a {
 }
 
 .copyright {
-  margin: 0;
-  width: 25%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px;
+  padding: 0px;
+  width: 35%;
   font-size: 16px;
   line-height: 18px;
+}
+
+.copyright p {
+  margin: 0px;
+  padding: 0px;
 }
 
 /* Footer styles end */
