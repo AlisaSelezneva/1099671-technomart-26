@@ -9,7 +9,7 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="catalog">
   <header class="header">
     <div class="menu-header">
       <!-- здесь задаем темно-синий фон -->
@@ -47,9 +47,11 @@
               <p>г. Санкт-Петербург, ул. Б. Конюшенная , д.19/8</p>
             </div>
             <div class="catalog-btn-account">
-              <div class="btn-account">
-                <a href="a">Равшан Джамшутович</a>
-              </div>
+              <ul class="container-btn">
+                <li>
+                  <a href="#" class="btn-account user-name">Равшан Джамшутович</a>
+                </li>
+              </ul>
               <ul class="account">
                 <li>
                   <a href="#">Мои заказы</a>
@@ -78,9 +80,10 @@
   <main>
     <section class="container">
       <ul class="breadcrumbs">
-        <li><a href="#" class="breadcrumbs-link home">Каталог</a></li>
-        <li><a href="#" class="breadcrumbs-link">Инструмент</a></li>
-        <li><a class="breadcrumbs-link">Перфораторы</a></li>
+        <li><a href="#" class="home"><span class="visually-hidden">Главная</span></a></li>
+        <li><a href="#">Каталог</a></li>
+        <li><a href="#">Инструмент</a></li>
+        <li>Перфораторы</li>
       </ul>
       <h2 class="popular-title">Перфораторы</h2>
       <div class="container-catalog">
