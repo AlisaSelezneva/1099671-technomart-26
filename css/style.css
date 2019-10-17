@@ -188,7 +188,7 @@ a {
 }
 
 .search-field {
-  padding: 12px 5px 11px 10px;
+  padding: 12px 5px 11px 30px;
   font-size: 17px;
   font-weight: 400;
   line-height: 18px;
@@ -199,7 +199,9 @@ a {
 }
 
 .search-svg {
-  margin: 12px 0px 0 19px;
+  position: absolute;
+  left: 630px;
+  margin: 12px 0px 15px 19px;
   opacity: 0.3;
 }
 
@@ -212,7 +214,9 @@ a {
   background-color: #ffffff;
 }
 
-
+.search-svg:hover {
+  color: #ffffff;
+}
 
 /*Информационный блок хедера*/
 
@@ -236,7 +240,7 @@ a {
   padding: 0px;
   padding-left: 49px;
   margin-top: 3px;
-  width: 196px;
+  width: 198px;
   font-style: italic;
   font-size: 16px;
   line-height: 23px;
@@ -563,6 +567,7 @@ a {
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
+  z-index: 10;
 }
 
 .slider-subtitle {
@@ -626,9 +631,16 @@ a {
 }
 
 .slider-item {
-  position: relative;
+  margin: 0px;
+  padding: 0px;
   width: 620px;
   min-height: 266px;
+}
+
+.slider-item img {
+  position: absolute;
+  top: 10px;
+  z-index: 10;
 }
 
 .slide1 {
@@ -795,7 +807,6 @@ a {
 
 .offer .flag-new::after {
   content: "";
-  position: absolute;
   top: 400px;
   right:1120px;
   width: 60px;
@@ -832,7 +843,10 @@ a {
 .product-item:hover {
   box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
+.promo-block {
+  margin-bottom: 53px;
 
+}
 .offer {
   display: flex;
   flex-wrap: wrap;
@@ -855,6 +869,7 @@ a {
 
 .offer-item,
 .offer-services {
+  position: relative;
   margin-bottom: 20px;
   width: 300px;
   min-height: 123px;
@@ -866,19 +881,19 @@ a {
 
 .offer-item-material {
   background: url("../img/materials.svg") no-repeat;
-  background-position: 213px;
+  background-position: 213px 31px;
   background-color: #ffbf47;
 }
 
 .offer-item-tool {
   background: url("../img/tool.svg") no-repeat;
-  background-position: 197px;
+  background-position: 197px 33px;
   background-color: #3bbce3;
 }
 
 .offer-item-technics {
   background: url("../img/technics.svg") no-repeat right;
-  background-position: 191px;
+  background-position: 191px 31px;
   background-color: #dc91d8;
 }
 
@@ -886,14 +901,14 @@ a {
 .offer-services-discounts {
   margin-bottom: 21px;
   background: url("../img/discounts.svg") no-repeat;
-  background-position: 196px;
+  background-position: 196px 27px;
   background-color: #8ed78f;
   object-fit: contain;
 }
 
 .offer-services-delivery {
   background: url("../img/delivery.svg") no-repeat;
-  background-position: 191px;
+  background-position: 191px 33px;
   background-color: #ffc047;
 }
 
