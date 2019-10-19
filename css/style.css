@@ -558,15 +558,6 @@ a {
   list-style-type: none;
 }
 
-.slider-subtitle {
-  position: relative;
-  padding: 0px;
-  margin: 0px;
-  font-size: 18px;
-  line-height: 24px;
-  z-index: 10;
-}
-
 .slider-input {
   display: none;
 }
@@ -629,15 +620,14 @@ a {
 
 .slider-image {
   position: absolute;
-  top: 10px;
+  top: 0px;
   z-index: 0;
 }
 
 .slider-title {
   position: relative;
-  padding: 0px;
+  padding: 27px 0px 0px 24px;
   margin: 0px;
-  margin-bottom: 2px;
   font-size: 36px;
   font-weight: 700;
   line-height: 36px;
@@ -645,6 +635,14 @@ a {
   z-index: 10;
 }
 
+.slider-subtitle {
+  position: relative;
+  padding: 8px 0px 0px 25px;
+  margin: 0px;
+  font-size: 18px;
+  line-height: 24px;
+  z-index: 10;
+}
 
 .slide1 {
   display: block;
@@ -658,7 +656,7 @@ a {
   display: inline-block;
   vertical-align: middle;
   position: absolute;
-  bottom: 22px;
+  bottom: 110px;
   left: 25px;
   width: 195px;
   margin: 0px;
@@ -847,17 +845,33 @@ a {
   box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 .promo-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin-bottom: 53px;
-
 }
+
 .offer {
   display: flex;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Cuprum", Arial, sans-serif;
+  list-style-type: none;
+}
+
+.offer-column {
+  display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0px;
   margin: 0px;
   font-family: "Cuprum", Arial, sans-serif;
   list-style-type: none;
+}
+
+.offer .offer-item {
+  margin-right: 20px;
 }
 
 .offer-title {
@@ -879,8 +893,6 @@ a {
   background-repeat: no-repeat;
   box-sizing: border-box;
 }
-
-
 
 .offer-item-material {
   background: url("../img/materials.svg") no-repeat;
@@ -916,17 +928,17 @@ a {
 }
 
 .offer-button {
-  padding: 12px 30px;
-  margin: 19px 33px 22px 23px;
+  display: inline-block;
+  vertical-align: middle;
+  min-width: 135px;
+  padding: 10px;
+  margin: 0px 33px 22px 23px;
+  text-align: center;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.1);
-}
-
-.offer-button a {
-  display: block;
 }
 
 .offer-button:hover {
