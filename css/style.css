@@ -1111,9 +1111,8 @@ a {
 }
 
 .credit .button-more {
-  display: inline-block;
+  display: block;
   width: 195px;
-  vertical-align: bottom;
   padding: 10px 0;
   margin: 0px;
   background-color: #ff5357;
@@ -1222,6 +1221,7 @@ a {
 }
 
 
+
 .about {
   display: flex;
   justify-content: space-between;
@@ -1240,17 +1240,22 @@ a {
   outline: 2px solid green;/*временная рамка*/
 }
 
-.container-about h2,
-.container-about-contacts h2 {
+.container-about h2 {
   padding: 0px;
   margin: 0px;
   margin-bottom: 38px;
 }
 
+.container-about-contacts h2 {
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 36px;
+}
+
 .container-about p {
   padding: 0px;
   margin: 0px;
-  margin-bottom: 24px;
+  margin-bottom: 31px;
 }
 
 .container-about p:first-of-type {
@@ -1258,13 +1263,18 @@ a {
 }
 
 .container-about-contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 300px;
   outline: 2px solid green;/*временная рамка*/
 }
 
 .container-about-contacts .button-more {
+  display: inline-block;
   margin: 0px;
-  padding: 0px;
+  padding: 11px 59px 10px 64px;
+  vertical-align: middle;
 }
 
 .container-about-contacts p {
@@ -1276,7 +1286,8 @@ a {
 
 .img-contacts {
   display: inline-block;
-  vertical-align: bottom;
+  width: 300px;
+	height: 158px;
   padding: 0px;
   margin: 0px;
   margin-bottom: 40px;
