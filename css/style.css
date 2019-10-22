@@ -17,7 +17,7 @@ a {
 .container {
   width: 940px;
   margin: 0 auto;
-  outline: 2px solid blue;/*временная рамка*/
+  /*outline: 2px solid blue;/*временная рамка*/
 }
 
 .visually-hidden {
@@ -47,7 +47,7 @@ a {
   line-height: 17px;
   color: #ffffff;
   background-color: #293449;
-  outline: 2px solid red;/*временная рамка*/
+  /*outline: 2px solid red;/*временная рамка*/
 }
 
 .menu-header a {
@@ -146,6 +146,24 @@ a {
 	margin-top: -7.5px;
 	background: url("../img/icon-cart.svg") no-repeat;
 }
+/*Меняю цвет иконок*/
+.header-basket:hover:before {
+ opacity: 1;
+ background: url("../img/icon-cart-hover.png") no-repeat;
+}
+
+.header-basket:active:before {
+ opacity: 0.5;
+}
+
+.header-bookmarks:hover:before {
+ opacity: 1;
+ background: url("../img/icon-bookmarks-hover.png") no-repeat;
+}
+
+.header-bookmarks:active:before {
+ opacity: 0.5;
+}
 
 .menu-header-container .header-bookmarks {
 	padding-left: 50px;
@@ -198,11 +216,25 @@ a {
   outline: none;
 }
 
+.search-field::-webkit-input-placeholder {
+	color: #ffffff;
+} /*Цвет для плейсхолдера*/
+
 .search-svg {
   position: absolute;
   left: 630px;
   margin: 12px 0px 15px 19px;
   opacity: 0.3;
+}
+
+.search-svg:hover {
+  opacity: 1;
+  color: #ffffff;
+}
+
+.search-svg:focus {
+  opacity: 1;
+  color: #ee3643;
 }
 
 .search input:hover {
@@ -707,7 +739,7 @@ a {
   text-transform: uppercase;
   color: #32425c;
   background-color: #f9f5f0;
-  outline: 2px solid red;
+  /*outline: 2px solid red; временная рамка*/
 }
 
 .catalog .popular-title {
@@ -730,9 +762,10 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
+  margin-top: 21px;
   padding: 0px;
   list-style-type: none;
-  outline: 2px solid red;/*временная рамка*/
+  /*outline: 2px solid red;/*временная рамка*/
 }
 
 .container-popular-brands {
@@ -743,7 +776,7 @@ a {
   margin: 0px;
   margin-bottom: 85px;
   list-style-type: none;
-  outline: 2px solid red;/*временная рамка*/
+  /*outline: 2px solid red;/*временная рамка*/
 }
 
 .container-products {
@@ -751,7 +784,7 @@ a {
   flex-direction: column;
   width: 700px;
 
-  outline: 2px solid green;/*временная рамка*/
+  /*outline: 2px solid green;/*временная рамка*/
 }
 
 
@@ -762,7 +795,7 @@ a {
   margin: 0px;
   padding: 0px;
   list-style-type: none;
-  outline: 2px solid red;/*временная рамка*/
+  /*outline: 2px solid red;/*временная рамка*/
 }
 
 .container-product-item {
@@ -1226,7 +1259,7 @@ a {
   display: flex;
   justify-content: space-between;
   margin-bottom: 86px;
-  outline: 2px solid red;/*временная рамка*/
+  /*outline: 2px solid red;/*временная рамка*/
 }
 
 .about-item {
@@ -1237,7 +1270,7 @@ a {
   min-height: 368px;
   min-width: 519px;
   margin-right: 120px;
-  outline: 2px solid green;/*временная рамка*/
+  /*outline: 2px solid green;/*временная рамка*/
 }
 
 .container-about h2 {
@@ -1267,7 +1300,7 @@ a {
   flex-direction: column;
   justify-content: space-between;
   width: 300px;
-  outline: 2px solid green;/*временная рамка*/
+  /*outline: 2px solid green;/*временная рамка*/
 }
 
 .container-about-contacts .button-more {
@@ -1307,14 +1340,14 @@ a {
 .footer-top-container {
   display: flex;
   justify-content: space-between;
-  outline: 2px solid green;/*временная рамка*/
+  /*outline: 2px solid green;/*временная рамка*/
 }
 
 .container-footer-info {
   width: 322px;
   padding-bottom: 53px;
   color: #f3f7f9;
-  outline: 2px solid green;/*временная рамка*/
+  /*outline: 2px solid green;/*временная рамка*/
 }
 
 .container-footer-info a {
@@ -1337,7 +1370,7 @@ a {
 
 .menu-footer {
   color: #f3f7f9;
-  outline: 2px solid green;/*временная рамка*/
+  /*outline: 2px solid green;/*временная рамка*/
 }
 
 .menu-footer.active:hover,
@@ -1470,7 +1503,7 @@ a {
   line-height: 24px;
   color: #ffffff;
   background-color: #293449;
-  outline: 2px solid green;/*временная рамка*/
+  /*outline: 2px solid green;/*временная рамка*/
 }
 
 .container-footer-social {
@@ -1540,13 +1573,13 @@ a {
 
 .container-catalog {
   display: flex;
-  outline: 2px solid red;/*временная рамка*/
+  /*outline: 2px solid red;/*временная рамка*/
 }
 
 .container-filter {
   margin-right: 20px;
   width: 220px;
-  outline: 2px solid green;/*временная рамка*/
+/*  outline: 2px solid green;/*временная рамка*/
 }
 
 .breadcrumbs {
