@@ -33,7 +33,6 @@ a {
 .header {
 	padding-bottom: 60px;
   margin: 0px;
-  margin-bottom: 59px;
   font-family: "Cuprum", Arial, sans-serif;
   background-color: #f3f7f8;
 }
@@ -202,6 +201,7 @@ a {
 
 .search {
   display: flex;
+  position: relative;
   width: 270px;
 }
 
@@ -561,10 +561,6 @@ a {
   background-color: #1d2739;
 }
 
-.navigation-item:hover {
-  background-color: #1d2739;
-}
-
 .navigation a:active {
   color: rgba(255, 255, 255, 0.5);
   background-color: #1d2739;
@@ -670,8 +666,8 @@ a {
 
 .slider-subtitle {
   position: relative;
-  padding: 8px 0px 0px 25px;
-  margin: 0px;
+  padding: 0px 0px 0px 25px;
+  margin: 8px 0px 0px 0px;;
   font-size: 18px;
   line-height: 24px;
   z-index: 10;
@@ -773,8 +769,8 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0px;
+  padding-bottom: 85px;
   margin: 0px;
-  margin-bottom: 85px;
   list-style-type: none;
   /*outline: 2px solid red;/*временная рамка*/
 }
@@ -842,8 +838,8 @@ a {
 .offer .flag-new::after {
   content: "";
   position: absolute;
-  top: 400px;
-  right:1120px;
+  top: 0;
+  right:0;
   width: 60px;
   height: 59px;
   z-index: 15;
@@ -882,7 +878,8 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 53px;
+  padding-top: 59px;
+  padding-bottom: 53px;
 }
 
 .offer {
@@ -928,10 +925,8 @@ a {
 }
 
 .offer-item-material {
-  background-image: url("../img/materials.svg"),
-              url("../img/new-flag.png");
-  background-position: 213px 31px,
-                       right top;
+  background-image: url("../img/materials.svg");
+  background-position: 213px 31px;
   background-repeat: no-repeat;
   background-color: #ffbf47;
 }
@@ -954,7 +949,6 @@ a {
   background: url("../img/discounts.svg") no-repeat;
   background-position: 196px 27px;
   background-color: #8ed78f;
-  object-fit: contain;
 }
 
 .offer-services-delivery {
@@ -987,6 +981,9 @@ a {
 }
 
 .brand-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   min-height: 145px;
   margin-top: 20px;
@@ -996,47 +993,9 @@ a {
   box-sizing: border-box;
 }
 
-.brand-link {
-  display: block;
-  height: 100%;
-}
-
 .brand-item:nth-child(4n+4) {
   margin-right: 0;
 }
-
-.brand-item:nth-child(1) {
-  padding: 53px 47px 55px 47px;
-}
-
-.brand-item:nth-child(2) {
-  padding: 50px 49px 55px 48px;
-}
-
-.brand-item:nth-child(3) {
-  padding: 48px 37px 53px 37px;
-}
-
-.brand-item:nth-child(4) {
-  padding: 21px 11px 36px 9px;
-}
-
-.brand-item:nth-child(5) {
-  padding: 58px 23px 56px 28px;
-}
-
-.brand-item:nth-child(6) {
-  padding: 35px 51px 37px 48px;
-}
-
-.brand-item:nth-child(7) {
-  padding: 23px 34px 26px 35px;
-}
-
-.brand-item:nth-child(8) {
-  padding: 34px 6px 32px 10px;
-}
-
 
 .brand-item:hover {
   box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
@@ -1088,7 +1047,6 @@ a {
 }
 
 .services {
-  margin-bottom: 82px;
   background-color: #f4f7f9;
 }
 
@@ -1109,7 +1067,6 @@ a {
 .services p {
   margin: 0px;
   padding: 0px;
-  padding-bottom: 74px;
   width: 398px;
 }
 
@@ -1120,7 +1077,6 @@ a {
 
 .delivery p {
   width: 275px;
-  margin-bottom: 0px;
 }
 
 .guarantee {
@@ -1130,17 +1086,12 @@ a {
 
 .guarantee p {
   width: 375px;
-  margin-bottom: 0px;
 }
 
 
 .credit {
   background-image: url("../img/credit-services.png");
   background-position: right top;
-}
-
-.credit p {
-  margin-bottom: 0px;
 }
 
 .credit .button-more {
@@ -1169,6 +1120,7 @@ a {
 .services-slider {
   display: flex;
   margin-bottom: 99px;
+  padding-top: 74px;
 }
 
 .services-menu {
@@ -1232,9 +1184,9 @@ a {
  background-repeat: no-repeat;
 }
 
-#services-item1:checked ~ .services-menu .services-menu-item [for="services-item1"],
-#services-item2:checked ~ .services-menu .services-menu-item [for="services-item2"],
-#services-item3:checked ~ .services-menu .services-menu-item [for="services-item3"] {
+#services-item1:checked ~ .services-menu .services-menu-item[for="services-item1"],
+#services-item2:checked ~ .services-menu .services-menu-item[for="services-item2"],
+#services-item3:checked ~ .services-menu .services-menu-item[for="services-item3"] {
   color: #32425c;
   background-color: #ffffff;
   box-shadow: 0 1px 0 #ffffff, inset 0 1px 0 #ffffff;
@@ -1296,9 +1248,7 @@ a {
 }
 
 .container-about-contacts {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+
   width: 300px;
   /*outline: 2px solid green;/*временная рамка*/
 }
@@ -1323,7 +1273,6 @@ a {
 	height: 158px;
   padding: 0px;
   margin: 0px;
-  margin-bottom: 40px;
 }
 
 /*About company styles end */
@@ -1566,6 +1515,9 @@ a {
   line-height: 18px;
 }
 
+.copyright-span {
+  display: block;
+}
 
 /* Footer styles end */
 
