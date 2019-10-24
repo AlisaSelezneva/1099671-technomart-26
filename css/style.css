@@ -118,8 +118,7 @@ a {
 }
 
 .header-bookmarks a {
-  padding-top: 14px;
-  padding-bottom: 13px;
+  padding: 14px 0px 13px 0px;
   text-align: center;
   width: 15px;
   height: 15px;
@@ -264,13 +263,11 @@ a {
 
   justify-content: space-between;
   margin: 0px;
-  padding-top: 46px;
-  padding-bottom: 44px;
+  padding: 46px 0px 44px 0px;
 }
 
 .main-title {
-  padding: 0px;
-  padding-left: 49px;
+  padding: 0px 0px 0px 49px;
   margin-top: 3px;
   width: 198px;
   font-style: italic;
@@ -281,13 +278,11 @@ a {
 
 
 .contacts-header {
-  margin-top: 18px;
-  margin-left: 71px;
+  margin: 18px 0px 0px 71px;
 }
 
 .contacts-header p {
-  padding: 0;
-  padding-top: 10px;
+  padding: 10px 0px 0px 0px;
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
@@ -322,8 +317,7 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   top: 15px;
-  margin: 0;
-  margin-left: auto;
+  margin: 0px 0px 0px auto;
   padding: 0px;
   width: 281px;
   min-height: 45px;
@@ -400,14 +394,12 @@ a {
 
 
 .catalog .container-btn {
-  margin-left: 0;
-	margin-bottom: 7px;
+  margin: 0px 0px 7px 0px;
 	width: 100%;
 }
 
 .container-btn .user-name {
-  padding-left: 47px;
-	padding-right: 67px;
+  padding: 0px 67px 0px 47px;
 	width: 300px;
 	box-sizing: border-box;
 }
@@ -465,8 +457,7 @@ a {
 .account a {
   display: block;
   position: relative;
-  margin-left: 18px;
-	margin-right: 16px;
+  margin: 0px 16px 0px 18px;
   font-size: 16px;
   color: #32425c;
 }
@@ -524,20 +515,15 @@ a {
 }
 
 .site-navigation:first-child {
-  padding: 0px;
-  padding-left: 52px;
+  padding: 0px 0px 0px 52px;
 }
 
 .site-navigation:last-child {
-  padding: 0px;
-  padding-right: 25px;
+  padding: 0px 25px 0px 0px;
 }
 
 .navigation li {
-  padding-top: 22px;
-  padding-right: 30px;
-  padding-bottom: 23px;
-  padding-left: 30px;
+  padding: 22px 30px 23px 30px;
   white-space: nowrap;
 }
 
@@ -694,8 +680,7 @@ a {
 
 .product-item .product-old-price {
   min-height: 20px;
-  margin-top: 15px;
-  margin-bottom: 10px;
+  margin: 15px 0px 10px 0px;
   font-size: 17px;
   font-weight: 700;
   line-height: 18px;
@@ -706,8 +691,7 @@ a {
 .product-item .product-new-price {
   position: relative;
   width: 80px;
-  margin: 10px auto;
-  margin-bottom: 20px;
+  margin: 10px auto 20px;
   padding: 10px 30px;
   font-size: 17px;
   font-weight: 700;
@@ -718,7 +702,7 @@ a {
 
 .popular-section {
   display: flex;
-  padding: 0px;
+  padding: 30px 0px 30px 30px;
   margin: 0px;
   justify-content: space-between;
   align-items: center;
@@ -727,7 +711,7 @@ a {
 
 .popular-title {
   margin: 0px;
-  padding: 33px 0px 30px 30px;
+  padding: 0px;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   font-weight: 400;
@@ -742,9 +726,7 @@ a {
   display: flex;
   justify-content: flex-start;
   margin: 0px;
-  padding-top: 32px;
-  padding-left: 30px;
-  padding-bottom: 34px;
+  padding: 32px 0px 34px 30px;
   background-color: #f2f6f8;
 }
 
@@ -757,8 +739,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0;
-  margin-top: 21px;
+  margin: 21px 0px 0px 0px;
   padding: 0px;
   list-style-type: none;
   /*outline: 2px solid red;/*временная рамка*/
@@ -768,8 +749,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0px;
-  padding-bottom: 85px;
+  padding: 0px 0px 85px 0px;
   margin: 0px;
   list-style-type: none;
   /*outline: 2px solid red;/*временная рамка*/
@@ -815,8 +795,7 @@ a {
 
 
 .product-item .image {
-  margin: 0;
- 	margin-bottom: 16px;
+  margin: 0px 0px 16px 0px;
  	padding: 0;
  	order: -1;
 }
@@ -855,16 +834,14 @@ a {
   padding: 40px 0;
   background-color: rgba(255,255,255,0.9);
   z-index: 10;
-  box-sizing: border-box;
 }
 
 .product-action .product-buy-button,
 .product-action .product-bookmarks-button {
   display: block;
   width: 129px;
-  margin: 0 auto;
-  margin-bottom: 7px;
-  padding: 7px 0;
+  margin: 0px auto 7px 0px;
+  padding: 7px 0px 0px 0px;
   border-radius:3px;
   background-color: #63a63e;
   border: 3px solid #63a63e;
@@ -986,15 +963,14 @@ a {
   justify-content: center;
   position: relative;
   min-height: 145px;
-  margin-top: 20px;
-  margin-right: 20px;
+  margin: 20px 20px 0px 0px;
   width: 220px;
   border: 1px solid #e5e5e5;
   box-sizing: border-box;
 }
 
 .brand-item:nth-child(4n+4) {
-  margin-right: 0;
+  margin-right: 0px;
 }
 
 .brand-item:hover {
@@ -1014,8 +990,7 @@ a {
 .partners-list {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
-  margin: 0;
-  margin-bottom: 37px;
+  margin: 0px 0px 37px 0px;
   padding: 0px;
   line-height: 20px;
   list-style-type: none;
@@ -1023,8 +998,7 @@ a {
 
 .partners-list li {
   position: relative;
-  margin: 0;
-  margin-bottom: 24px;
+  margin: 0px 0px 24px 0px;
   padding-left: 36px;
   font-size: 18px;
   font-weight: 400;
@@ -1045,7 +1019,7 @@ a {
 .map {
   display: inline-block;
 }
-
+/*Services-slider start*/
 .services {
   background-color: #f4f7f9;
 }
@@ -1071,6 +1045,8 @@ a {
 }
 
 .delivery {
+  margin: 0px;
+  padding: 0px;
   background-image: url("../img/delivery-services.png");
   background-position: 120px 30px;
 }
@@ -1107,8 +1083,6 @@ a {
 }
 
 .service-subtitle {
-  margin: 0px;
-  margin-bottom: 34px;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 36px;
   line-height: 36px;
@@ -1119,15 +1093,13 @@ a {
 
 .services-slider {
   display: flex;
-  margin-bottom: 99px;
   padding-top: 74px;
 }
 
 .services-menu {
   position: relative;
-  padding: 0px;
-  margin: 0px;
-  margin-right: 80px;
+  padding: 74px 0px 99px 0px;
+  margin: 0px 80px 0px 0px;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 21px;
   line-height: 30px;
@@ -1205,12 +1177,12 @@ a {
   display: block;
 }
 
-
+/*Services-slider end*/
 
 .about {
   display: flex;
+  padding: 82px 0px 86px 0px;
   justify-content: space-between;
-  margin-bottom: 86px;
   /*outline: 2px solid red;/*временная рамка*/
 }
 
@@ -1227,20 +1199,17 @@ a {
 
 .container-about h2 {
   padding: 0px;
-  margin: 0px;
-  margin-bottom: 38px;
+  margin: 0px 0px 38px 0px;
 }
 
 .container-about-contacts h2 {
   padding: 0px;
-  margin: 0px;
-  margin-bottom: 36px;
+  margin: 0px 0px 36px 0px;
 }
 
 .container-about p {
   padding: 0px;
-  margin: 0px;
-  margin-bottom: 31px;
+  margin: 0px 0px 31px 0px;
 }
 
 .container-about p:first-of-type {
@@ -1263,8 +1232,7 @@ a {
 .container-about-contacts p {
   width: 179px;
   padding: 0px;
-  margin: 0px;
-  margin-bottom: 36px;
+  margin: 0px 0px 36px 0px;
 }
 
 .img-contacts {
@@ -1349,38 +1317,22 @@ a {
 
 .socials-style {
   display: block;
-  position: relative;
   padding: 0px;
-  margin: 0px;
-  margin-right: 3px;
+  margin: 0px 3px 0px 0px;
   width: 42px;
   height: 42px;
   border-radius: 50%;
 }
 
 .socials-vk {
-  padding: 0px;
-  margin: 0px;
-  margin-right: 3px;
-  flex-grow: 1;
-  align-self: center;
   background: #212a3a url("../img/icon-vk.svg") no-repeat center;
 }
 
 .socials-fb {
-  padding: 0px;
-  margin: 0px;
-  margin-right: 3px;
-  flex-grow: 1;
-  align-self: center;
   background: #212a3a url("../img/icon-fb.svg") no-repeat center;
 }
 
 .socials-ig {
-  padding: 0px;
-  margin: 0px;
-  flex-grow: 1;
-  align-self: center;
   background: #212a3a url("../img/icon-insta.svg") no-repeat center;
 }
 
@@ -1403,24 +1355,14 @@ a {
 .footer-navigation-first {
   display: flex;
   justify-content: flex-end;
-  margin: 0px;
-  margin-left: 10px;
-  padding: 0px;
-  padding-top: 42px;
+  margin: 0px 0px 0px 20px;
+  padding: 42px 0px 0px 0px;
   list-style-type: none;
 }
 
 .footer-navigation-first a {
   display: inline-block;
-  padding-left: 60px;
-  padding-right: 0px;
-  padding-bottom: 45px;
-}
-
-.footer-navigation-first li {
-  display: block;
-  padding: 0px;
-  margin: 0px;
+  padding: 0px 0px 45px 60px;
 }
 
 .footer-navigation-second {
@@ -1460,8 +1402,7 @@ a {
   align-items: center;
   justify-content: space-between;
   min-height: 39px;
-  padding-top: 35px;
-  padding-bottom: 30px;
+  padding: 35px 0px 30px 0px;
 }
 
 
@@ -1538,7 +1479,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   margin: 0px;
-  padding: 0;
+  padding: 25px 0px 25px 0px;
   list-style-type: none;
 }
 
@@ -1548,7 +1489,7 @@ a {
 
 .breadcrumbs li {
   position: relative;
-  padding: 25px 18px 25px 16px;
+  padding: 0px 18px 0px 16px;
   margin: 0px;
   line-height: 18px;
   text-transform: uppercase;
@@ -1666,8 +1607,7 @@ a {
   display: block;
   min-height: 40px;
   padding: 0 25px;
-  margin-top: 10px;
-  margin-bottom: 15px;
+  margin: 10px  0px 25px 0px;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -1679,8 +1619,7 @@ a {
 .product-item .product-title {
   min-height: 40px;
   padding: 0 25px;
-  margin-top: 10px;
-  margin-bottom: 15px;
+  margin: 10px 0px 25px 0px;
 }
 
 .product-buy-button {
@@ -1775,8 +1714,8 @@ a {
 
 .button-more {
   min-width: 114px;
-  margin: 25px 24px 26px 0px;
   padding: 13px 70px 13px 69px;
+  margin: 0px 24px 0px 0px;
   text-align: center;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
