@@ -20,6 +20,12 @@ a {
   /*outline: 2px solid blue;/*временная рамка*/
 }
 
+.container-index {
+  width: 940px;
+  margin: 0 auto;
+  padding: 68px 0px 51px 0px;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -38,7 +44,8 @@ a {
 }
 
 .header p {
-  margin: 0px;
+  margin-bottom: 0px;
+  text-align: center;
 }
 
 .menu-header {
@@ -147,7 +154,6 @@ a {
 /*Меняю цвет иконок*/
 .header-basket:hover:before {
  opacity: 1;
- background: url("../img/icon-cart-hover.png") no-repeat;
 }
 
 .header-basket:active:before {
@@ -156,7 +162,6 @@ a {
 
 .header-bookmarks:hover:before {
  opacity: 1;
- background: url("../img/icon-bookmarks-hover.png") no-repeat;
 }
 
 .header-bookmarks:active:before {
@@ -205,7 +210,8 @@ a {
 }
 
 .search-field {
-  padding: 12px 5px 11px 30px;
+  min-width: 270px;
+  padding: 12px 5px 11px 49px;
   font-size: 17px;
   font-weight: 400;
   line-height: 18px;
@@ -215,26 +221,31 @@ a {
   outline: none;
 }
 
+.search-field::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* убираю крестик */
+
 .search-field::-webkit-input-placeholder {
 	color: #ffffff;
 } /*Цвет для плейсхолдера*/
 
 .search-svg {
   position: absolute;
-  left: 630px;
+  left: 0px;
+  right: 0px;
   margin: 12px 0px 15px 19px;
   opacity: 0.3;
+  z-index: 1;
 }
 
-.search-svg:hover {
+.search:hover .search-svg {
   opacity: 1;
   color: #ffffff;
 }
 
-.search-svg:focus {
-  opacity: 1;
-  color: #ee3643;
-}
+
 
 .search input:hover {
   background-color: #212a3a;
@@ -242,11 +253,15 @@ a {
 
 .search input:active {
   color: #000000;
+  background-color: #293449;
+}
+
+.search input:focus {
   background-color: #ffffff;
 }
 
-.search-svg:hover {
-  color: #ffffff;
+.search input:focus + .search-svg {
+  fill: #ee3643;
 }
 
 /*Информационный блок хедера*/
@@ -566,7 +581,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0;
+  margin: 0px;
   padding: 0px;
   font-family: "Cuprum", Arial, sans-serif;
   color: #ffffff;
@@ -591,7 +606,7 @@ a {
 
 .arrow-right {
   left: 578px;
-  background-image: url(../img/icon-right.svg);
+  background-image: url("../img/icon-right.svg");
 }
 
 .circle-left,
@@ -613,24 +628,27 @@ a {
   left: 315px;
 }
 
-#slide1:checked ~ .circle[for="slide1"],
-#slide2:checked ~ .circle[for="slide2"] {
-  background-color: #ee3643;
-}
-
-#slide2:checked ~ .slider-list .slide1 {
-  display: none;
-}
-
-#slide2:checked ~ .slider-list .slide2 {
-  display: block;
-}
-
 .slider-item {
+  display: none;
   margin: 0px;
   padding: 0px;
   width: 620px;
   min-height: 266px;
+}
+
+.slider-radio1:checked ~ .circle-left,
+.slider-radio2:checked ~ .circle-right {
+  background-color: #ee3643;
+}
+
+.slider-radio1:checked ~ .slider-list .slide1,
+.slider-radio2:checked ~ .slider-list .slide2 {
+  display: block;
+}
+
+.slide1,
+.slide2 {
+
 }
 
 .slider-image {
@@ -657,14 +675,6 @@ a {
   font-size: 18px;
   line-height: 24px;
   z-index: 10;
-}
-
-.slide1 {
-  display: block;
-}
-
-.slide2 {
-  display: none;
 }
 
 .slider-list .button-more {
@@ -831,7 +841,7 @@ a {
   left: 0;
   width: 218px;
   height: 88px;
-  padding: 40px 0;
+  padding: 44px 43px 0px 42px;
   background-color: rgba(255,255,255,0.9);
   z-index: 10;
 }
@@ -1035,7 +1045,7 @@ a {
 
 .services .services-title {
   margin: 0px;
-  padding: 68px 0px 38px 0px;
+  padding: 0px 0px 38px 0px;
 }
 
 .services p {
@@ -1048,7 +1058,7 @@ a {
   margin: 0px;
   padding: 0px;
   background-image: url("../img/delivery-services.png");
-  background-position: 120px 30px;
+  background-position: 120px 100px;
 }
 
 .delivery p {
@@ -1057,7 +1067,7 @@ a {
 
 .guarantee {
   background-image: url("../img/guarantee-services.png");
-  background-position: right top;
+  background-position: 210px 100px;
 }
 
 .guarantee p {
@@ -1067,14 +1077,14 @@ a {
 
 .credit {
   background-image: url("../img/credit-services.png");
-  background-position: right top;
+  background-position: 110px 100px;
 }
 
 .credit .button-more {
   display: block;
   width: 195px;
   padding: 10px 0;
-  margin: 0px;
+  margin: 31px 0px 0px 0px;
   background-color: #ff5357;
 }
 
@@ -1084,6 +1094,7 @@ a {
 
 .service-subtitle {
   font-family: "Cuprum", Arial, sans-serif;
+  padding-top: 45px;
   font-size: 36px;
   line-height: 36px;
   text-transform: uppercase;
@@ -1093,12 +1104,12 @@ a {
 
 .services-slider {
   display: flex;
-  padding-top: 74px;
+
 }
 
 .services-menu {
   position: relative;
-  padding: 74px 0px 99px 0px;
+  padding: 76px 0px 48px 0px;
   margin: 0px 80px 0px 0px;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 21px;
@@ -1106,28 +1117,17 @@ a {
   list-style-type: none;
   font-weight: 700;
   color: #32425c;
-
-  box-shadow: 0 1px 0 #293449, inset 0 1px 0 #405069;
+  border: none;
 }
 
-.service-menu::before {
-  display: block;
-  content: "";
+.services-menu::after {
   position: absolute;
-  top: -46px;
-  right: 0;
+  content: "";
+  top: 15px;
+  right: 0px;
   width: 10px;
   height: 279px;
-  background-image: url("../img/shadow.png");
-}
-
-.services-input {
-  display: none;
-}
-
-.guarantee,
-.credit {
-  display: none;
+  background: url("../img/shadow.png") center no-repeat;
 }
 
 .services-menu-item {
@@ -1152,28 +1152,39 @@ a {
 }
 
 .services-item {
+ padding: 0px;
+ margin: 0px;
  flex-grow: 1;
  background-repeat: no-repeat;
 }
 
-#services-item1:checked ~ .services-menu .services-menu-item[for="services-item1"],
-#services-item2:checked ~ .services-menu .services-menu-item[for="services-item2"],
-#services-item3:checked ~ .services-menu .services-menu-item[for="services-item3"] {
+.services-input {
+  display: none;
+}
+
+.guarantee,
+.credit {
+  display: none;
+}
+
+.services-item1:checked ~ .services-menu .services-item1,
+.services-item2:checked ~ .services-menu .services-item2,
+.services-item3:checked ~ .services-menu .services-item3 {
   color: #32425c;
   background-color: #ffffff;
   box-shadow: 0 1px 0 #ffffff, inset 0 1px 0 #ffffff;
 }
 
-#services-item2:checked ~ .delivery,
-#services-item3:checked ~ .delivery {
+.services-item2:checked ~ .delivery,
+.services-item3:checked ~ .delivery {
   display: none;
 }
 
-#services-item2:checked ~ .guarantee {
+.services-item2:checked ~ .guarantee {
   display: block;
 }
 
-#services-item3:checked ~ .credit {
+.services-item3:checked ~ .credit {
   display: block;
 }
 
@@ -1239,7 +1250,7 @@ a {
   display: inline-block;
   width: 300px;
 	height: 158px;
-  padding: 0px;
+  padding-bottom: 40px;
   margin: 0px;
 }
 
@@ -1496,21 +1507,17 @@ a {
   color: #000000;
 }
 
-.breadcrumbs li:not(:first-child)::before {
+.breadcrumbs li:not(:last-child)::before {
 	content: "";
 	position: absolute;
-	left: 0;
+  top: 3px;
+	right: -3px;
 	width: 8px;
 	height: 12px;
-
 	background: url("../img/icon-right-small.svg") no-repeat;
 }
 
-.breadcrumbs li:first-child {
-	padding-right: 3px;
-}
-
-.breadcrumbs .home::before {
+.breadcrumbs li:first-child::after {
 	content: "";
 	position: absolute;
 	top: 50%;
@@ -1518,6 +1525,7 @@ a {
 	width: 14px;
 	height: 12px;
   margin-top: -6px;
+  padding-right: 3px;
   background: url("../img/icon-home.svg") no-repeat;
 }
 

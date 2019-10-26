@@ -20,7 +20,7 @@
         </a>
         <form class="search" action="#" method="get">
           <input type="search" id="search-field" name="search" class="search-field" placeholder="Поиск:">
-          <label class="icon-search" for="search-field">
+          <label for="search-field">
             <svg class="search-svg" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
               <path fill="#ffffff"
                 d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z" />
@@ -86,10 +86,10 @@
           </li>
         </ul>
         <div class="slider">
-          <input class="slider-input" type="radio" name="slide" id="slide1" checked>
+          <input class="slider-input slider-radio1" type="radio" name="slide" id="slide1" checked>
           <label class="arrow-left" for="slide1"></label>
           <label class="circle circle-left" for="slide1"></label>
-          <input class="slider-input" type="radio" name="slide" id="slide2">
+          <input class="slider-input slider-radio2" type="radio" name="slide" id="slide2">
           <label class="arrow-right" for="slide2"></label>
           <label class="circle circle-right" for="slide2"></label>
           <ul class="slider-list">
@@ -232,23 +232,23 @@
       </section>
     </div>
     <section class="services">
-      <div class="container">
+      <div class="container-index">
         <h2 class="services-title">Сервисы</h2>
         <p>Хороший интернет-магазин отличается от плохого не только ценами!
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
         <div class="services-slider">
-          <input class="services-input" type="radio" name="services-item" id="services-item1" checked>
-          <input class="services-input" type="radio" name="services-item" id="services-item2">
-          <input class="services-input" type="radio" name="services-item" id="services-item3">
+          <input class="services-input services-item1" type="radio" name="services-item" id="services-item1" checked>
+          <input class="services-input services-item2" type="radio" name="services-item" id="services-item2">
+          <input class="services-input services-item3"  type="radio" name="services-item" id="services-item3">
           <ul class="services-menu">
             <li>
-              <label class="services-menu-item" for="services-item1">Доставка</label>
+              <label class="services-menu-item services-item1" for="services-item1">Доставка</label>
             </li>
             <li>
-              <label class="services-menu-item" for="services-item2">Гарантия</label>
+              <label class="services-menu-item services-item2" for="services-item2">Гарантия</label>
             </li>
             <li>
-              <label class="services-menu-item" for="services-item3">Кредит</label>
+              <label class="services-menu-item services-item3" for="services-item3">Кредит</label>
             </li>
           </ul>
           <div class="services-item delivery">
