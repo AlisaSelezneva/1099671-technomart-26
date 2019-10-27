@@ -22,7 +22,7 @@
           <input type="search" id="search-field" name="search" class="search-field" placeholder="Поиск:">
           <label class="icon-search" for="search-field">
             <svg class="search-svg" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
-              <path fill="#ffffff"
+              <path
                 d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z" />
             </svg>
           </label>
@@ -61,7 +61,7 @@
             </div>
           </div>
           <nav class="navigation">
-            <ul>
+            <ul class="site-navigation">
               <li><a href="index.html">Главная</a></li>
               <li><a href="#">Компания</a></li>
               <li><a class="navigation active">Каталог</a></li>
@@ -86,8 +86,8 @@
       <h2 class="popular-title">Перфораторы</h2>
       <div class="container-catalog">
         <div class="container-filter">
-          <p class="catalog-subtitle">Фильтр:</p>
-          <form method="get" action="#">
+          <p class="catalog-subtitle-filter">Фильтр:</p>
+          <form class="filter-form" method="get" action="#">
             <fieldset>
               <legend class="filter-list">Цена:</legend>
               <div class=“progress”>
@@ -104,51 +104,51 @@
             </fieldset>
           </form>
           <form method="get" action="#">
-            <fieldset>
+            <fieldset class="filter-brands">
               <legend class="filter-legend">Производители:</legend>
-              <ul class="filter">
+              <ul class="filter-brands-list">
                 <li class="checkbox-item">
-                  <input type="checkbox" name="bosch" id="filter-bosh" checked>
+                  <input type="checkbox" name="bosch" id="filter-bosh" class="visually-hidden" checked disabled>
                   <label for="filter-bosh">
                     Bosch
                   </label>
                 </li>
                 <li class="checkbox-item">
-                  <input type="checkbox" name="interskol" id="filter-interskol">
+                  <input type="checkbox" name="interskol" id="filter-interskol" class="visually-hidden">
                   <label for="filter-interskol">
                     Интерскол
                   </label>
                 </li>
                 <li class="checkbox-item">
-                  <input type="checkbox" name="makita" id="filter-makita" checked>
+                  <input type="checkbox" name="makita" id="filter-makita" class="visually-hidden" checked>
                   <label for="filter-makita">
                     Makita</label>
                 </li>
                 <li class="checkbox-item">
-                  <input type="checkbox" name="dewalt" id="filter-dewalt">
+                  <input type="checkbox" name="dewalt" id="filter-dewalt" class="visually-hidden">
                   <label for="filter-dewalt">
                     Dewalt
                   </label>
                 </li>
                 <li class="checkbox-item">
-                  <input type="checkbox" name="hitachi" id="filter-hitachi">
+                  <input type="checkbox" name="hitachi" id="filter-hitachi" class="visually-hidden">
                   <label for="filter-hitachi">
                     Hitachi
                   </label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset>
+            <fieldset class="filter-power">
               <legend class="filter-legend">Питание</legend>
-              <ul class="filter">
+              <ul class="filter-power-list">
                 <li class="radio-button-item">
-                  <input type="radio" name="power" value="accumulator-powered" id="filter-accumulator" checked>
+                  <input type="radio" name="power" value="accumulator-powered" id="filter-accumulator" class="visually-hidden" checked>
                   <label for="filter-accumulator">
                     Аккумуляторные
                   </label>
                 </li>
                 <li class="radio-button-item">
-                  <input type="radio" name="power" value="mains-powered" id="filter-mains">
+                  <input type="radio" name="power" value="mains-powered" id="filter-mains" class="visually-hidden">
                   <label for="filter-mains">
                     Сетевые
                   </label>
@@ -163,12 +163,20 @@
             <p class="catalog-subtitle">Сортировка:</p>
             <ul class="sort">
               <li><a class="sort-link active">По цене</a></li>
-              <li><a href="#" class="sort-link">По типу</a></li>
+              <li><a href="#" class="sort-link ">По типу</a></li>
               <li><a href="#" class="sort-link">По функционалу</a></li>
             </ul>
-            <ul class="sort">
-              <li><a>вверх</a></li>
-              <li><a href="#">вниз</a></li>
+            <ul class="sort-price">
+              <li><a class="sort-up active" href="">
+                <span class="visually-hidden">По наименьшей цене</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                    <path d="M5.5 0L0 10h11z"/>
+                </svg></a></li>
+              <li><a class="sort-down" href="">
+                <span class="visually-hidden">По наибольшей цене</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                    <path d="M5.5 10L0 0h11"/>
+                </svg></a></li>
             </ul>
           </div>
           <ul class="container-product-item">
