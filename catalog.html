@@ -101,10 +101,10 @@
                 </div>
                 <div class="price-controls">
                   <label class="min-price"><span class="visually-hidden">От</span>
-                  <input name="min-price" type="text" value="0"><span class="price-controls-span">—</span>
+                    <input name="min-price" type="text" value="0"><span class="price-controls-span">—</span>
                   </label>
                   <label class="max-price"><span class="visually-hidden">До</span>
-                  <input name="max-price" type="text" value="30000">
+                    <input name="max-price" type="text" value="30000">
                   </label>
                 </div>
               </div>
@@ -385,10 +385,13 @@
       </div>
     </div>
   </footer>
-  <div class="modal">
-    <p>Товар добавлен в корзину!</p>
-    <a href="#">Оформить заказ</a>
-    <a href="catalog.html">Продолжить покупки</a>
+  <div class="item-add-modal">
+    <a href="#" class="modal-close"></a>
+    <p class="text-modal">Товар добавлен в корзину!</p>
+    <div class="item-add-btn">
+      <input type="submit" class="item-order-btn" value="Оформить заказ">
+      <a href="#" class="continue-shopping-btn">Продолжить покупки</a>
+    </div>
   </div>
 </body>
 

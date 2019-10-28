@@ -302,20 +302,21 @@
         <a class="button-more" href="#">Заблудились? Напишите нам!</a>
       </section>
     </div>
-    <form class="letter" action="#" method="post">
-      <p>
-        <label for="user-field">Ваше имя:</label>
-        <input id="user-field" type="text" name="user" value="" placeholder="Имя Фамилия">
-      </p>
-      <p>
-        <label for="e-mail-field">Ваш e-mail:</label>
-        <input id="e-mail-field" type="email" name="e-mail" value="" placeholder="email@example.com">
-      </p>
-      <p>
+    <form class="letter-modal" action="#" method="post">
+      <a href="#" class="modal-close"></a>
+      <div class="info-modal-wrap">
+        <div class="info-modal">
+          <label for="user-field">Ваше имя:</label>
+          <input id="user-field" type="text" name="user" value="" placeholder="Имя Фамилия">
+          <label for="e-mail-field">Ваш e-mail:</label>
+          <input id="e-mail-field" type="email" name="e-mail" value="" placeholder="email@example.com">
+        </div>
         <label for="text-field">Текст письма:</label>
         <textarea id="text-field" rows="5" cols="30" name="text" placeholder="В свободной форме"></textarea>
-      </p>
-      <button type="submit">Отправить</button>
+      </div>
+      <div class="btn-modal-wrap">
+        <button class="letter-modal-btn" type="submit">Отправить</button>
+      </div>
     </form>
   </main>
   <footer class="footer">

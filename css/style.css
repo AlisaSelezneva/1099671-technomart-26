@@ -1923,17 +1923,159 @@ a {
   }
 
 /* Catalog styles end */
-.modal {
+
+/*modal styles start*/
+
+.item-add-modal {
   display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 620px;
+  height: 282px;
+  margin: -200px 0px 0px -300px;
+  font-family: "Cuprum", Arial, sans-serif;
+  background-color: #ffffff;
+  box-shadow: 0px 20px 40px 0 rgba(41, 52, 73, 0.75);
+  border-top: 7px solid #ee3643;
 }
 
-.letter {
-  display: none;
+.text-modal {
+  padding: 68px 125px 68px 179px;
+  margin: 0px;
+  font-size: 30px;
+  line-height: 30px;
 }
 
-.title-hidden {
-  display: none;
+.item-add-btn {
+  display: flex;
+  justify-content: space-between;
+  padding: 37px 80px;
+  margin: 0px;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: #f1f1f1;
 }
+
+.item-order-btn {
+  padding: 14px 62px 14px 59px;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+  background-color: #ee3643;
+}
+
+.continue-shopping-btn {
+  padding: 14px 48px 12px 44px;
+  color: #000000;
+  border: none;
+  background-color: #ffffff;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.modal-close:before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 21px;
+  height: 21px;
+  right: 9px;
+  top: 9px;
+  background: url("../img/modal-close.svg") no-repeat;
+}
+
+.text-modal:before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 66px;
+  height: 66px;
+  top: 48px;
+  left: 81px;
+  background: url("../img/modal-check.svg") no-repeat;
+}
+
+/*modal-item-add styles end*/
+/*letter-modal styles start*/
+
+.letter-modal {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  width: 620px;
+  min-height: 430px;
+  margin: -200px 0px 0px -300px;
+  font-family: "Cuprum", Arial, sans-serif;
+  background-color: #ffffff;
+  box-shadow: 0px 20px 40px 0 rgba(41, 52, 73, 0.75);
+  border-top: 7px solid #ee3643;
+  z-index: 100;
+  box-sizing: border-box;
+}
+
+.info-modal-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  padding: 45px 80px 37px 80px;
+}
+
+.info-modal {
+  display: flex;
+}
+
+.letter-modal label {
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.letter-modal input {
+  width: 220px;
+  height: 38px;
+  font-size: 13px;
+  line-height: 18px;
+  border: 2px solid #dee3e4;
+  border-radius: 3px;
+}
+
+.letter-modal textarea {
+  width: 460px;
+  height: 114px;
+  font-size: 13px;
+  line-height: 18px;
+  border: 2px solid #dee3e4;
+  border-radius: 3px;
+}
+
+.btn-modal-wrap {
+  padding: 37px 80px;
+  margin: 0px;
+  background-color: #f4f4f4;
+}
+
+.letter-modal-btn {
+  padding: 14px 199px 14px 198px;
+  margin: 0px;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+  background-color: #ee3643;
+}
+
+/*letter-modal styles end*/
 
 .button-more {
   min-width: 114px;
