@@ -303,16 +303,20 @@
       </section>
     </div>
     <form class="letter-modal" action="#" method="post">
-      <a href="#" class="modal-close"></a>
+      <button type="button" class="modal-close"></button>
       <div class="info-modal-wrap">
-        <div class="info-modal">
+        <p class="modal-item modal-item-half">
           <label for="user-field">Ваше имя:</label>
           <input id="user-field" type="text" name="user" value="" placeholder="Имя Фамилия">
+        </p>
+        <p class="modal-item modal-item-half">
           <label for="e-mail-field">Ваш e-mail:</label>
           <input id="e-mail-field" type="email" name="e-mail" value="" placeholder="email@example.com">
-        </div>
-        <label for="text-field">Текст письма:</label>
-        <textarea id="text-field" rows="5" cols="30" name="text" placeholder="В свободной форме"></textarea>
+        </p>
+        <p class="modal-item">
+          <label for="text-field">Текст письма:</label>
+          <textarea id="text-field" rows="5" cols="30" name="text" placeholder="В свободной форме"></textarea>
+        </p>
       </div>
       <div class="btn-modal-wrap">
         <button class="letter-modal-btn" type="submit">Отправить</button>

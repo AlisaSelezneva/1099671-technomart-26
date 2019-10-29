@@ -1668,6 +1668,22 @@ a {
   margin: 0px;
 }
 
+.checkbox-item {
+ opacity: 0.8;
+}
+
+.checkbox-item:hover {
+  opacity: 1;
+}
+
+.checkbox-item:disabled {
+  opacity: 0.3;
+}
+
+.checkbox-item:disabled input {
+  opacity: 0.3;
+}
+
 .filter-brands input:checked + label::after {
 	content: "";
 	position: absolute;
@@ -1702,6 +1718,19 @@ a {
   width: 25px;
   height: 25px;
   background: url("../img/radio-off.svg") no-repeat 0 0;
+}
+
+.filter-input:hover {
+  color: #c5c5c5;
+}
+
+.filter-input:focus + label {
+  color: #b5b5b5;
+}
+
+.filter-input:disabled + label {
+  color: rgba(0, 0, 0, 0.4);
+  opacity: 0.3;
 }
 
 .filter-brands input:checked + label::before {
@@ -1751,20 +1780,6 @@ a {
   background-color: #f7f3ec;
 }
 
-.checkbox-item {}
-
-.checkbox-item:hover {}
-
-/* Это я пока не поняла как правильно сделать :(
-
-.checkbox-item: {
-  color: rgba(0, 0, 0, 0.4);
-}
-
-.radio-button-item:block {
-  color: rgba(0, 0, 0, 0.4);
-}
-*/
 .sort {
   display: flex;
   justify-content: space-between;
@@ -1976,9 +1991,12 @@ a {
 }
 
 .modal-close {
-  position: absolute;
+  position: relative;
+  margin: 0px;
+  padding: 0px;
   top: 0;
   right: 0;
+  border: none;
 }
 
 .modal-close:before {
@@ -2009,6 +2027,7 @@ a {
 .letter-modal {
   position: fixed;
   display: flex;
+  display: none;
   flex-direction: column;
   top: 50%;
   left: 50%;
@@ -2025,14 +2044,23 @@ a {
 
 .info-modal-wrap {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: space-between;
-  flex-grow: 1;
-  padding: 45px 80px 37px 80px;
+  padding: 45px 80px 0px 80px;
 }
 
-.info-modal {
-  display: flex;
+.modal-item {
+  display: block;
+  margin: 9px 0px 37px 0px;
+}
+
+.modal-item textarea {
+  margin-top: 48px;
+  resize:none
+}
+
+.modal-item-half {
+  height: 38px;
 }
 
 .letter-modal label {
@@ -2041,7 +2069,9 @@ a {
 }
 
 .letter-modal input {
-  width: 220px;
+  padding:0px 0px 0px 14px;
+  margin-top: 5px;
+  width: 100%;
   height: 38px;
   font-size: 13px;
   line-height: 18px;
@@ -2050,6 +2080,8 @@ a {
 }
 
 .letter-modal textarea {
+  padding:13px 0px 0px 16px;
+  margin: 5px 0px 0px 0px;
   width: 460px;
   height: 114px;
   font-size: 13px;
@@ -2065,7 +2097,8 @@ a {
 }
 
 .letter-modal-btn {
-  padding: 14px 199px 14px 198px;
+  padding: 14px;
+  width: 100%;
   margin: 0px;
   font-size: 14px;
   line-height: 18px;
@@ -2073,6 +2106,19 @@ a {
   color: #ffffff;
   border: none;
   background-color: #ee3643;
+}
+
+.letter-modal input[type = 'text']:hover,
+.letter-modal input[type = 'email']:hover,
+.letter-modal textarea:hover {
+    border-color: #b5b5b5;
+}
+
+.letter-modal input[type = 'text']:focus,
+.letter-modal input[type = 'email']:focus,
+.letter-modal textarea:focus {
+    border-color: #ee3643;
+    outline: none;
 }
 
 /*letter-modal styles end*/

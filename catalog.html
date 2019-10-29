@@ -115,30 +115,30 @@
               <legend class="filter-legend">Производители:</legend>
               <ul class="filter-brands-list">
                 <li class="checkbox-item">
-                  <input type="checkbox" name="bosch" id="filter-bosh" class="visually-hidden" checked>
+                  <input type="checkbox" name="bosch" id="filter-bosh" class="visually-hidden filter-input" checked>
                   <label for="filter-bosh">
                     Bosch
                   </label>
                 </li>
                 <li class="checkbox-item">
-                  <input type="checkbox" name="interskol" id="filter-interskol" class="visually-hidden">
+                  <input type="checkbox" name="interskol" id="filter-interskol" class="visually-hidden filter-input">
                   <label for="filter-interskol">
                     Интерскол
                   </label>
                 </li>
                 <li class="checkbox-item">
-                  <input type="checkbox" name="makita" id="filter-makita" class="visually-hidden" checked>
+                  <input type="checkbox" name="makita" id="filter-makita" class="visually-hidden filter-input" checked>
                   <label for="filter-makita">
                     Makita</label>
                 </li>
                 <li class="checkbox-item">
-                  <input type="checkbox" name="dewalt" id="filter-dewalt" class="visually-hidden">
+                  <input type="checkbox" name="dewalt" id="filter-dewalt" class="visually-hidden filter-input">
                   <label for="filter-dewalt">
                     Dewalt
                   </label>
                 </li>
                 <li class="checkbox-item">
-                  <input type="checkbox" name="hitachi" id="filter-hitachi" class="visually-hidden">
+                  <input type="checkbox" name="hitachi" id="filter-hitachi" class="visually-hidden filter-input">
                   <label for="filter-hitachi">
                     Hitachi
                   </label>
@@ -148,14 +148,14 @@
             <fieldset class="filter-power">
               <legend class="filter-legend">Питание</legend>
               <ul class="filter-power-list">
-                <li class="radio-button-item">
-                  <input type="radio" name="power" value="accumulator-powered" id="filter-accumulator" class="visually-hidden" checked>
+                <li class="filter-power-item">
+                  <input type="radio" name="power" value="accumulator-powered" id="filter-accumulator" class="visually-hidden filter-input" checked>
                   <label for="filter-accumulator">
                     Аккумуляторные
                   </label>
                 </li>
-                <li class="radio-button-item">
-                  <input type="radio" name="power" value="mains-powered" id="filter-mains" class="visually-hidden">
+                <li class="filter-power-item">
+                  <input type="radio" name="power" value="mains-powered" id="filter-mains" class="visually-hidden filter-input">
                   <label for="filter-mains">
                     Сетевые
                   </label>
@@ -386,7 +386,7 @@
     </div>
   </footer>
   <div class="item-add-modal">
-    <a href="#" class="modal-close"></a>
+    <button type="button" class="modal-close"></button>
     <p class="text-modal">Товар добавлен в корзину!</p>
     <div class="item-add-btn">
       <input type="submit" class="item-order-btn" value="Оформить заказ">
