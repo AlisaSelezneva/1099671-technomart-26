@@ -67,6 +67,7 @@ a {
   align-items: center;
   flex-wrap: wrap;
   margin: 0 auto;
+  height: 42px;
   box-sizing: border-box;
 }
 
@@ -75,7 +76,6 @@ a {
   position: relative;
   margin: 0px;
   padding: 10px;
-	width: 150px;
   box-sizing: border-box;
 }
 
@@ -186,6 +186,7 @@ a {
 .order {
   padding: 0px;
   margin: 0px;
+  width: 150px;
   text-align: center;
   background-color: #63a63e;
 }
@@ -207,10 +208,12 @@ a {
   display: flex;
   position: relative;
   width: 270px;
+  height: 42px;
 }
 
 .search-field {
   min-width: 270px;
+  height: 40px;
   padding: 12px 5px 11px 49px;
   font-size: 17px;
   font-weight: 400;
