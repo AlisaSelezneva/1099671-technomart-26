@@ -125,7 +125,7 @@ a {
 }
 
 .header-bookmarks a {
-  padding: 14px 0px 13px 0px;
+  padding: 14px 5px 13px 0px;
   text-align: center;
   width: 15px;
   height: 15px;
@@ -133,14 +133,14 @@ a {
 
 .header-bookmarks::before {
   top: 50%;
-  left: 20px;
-  margin-top: -7px;
+  left: -37px;
+  margin-top: -11px;
 	width: 14px;
 	height: 16px;
 	background: url("../img/icon-bookmark.svg") no-repeat;
 }
 .menu-header-container .header-basket {
-	padding-left: 50px;
+	padding: 0px 0px 0px 5px;
 }
 
 .header-basket::before {
@@ -184,15 +184,11 @@ a {
 }
 
 .order {
-  padding: 0px;
+  padding: 0px 22px 0px 20px;
   margin: 0px;
   width: 150px;
   text-align: center;
   background-color: #63a63e;
-}
-
-.order {
-  padding: 14px 22px 13px 20px;
 }
 
 .order:hover {
@@ -214,7 +210,7 @@ a {
 .search-field {
   min-width: 270px;
   height: 40px;
-  padding: 12px 5px 11px 49px;
+  padding: 10px 14px 11px 21px;
   font-size: 17px;
   font-weight: 400;
   line-height: 18px;
@@ -236,9 +232,10 @@ a {
 
 .search-svg {
   position: absolute;
-  left: 0px;
+  top: -2px;
+  left: -29px;
   right: 0px;
-  margin: 12px 0px 15px 19px;
+  margin: 12px 0px 10px 19px;
   opacity: 0.3;
   z-index: 1;
   fill: #ffffff;
@@ -284,8 +281,8 @@ a {
 }
 
 .main-title {
-  padding: 0px 0px 0px 49px;
-  margin-top: 3px;
+  padding: 0px 0px 0px 53px;
+  margin-top: 4px;
   width: 198px;
   font-style: italic;
   font-size: 16px;
@@ -296,10 +293,12 @@ a {
 
 .contacts-header {
   margin: 0px 0px 0px 71px;
+  padding: 0px;
 }
 
 .contacts-header p {
   margin-top: 10px;
+  padding: 0px;
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
@@ -308,7 +307,7 @@ a {
 .contacts-header .phone {
   display: block;
   position: relative;
-  padding: 13px 45px 11px 74px;
+  padding: 10px 45px 11px 70px;
   width: 270px;
   text-align: left;
   font-size: 21px;
@@ -417,7 +416,7 @@ a {
 }
 
 .container-btn .user-name {
-  padding: 14px 67px 11px 47px;
+  padding: 12px 65px 11px 47px;
 	width: 300px;
 	box-sizing: border-box;
 }
@@ -425,7 +424,7 @@ a {
 .container-btn .user-name::before {
   content: "";
 	position: absolute;
-  left: 13px;
+  left: 15px;
 	width: 20px;
 	height: 18px;
 	margin-top: 0px;
@@ -435,7 +434,7 @@ a {
 .container-btn .user-name::after {
   content: "";
 	position: absolute;
-  right: 10px;
+  right: 1px;
 	width: 20px;
 	height: 18px;
   margin-right: 10px;
@@ -475,7 +474,7 @@ a {
 .account a {
   display: block;
   position: relative;
-  margin: 10px 16px 0px 18px;
+  margin: 2px 14px 0px 18px;
   font-size: 16px;
   color: #32425c;
 }
@@ -541,8 +540,7 @@ a {
 }
 
 .navigation li {
-  padding: 22px 30px 23px 30px;
-  white-space: nowrap;
+  padding: 19px 20px 23px 29px;
 }
 
 .navigation ul {
@@ -693,7 +691,7 @@ a {
 
 .product-item .product-old-price {
   min-height: 20px;
-  margin: 15px 0px 10px 0px;
+  margin: 12px 0px 8px 3px;
   font-size: 17px;
   font-weight: 700;
   line-height: 18px;
@@ -704,8 +702,8 @@ a {
 .product-item .product-new-price {
   position: relative;
   width: 80px;
-  margin: 5px auto 20px;
-  padding: 10px 30px;
+  margin: 3px 30px 20px 40px  ;
+  padding: 10px 31px;
   font-size: 17px;
   font-weight: 700;
   line-height: 18px;
@@ -739,7 +737,7 @@ a {
   display: flex;
   justify-content: flex-start;
   margin-bottom: 20px;
-  padding: 30px 0px 28px 30px;
+  padding: 29px 0px 30px 28px;
   background-color: #f2f6f8;
 }
 
@@ -1041,6 +1039,7 @@ a {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
+  letter-spacing: 0.1px;
 }
 
 .services .services-title {
@@ -1199,24 +1198,26 @@ a {
 
 .about-item {
   background-color: #f4f7f9;
-  padding: 67px 0px 73px 0px;
+  padding: 63px 0px 70px 0px;
 }
 
 .about-item p {
-  padding:  20px 0px 0px 0px;
+  padding:  26px 0px 0px 0px;
   margin: 0px;
+  min-width: 947px;
+  letter-spacing: 0.1px;
 }
 
 .container-about {
   min-height: 368px;
   min-width: 519px;
   margin-right: 120px;
-  /*outline: 2px solid green;/*временная рамка*/
 }
 
 .container-about h2 {
   padding: 0px;
-  margin: 0px 0px 38px 0px;
+  margin: 0px 30px 38px 0px;
+  letter-spacing: 0px;
 }
 
 .container-about-contacts h2 {
@@ -1279,7 +1280,7 @@ a {
 
 .container-footer-info {
   width: 322px;
-  padding-bottom: 53px;
+  padding-bottom: 48px;
   color: #f3f7f9;
   /*outline: 2px solid green;/*временная рамка*/
 }
@@ -1289,13 +1290,13 @@ a {
 }
 
 .container-footer-info p {
-  padding-top: 32px;
+  padding: 10px 0px 0px 0px;
 }
 
 .logo-footer {
   display: inline-block;
-  padding: 20px 41px 25px 41px;
-  margin-bottom: 32px;
+  padding: 21px 41px 20px 42px;
+  margin: 0px 0px 27px 0px;
   min-height: 68px;
   background-color: #ee3643;
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
@@ -1304,6 +1305,8 @@ a {
 
 .menu-footer {
   color: #f3f7f9;
+  padding: 0px;
+  margin: 0px;
   /*outline: 2px solid green;/*временная рамка*/
 }
 
@@ -1373,13 +1376,13 @@ a {
   display: flex;
   justify-content: flex-end;
   margin: 0px 0px 0px 20px;
-  padding: 42px 0px 0px 0px;
+  padding: 38px 0px 0px 0px;
   list-style-type: none;
 }
 
 .footer-navigation-first a {
   display: inline-block;
-  padding: 0px 0px 45px 60px;
+  padding: 0px 0px 34px 58px;
 }
 
 .footer-navigation-second {
@@ -1419,7 +1422,7 @@ a {
   align-items: center;
   justify-content: space-between;
   min-height: 39px;
-  padding: 35px 0px 30px 0px;
+  padding: 33px 0px 30px 0px;
 }
 
 
@@ -1446,11 +1449,16 @@ a {
 .dev-contacts-footer {
   width: 111px;
   margin: 0px;
-  padding: 0px;
+  padding: 2px 6px 0px 0px;
+}
+
+.contacts-footer {
+  padding: 10px 6px 0px 0px;
 }
 
 .mail-contacts-footer {
   text-decoration: none;
+  padding: 10px 0px 0px 0px;
 }
 
 .contacts-footer a:hover,
@@ -1491,7 +1499,8 @@ a {
 }
 
 .catalog .contacts-header p {
-  margin-top: 10px;
+  margin: 1px 4px 0px 2px;
+  padding: 0px;
 }
 
 .container-filter {
@@ -1504,17 +1513,19 @@ a {
   display: flex;
   flex-wrap: wrap;
   margin: 0px;
-  padding: 17px 0px 18px 0px;
+  padding: 21px 0px 22px 0px;
   list-style-type: none;
 }
 
 .breadcrumbs a {
+  padding: 0px 0px 0px 6px;
+  margin: 0px;
   color: #000000;
 }
 
 .breadcrumbs li {
   position: relative;
-  padding: 0px 18px 0px 16px;
+  padding: 0px 16px 0px 18px;
   margin: 0px;
   line-height: 18px;
   text-transform: uppercase;
@@ -1524,8 +1535,8 @@ a {
 .breadcrumbs li:not(:last-child)::before {
 	content: "";
 	position: absolute;
-  top: 3px;
-	right: -3px;
+  top: 2px;
+	right: 0px;
 	width: 8px;
 	height: 12px;
 	background: url("../img/icon-right-small.svg") no-repeat;
@@ -1539,13 +1550,14 @@ a {
 	width: 14px;
 	height: 12px;
   margin-top: -6px;
-  padding-right: 3px;
+  padding: 0px 20px 0px 0px;
   background: url("../img/icon-home.svg") no-repeat;
 }
 
 .filter-form fieldset {
   padding: 0px;
-  margin: 0px 0px 25px 0px;
+  margin: 0px 2px 15px 2px;
+  letter-spacing: 0.1px;
   border: none;
   border-bottom: 1px solid #c5c5c5;
 }
@@ -1607,11 +1619,11 @@ a {
 }
 
 .range-controls .toggle-min {
-  left: 50px;
+  left: 20px;
 }
 
 .range-controls .toggle-max {
-  left: 110px;
+  left: 160px;
 }
 
 .price-controls {
@@ -1630,7 +1642,7 @@ a {
 }
 
 .min-price input {
-	margin-right: 8px;
+	margin: 0px 8px 0px 0px;
 }
 
 .max-price input {
@@ -1645,7 +1657,7 @@ a {
 }
 
 .filter-brands .filter-legend {
-  padding: 0px 0px 25px 0px;
+  padding: 0px 0px 14px 0px;
 }
 
 .filter-power .filter-legend {
@@ -1655,8 +1667,8 @@ a {
 .filter-brands,
 .filter-power {
   position: relative;
-  padding: 0px 0px 27px 0px;
-  margin-bottom: 19px;
+  padding: 0px;
+  margin-bottom: 52px;
   border: none;
   border-bottom: 1px solid #c5c5c5;
 }
@@ -1776,8 +1788,8 @@ a {
 }
 
 .catalog-subtitle-filter {
-  padding: 10px 0px 10px 18px;
-  margin: 0px 0px 20px 0px;
+  padding: 9px 0px 12px 19px;
+  margin: 0px 0px 11px 0px;
   line-height: 18px;
   text-transform: uppercase;
   background-color: #f7f3ec;
@@ -1787,7 +1799,7 @@ a {
   display: flex;
   justify-content: space-between;
   min-width: 354px;
-  margin: 0px 46px 0px auto;
+  margin: 0px 45px 0px auto;
   padding: 0px;
   text-transform: uppercase;
   list-style-type: none;
@@ -1815,7 +1827,7 @@ a {
 .container-sort {
  display:flex;
  justify-content: space-between;
- padding: 9px 17px 4px 19px;
+ padding: 9px 15px 4px 19px;
  margin-bottom: 21px;
  background-color: #f7f3ec;
 }
@@ -1823,6 +1835,7 @@ a {
 .sort-link {
   display: block;
   padding: 0px;
+  margin: 0px;
   color: rgba(0, 0, 0, 0.3);
   border-bottom: 1px dotted #ee3643;
 }
@@ -1860,7 +1873,7 @@ a {
 .product-item .product-title {
   min-height: 40px;
   padding: 0 25px;
-  margin: 10px 0px 25px 0px;
+  margin: 3px 0px 10px 0px;
 }
 
 .product-buy-button {
@@ -1909,12 +1922,12 @@ a {
 .pagination {
   display: flex;
   list-style-type: none;
-  padding: 52px 0px 60px 0px;
+  padding: 38px 0px 70px 0px;
   margin: 0px;
 }
 
 .pagination a {
-  padding: 15px 17px;
+  padding: 9px 17px 12px;
   margin: 5px;
   line-height: 18px;
   height: 38px;
@@ -1937,7 +1950,7 @@ a {
 }
 
 .pagination .next {
-  padding: 14px 32px;
+  padding: 10px 32px;
   }
 
 /* Catalog styles end */
