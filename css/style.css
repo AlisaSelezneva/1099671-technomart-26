@@ -17,13 +17,12 @@ a {
 .container {
   width: 940px;
   margin: 0 auto;
-  /*outline: 2px solid blue;/*временная рамка*/
 }
 
 .container-index {
   width: 940px;
   margin: 0 auto;
-  padding: 68px 0px 51px 0px;
+  padding: 64px 0px 46px 0px;
 }
 
 .visually-hidden {
@@ -93,7 +92,7 @@ a {
   position: absolute;
   width: 220px;
   height: 47px;
-	padding: 13px 56px 15px 55px;
+  margin: 0px;
 	text-align: center;
 
   background-color: #ee3643;
@@ -277,7 +276,7 @@ a {
 
   justify-content: space-between;
   margin: 0px;
-  padding: 46px 0px 30px 0px;
+  padding: 46px 0px 28px 0px;
 }
 
 .main-title {
@@ -297,7 +296,7 @@ a {
 }
 
 .contacts-header p {
-  margin-top: 10px;
+  margin: 1px 3px 0px 2px;
   padding: 0px;
   font-size: 14px;
   line-height: 24px;
@@ -344,7 +343,7 @@ a {
 .container-btn .btn-account  {
   display: block;
   position: relative;
-  padding: 14px 24px 11px 25px;
+  padding: 12px 23px 11px 25px;
   font-size: 21px;
   font-weight: 400;
   line-height: 21px;
@@ -536,7 +535,7 @@ a {
 }
 
 .site-navigation:last-child {
-  padding: 0px 25px 0px 0px;
+  padding: 3px 34px 0px 0px;
 }
 
 .navigation li {
@@ -614,8 +613,8 @@ a {
 .circle-right {
   display: block;
   position: absolute;
-  width: 10px;
-  height: 10px;
+  width: 7px;
+  height: 7px;
   top: 220px;
   left: 295px;
   z-index: 1;
@@ -660,7 +659,7 @@ a {
 
 .slider-title {
   position: relative;
-  padding: 27px 0px 0px 24px;
+  padding: 23px 0px 0px 24px;
   margin: 0px;
   font-size: 36px;
   font-weight: 700;
@@ -672,7 +671,7 @@ a {
 .slider-subtitle {
   position: relative;
   padding: 0px 0px 0px 25px;
-  margin: 8px 0px 0px 0px;;
+  margin: 2px 0px 0px 0px;;
   font-size: 18px;
   line-height: 24px;
   z-index: 10;
@@ -682,9 +681,9 @@ a {
   display: inline-block;
   vertical-align: middle;
   position: absolute;
-  bottom: 35px;
-  left: 25px;
-  width: 195px;
+  bottom: 24px;
+  left: 26px;
+  width: 175px;
   margin: 0px;
   padding: 10px;
 }
@@ -702,7 +701,7 @@ a {
 .product-item .product-new-price {
   position: relative;
   width: 80px;
-  margin: 3px 30px 20px 40px  ;
+  margin: 0px 30px 20px 40px;
   padding: 10px 31px;
   font-size: 17px;
   font-weight: 700;
@@ -713,16 +712,21 @@ a {
 
 .popular-section {
   display: flex;
-  padding: 30px 24px 30px 30px;
   margin: 0px;
   justify-content: space-between;
   align-items: center;
   background-color: #f9f5f0;
 }
 
+.popular-section .button-more {
+  padding: 10px 13px;
+  margin: 25px 22px;
+  min-width: 230px;
+}
+
 .popular-title {
   margin: 0px;
-  padding: 0px;
+  padding: 0px 0px 1px 28px;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   font-weight: 400;
@@ -753,7 +757,6 @@ a {
   margin: 21px 0px 0px 0px;
   padding: 0px;
   list-style-type: none;
-  /*outline: 2px solid red;/*временная рамка*/
 }
 
 .container-popular-brands {
@@ -790,12 +793,12 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
+  margin: 0px 0px 20px 0px;
+  padding: 0px;
   width: 220px;
   border: 1px solid #e5e5e5;
   line-height: 20px;
   text-align: center;
-
   box-sizing: border-box;
 }
 
@@ -892,7 +895,7 @@ a {
 
 .offer-title {
   margin: 0px;
-  padding: 12px 0px 19px 22px;
+  padding: 21px 0px 12px 22px;
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
@@ -940,15 +943,15 @@ a {
   background: url("../img/delivery.svg") no-repeat;
   background-position: 191px 33px;
   background-color: #ffc047;
-  margin-bottom: 0px;
+  margin: 0px;
 }
 
 .offer-button {
   display: inline-block;
   vertical-align: middle;
   min-width: 135px;
-  padding: 10px 0px;
-  margin: 0px 33px 22px 23px;
+  padding: 11px 0px 8px 1px;
+  margin: 0px 32px 25px 24px;
   text-align: center;
   font-size: 14px;
   line-height: 18px;
@@ -971,7 +974,8 @@ a {
   justify-content: center;
   position: relative;
   min-height: 145px;
-  margin: 20px 20px 0px 0px;
+  margin: 22px 20px 0px 0px;
+  padding: 0px;
   width: 220px;
   border: 1px solid #e5e5e5;
   box-sizing: border-box;
@@ -1044,7 +1048,7 @@ a {
 
 .services .services-title {
   margin: 0px;
-  padding: 0px 0px 38px 0px;
+  padding: 0px 0px 24px 0px;
 }
 
 .services p {
@@ -1093,7 +1097,7 @@ a {
 
 .service-subtitle {
   font-family: "Cuprum", Arial, sans-serif;
-  padding-top: 45px;
+  padding: 39px 0px 0px 0px;
   font-size: 36px;
   line-height: 36px;
   text-transform: uppercase;
@@ -1103,12 +1107,11 @@ a {
 
 .services-slider {
   display: flex;
-
 }
 
 .services-menu {
   position: relative;
-  padding: 76px 0px 48px 0px;
+  padding: 70px 0px 48px 0px;
   margin: 0px 80px 0px 0px;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 21px;
@@ -1132,8 +1135,8 @@ a {
 .services-menu-item {
   display: block;
   margin: 0px;
-  padding: 21px 0px 21px 22px;
-  width: 240px;
+  padding: 18px 0px 16px 22px;
+  width: 219px;
   text-align: left;
   color: #ffffff;
   box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
@@ -1216,7 +1219,7 @@ a {
 
 .container-about h2 {
   padding: 0px;
-  margin: 0px 30px 38px 0px;
+  margin: 0px 30px 36px 0px;
   letter-spacing: 0px;
 }
 
@@ -1860,8 +1863,8 @@ a {
 .product-title {
   display: block;
   min-height: 40px;
-  padding: 0 25px;
-  margin: 10px  0px 25px 0px;
+  padding: 0px 25px;
+  margin: 10px 0px 0px 0px;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -1872,7 +1875,7 @@ a {
 
 .product-item .product-title {
   min-height: 40px;
-  padding: 0 25px;
+  padding: 0px 25px;
   margin: 3px 0px 10px 0px;
 }
 
