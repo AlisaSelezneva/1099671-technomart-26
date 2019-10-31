@@ -66,6 +66,7 @@ a {
   align-items: center;
   flex-wrap: wrap;
   margin: 0 auto;
+  padding: 0px;
   height: 42px;
   box-sizing: border-box;
 }
@@ -86,15 +87,13 @@ a {
 	opacity: 0.3;
 }
 
-
 .logo-header {
   display: block;
   position: absolute;
-  width: 220px;
+  width: 223px;
   height: 47px;
   margin: 0px;
 	text-align: center;
-
   background-color: #ee3643;
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
 }
@@ -120,20 +119,20 @@ a {
 }
 
 .header-bookmarks {
-  padding: 14px 22px 13px 20px;
+  padding: 0px;
+  margin: 0px;
 }
 
 .header-bookmarks a {
-  padding: 14px 5px 13px 0px;
+  padding: 14px 0px 13px 0px;
   text-align: center;
   width: 15px;
   height: 15px;
 }
 
 .header-bookmarks::before {
-  top: 50%;
-  left: -37px;
-  margin-top: -11px;
+  left: -55px;
+  margin-top: -3px;
 	width: 14px;
 	height: 16px;
 	background: url("../img/icon-bookmark.svg") no-repeat;
@@ -143,11 +142,10 @@ a {
 }
 
 .header-basket::before {
-  top: 50%;
-	left: 17px;
+	left: -16px;
   width: 15px;
 	height: 15px;
-	margin-top: -7.5px;
+	margin-top: -3px;
 	background: url("../img/icon-cart.svg") no-repeat;
 }
 /*Меняю цвет иконок*/
@@ -168,7 +166,8 @@ a {
 }
 
 .menu-header-container .header-bookmarks {
-	padding-left: 50px;
+	padding: 0px;
+  margin: 0px;
 }
 
 .header-bookmarks:hover,
@@ -183,7 +182,7 @@ a {
 }
 
 .order {
-  padding: 0px 22px 0px 20px;
+  padding: 0px;
   margin: 0px;
   width: 150px;
   text-align: center;
@@ -203,13 +202,15 @@ a {
   display: flex;
   position: relative;
   width: 270px;
-  height: 42px;
+  height: 43px;
+  padding: 0px;
+  margin: 0px;
 }
 
 .search-field {
   min-width: 270px;
   height: 40px;
-  padding: 10px 14px 11px 21px;
+  padding: 5px 14px 9px 12px;
   font-size: 17px;
   font-weight: 400;
   line-height: 18px;
@@ -234,7 +235,7 @@ a {
   top: -2px;
   left: -29px;
   right: 0px;
-  margin: 12px 0px 10px 19px;
+  margin: 10px 0px 11px 12px;
   opacity: 0.3;
   z-index: 1;
   fill: #ffffff;
@@ -273,7 +274,6 @@ a {
 .middle-part {
   display: flex;
   flex-wrap: wrap;
-
   justify-content: space-between;
   margin: 0px;
   padding: 46px 0px 28px 0px;
@@ -1010,7 +1010,7 @@ a {
 
 .partners-list li {
   position: relative;
-  margin: 0px 0px 24px 0px;
+  margin: 0px 0px 14px 0px;
   padding-left: 36px;
   font-size: 18px;
   font-weight: 400;
@@ -1043,7 +1043,7 @@ a {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
-  letter-spacing: 0.1px;
+  letter-spacing: 0.9px;
 }
 
 .services .services-title {
@@ -1194,14 +1194,13 @@ a {
 
 .about {
   display: flex;
-  padding: 82px 0px 86px 0px;
+  padding: 78px 0px 89px 0px;
   justify-content: space-between;
-  /*outline: 2px solid red;/*временная рамка*/
 }
 
 .about-item {
   background-color: #f4f7f9;
-  padding: 63px 0px 70px 0px;
+  padding: 63px 0px 68px 0px;
 }
 
 .about-item p {
@@ -1214,54 +1213,49 @@ a {
 .container-about {
   min-height: 368px;
   min-width: 519px;
-  margin-right: 120px;
+  margin: 0px 120px 0px 0px;
+
 }
 
 .container-about h2 {
   padding: 0px;
-  margin: 0px 30px 36px 0px;
-  letter-spacing: 0px;
+  margin: 0px 0px 26px 0px;
+  letter-spacing: 0.1px;
 }
 
 .container-about-contacts h2 {
   padding: 0px;
-  margin: 0px 0px 36px 0px;
+  margin: 0px 0px 21px 0px;
 }
 
 .container-about p {
   padding: 0px;
-  margin: 0px 0px 31px 0px;
+  margin: 0px 0px 32px 0px;
 }
 
 .container-about p:first-of-type {
-  margin-bottom: 36px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .container-about-contacts {
-
   width: 300px;
-  /*outline: 2px solid green;/*временная рамка*/
-}
-
-.container-about-contacts .button-more {
-  display: inline-block;
   margin: 0px;
-  padding: 11px 59px 10px 64px;
-  vertical-align: middle;
+  padding: 0px;
 }
 
 .container-about-contacts p {
   width: 179px;
   padding: 0px;
-  margin: 0px 0px 36px 0px;
+  margin: 0px 0px 16px 0px;
 }
 
 .img-contacts {
   display: inline-block;
   width: 300px;
-	height: 158px;
-  padding-bottom: 40px;
-  margin: 0px;
+	height: 164px;
+  padding: 10px 0px 5px 0px;
+  margin-bottom: 27px;
 }
 
 /*About company styles end */
@@ -1283,7 +1277,7 @@ a {
 
 .container-footer-info {
   width: 322px;
-  padding-bottom: 48px;
+  padding-bottom: 50px;
   color: #f3f7f9;
   /*outline: 2px solid green;/*временная рамка*/
 }
@@ -1293,12 +1287,12 @@ a {
 }
 
 .container-footer-info p {
-  padding: 10px 0px 0px 0px;
+  padding: 2px 0px 0px 0px;
 }
 
 .logo-footer {
   display: inline-block;
-  padding: 21px 41px 20px 42px;
+  padding: 21px 41px 18px 42px;
   margin: 0px 0px 27px 0px;
   min-height: 68px;
   background-color: #ee3643;
@@ -1310,7 +1304,6 @@ a {
   color: #f3f7f9;
   padding: 0px;
   margin: 0px;
-  /*outline: 2px solid green;/*временная рамка*/
 }
 
 .menu-footer.active:hover,
@@ -1378,14 +1371,14 @@ a {
 .footer-navigation-first {
   display: flex;
   justify-content: flex-end;
-  margin: 0px 0px 0px 20px;
-  padding: 38px 0px 0px 0px;
+  margin: 0px 0px 0px 25px;
+  padding: 42px 0px 0px 0px;
   list-style-type: none;
 }
 
 .footer-navigation-first a {
   display: inline-block;
-  padding: 0px 0px 34px 58px;
+  padding: 0px 0px 30px 57px;
 }
 
 .footer-navigation-second {
@@ -1417,7 +1410,6 @@ a {
   line-height: 24px;
   color: #ffffff;
   background-color: #293449;
-  /*outline: 2px solid green;/*временная рамка*/
 }
 
 .container-footer-social {
@@ -1425,7 +1417,7 @@ a {
   align-items: center;
   justify-content: space-between;
   min-height: 39px;
-  padding: 33px 0px 30px 0px;
+  padding: 30px 0px 25px 0px;
 }
 
 
@@ -1452,16 +1444,16 @@ a {
 .dev-contacts-footer {
   width: 111px;
   margin: 0px;
-  padding: 2px 6px 0px 0px;
+  padding: 0px;
 }
 
 .contacts-footer {
-  padding: 10px 6px 0px 0px;
+  padding: 12px 23px 0px 0px;
 }
 
 .mail-contacts-footer {
   text-decoration: none;
-  padding: 10px 0px 0px 0px;
+  padding: 0px;
 }
 
 .contacts-footer a:hover,
@@ -1930,8 +1922,8 @@ a {
 }
 
 .pagination a {
-  padding: 9px 17px 12px;
-  margin: 5px;
+  padding: 9px 16px 12px 15px;
+  margin-right: 7px;
   line-height: 18px;
   height: 38px;
   min-width: 38px;
@@ -1953,7 +1945,8 @@ a {
 }
 
 .pagination .next {
-  padding: 10px 32px;
+  text-transform: uppercase;
+  padding: 10px 37px 10px 30px;
   }
 
 /* Catalog styles end */
@@ -2161,13 +2154,13 @@ a {
   display: inline-block;
   vertical-align: bottom;
   margin: 0px;
-  padding: 14px 40px;
+  padding: 9px 39px;
 }
 
 .container-about-contacts .button-more {
   display: inline-block;
   vertical-align: bottom;
-  padding: 14px 59px 12px 63px;
+  padding: 9px 60px 11px 63px;
   margin: 0px;
 }
 
