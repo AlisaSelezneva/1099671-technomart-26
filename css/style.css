@@ -1013,11 +1013,12 @@ a {
 
 .partners-list li {
   position: relative;
-  margin: 0px 0px 14px 0px;
+  margin: 0px 0px 20px 0px;
   padding-left: 36px;
   font-size: 18px;
   font-weight: 400;
   line-height: 20px;
+  letter-spacing: 0.2px;
 }
 
 .partners-list li::before {
@@ -1027,7 +1028,7 @@ a {
   top: 9px;
   left: 0;
   width: 25px;
-  height: 2px;
+  height: 3px;
   background-color: #ee3643;
 }
 
@@ -1046,7 +1047,7 @@ a {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
-  letter-spacing: 0.9px;
+  letter-spacing: 1px;
 }
 
 .services .services-title {
@@ -1117,7 +1118,7 @@ a {
 
 .services-menu {
   position: relative;
-  padding: 70px 0px 48px 0px;
+  padding: 70px 0px 46px 0px;
   margin: 0px 80px 0px 0px;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 21px;
@@ -1141,8 +1142,8 @@ a {
 .services-menu-item {
   display: block;
   margin: 0px;
-  padding: 16px 0px 16px 22px;
-  width: 219px;
+  padding: 18px 0px 16px 21px;
+  width: 220px;
   color: #ffffff;
   box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
   border: none;
@@ -1199,24 +1200,24 @@ a {
 
 .about {
   display: flex;
-  padding: 84px 0px 89px 0px;
+  padding: 80px 0px 89px 0px;
   justify-content: space-between;
 }
 
 .about-item {
   background-color: #f4f7f9;
-  padding: 63px 0px 68px 0px;
+  padding: 63px 0px 78px 0px;
 }
 
 .about-item p {
-  padding:  26px 0px 0px 0px;
+  padding:  35px 0px 0px 0px;
   margin: 0px;
   min-width: 947px;
   letter-spacing: 0.1px;
 }
 
 .container-about {
-  min-height: 368px;
+  min-height: 375px;
   min-width: 519px;
   margin: 0px 120px 0px 0px;
 
@@ -1236,12 +1237,12 @@ a {
 
 .container-about p {
   padding: 0px;
-  margin: 0px 0px 32px 0px;
+  margin: 0px 0px 23px 0px;
   letter-spacing: 0.03px;
 }
 
 .container-about p:first-of-type {
-  margin-top: 12px;
+  margin-top: 25px;
   margin-bottom: 25px;
   letter-spacing: 0.12px;
 }
@@ -1264,7 +1265,7 @@ a {
   width: 300px;
 	height: 164px;
   padding: 10px 0px 5px 0px;
-  margin-bottom: 27px;
+  margin-bottom: 28px;
 }
 
 /*About company styles end */
@@ -2162,15 +2163,13 @@ a {
 .container-about .button-more {
   display: inline-block;
   vertical-align: bottom;
-  margin: 0px;
-  padding: 9px 39px;
+  padding: 10px 41px 10px 42px;
 }
 
 .container-about-contacts .button-more {
   display: inline-block;
   vertical-align: bottom;
-  padding: 12px 58px 10px 65px;
-  margin: 0px;
+  padding: 13px 61px 10px 62px;
 }
 
 .button-more:hover {
