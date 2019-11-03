@@ -508,7 +508,7 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0px auto;
-  padding: 0px 20px 0px 20px;
+  padding: 0px 22px 0px 22px;
   min-height: 55px;
   width: 940px;
   box-sizing: border-box;
@@ -729,7 +729,7 @@ a {
   display: flex;
   justify-content: flex-start;
   margin-bottom: 20px;
-  padding: 29px 0px 30px 28px;
+  padding: 32px 0px 30px 28px;
   background-color: #f2f6f8;
 }
 
@@ -1279,7 +1279,7 @@ a {
   padding: 0px;
   margin: 0px;
   letter-spacing: 0.14px;
-  min-width: 330px;
+  min-width: 335px;
   color: #f1f5f7;
 }
 
@@ -1363,7 +1363,7 @@ a {
 .footer-navigation-first {
   display: flex;
   justify-content: flex-end;
-  margin: 0px 0px 0px 4px;
+  margin: 0px;
   padding: 39px 0px 0px 0px;
   list-style-type: none;
 }
@@ -1496,15 +1496,12 @@ a {
 .breadcrumbs {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  order: -1;
+  min-height: 57px;
+  padding: 0px;
   margin: 0px;
-  padding: 20px 0px 22px 0px;
   list-style-type: none;
-}
-
-.breadcrumbs a {
-  padding: 0px 0px 0px -3px;
-  margin: 0px;
-  color: #000000;
 }
 
 .breadcrumbs li {
@@ -1516,10 +1513,20 @@ a {
   color: #000000;
 }
 
-.breadcrumbs li:not(:last-child)::before {
+.breadcrumbs li:not(first-child)::before {
   content: "";
   position: absolute;
   top: 2px;
+  right: 0px;
+  width: 8px;
+  height: 12px;
+  background: url("../img/icon-right-small.svg") no-repeat;
+}
+
+.breadcrumbs li:first-child::before {
+  content: "";
+  position: absolute;
+  top: -5px;
   right: 0px;
   width: 8px;
   height: 12px;
@@ -1548,7 +1555,7 @@ a {
 
 .filter-price {
   margin: 0;
-  padding: 20px 0px 25px 0px;
+  padding: 21px 0px 25px 0px;
   border: none;
 }
 
@@ -1644,19 +1651,19 @@ a {
 }
 
 .filter-brands .filter-legend {
-  padding: 0px 0px 14px 0px;
+  padding: 3px 0px 12px 0px;
   letter-spacing: 0.11px;
 }
 
 .filter-power .filter-legend {
-  padding: 0px 0px 4px 0px;
+  padding: 0px 0px 8px 0px;
 }
 
 .filter-brands,
 .filter-power {
   position: relative;
   padding: 0px;
-  margin-bottom: 52px;
+  margin-bottom: 32px;
   border: none;
   border-bottom: 1px solid #c5c5c5;
 }
@@ -1745,7 +1752,7 @@ a {
 .filter-power li {
   font-size: 15px;
   font-weight: 400;
-  padding: 0px;
+  padding: 2px 0px 1px 0px;
   line-height: 20px;
   text-transform: uppercase;
   list-style-type: none;
@@ -1777,7 +1784,7 @@ a {
 }
 
 .catalog-subtitle-filter {
-  padding: 7px 0px 12px 19px;
+  padding: 9px 0px 12px 19px;
   margin: 0px 0px 13px 0px;
   line-height: 18px;
   text-transform: uppercase;
@@ -1788,7 +1795,7 @@ a {
   display: flex;
   justify-content: space-between;
   min-width: 354px;
-  margin: -2px 48px 0px auto;
+  margin: -2px 47px 0px auto;
   padding: 0px;
   text-transform: uppercase;
   list-style-type: none;
@@ -1816,7 +1823,7 @@ a {
 .container-sort {
   display: flex;
   justify-content: space-between;
-  padding: 7px 15px 4px 19px;
+  padding: 9px 15px 4px 19px;
   margin-bottom: 21px;
   background-color: #f7f3ec;
 }
@@ -1910,8 +1917,8 @@ a {
 .pagination {
   display: flex;
   list-style-type: none;
-  padding: 32px 0px 70px 0px;
   margin: 0px;
+  padding: 32px 0px 70px 0px;
 }
 
 .pagination a {
