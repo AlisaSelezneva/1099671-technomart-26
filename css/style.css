@@ -34,7 +34,6 @@ a {
 }
 
 /* Header styles start */
-
 .header {
   padding-bottom: 60px;
   margin: 0px;
@@ -163,7 +162,6 @@ a {
 }
 
 /*Меняю цвет иконок*/
-
 .header-basket:hover:before {
   opacity: 1;
 }
@@ -209,7 +207,6 @@ a {
   display: flex;
   position: relative;
   width: 270px;
-
 }
 
 .search-field {
@@ -230,13 +227,11 @@ a {
 }
 
 /* убираю крестик */
-
 .search-field::-webkit-input-placeholder {
   color: #ffffff;
 }
 
 /*Цвет для плейсхолдера*/
-
 .search-svg {
   position: absolute;
   top: -12px;
@@ -271,7 +266,6 @@ a {
 }
 
 /*Информационный блок хедера*/
-
 .info-header {
   margin: 0px;
   padding: 0px;
@@ -334,7 +328,6 @@ a {
 }
 
 /*Кнопки для не авторизированного пользователя start*/
-
 .container-btn {
   display: flex;
   flex-wrap: wrap;
@@ -400,10 +393,9 @@ a {
 .container-btn .btn-account:active::after {
   opacity: 0.3;
 }
+
 /*Кнопки для не авторизированного  пользователя end*/
-
 /*Кнопки для авторизированного пользователя start*/
-
 .catalog .catalog-btn-account {
   display: flex;
   flex-direction: column;
@@ -501,8 +493,8 @@ a {
   background-color: #32425c;
   opacity: 0.3;
 }
-/*Кнопки для авторизированного пользователя end*/
 
+/*Кнопки для авторизированного пользователя end*/
 .site-navigation {
   display: flex;
   flex-wrap: wrap;
@@ -515,9 +507,16 @@ a {
   list-style-type: none;
 }
 
-.site-navigation a {
+.catalog .site-navigation a {
   display: block;
   padding: 20px 30px 21px 31px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.site-navigation a {
+  display: block;
+  padding: 21px 30px 24px 31px;
   text-align: center;
   box-sizing: border-box;
 }
@@ -530,8 +529,6 @@ a {
   color: #ffffff;
   background-color: #293449;
 }
-
-
 
 .navigation.active:hover,
 .navigation.active:active {
@@ -550,10 +547,9 @@ a {
   color: rgba(255, 255, 255, 0.5);
   background-color: #1d2739;
 }
+
 /* Header styles end */
-
 /*Promo-block and items styles start*/
-
 .slider {
   position: relative;
   width: 620px;
@@ -751,13 +747,14 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0px 0px 85px 0px;
-  margin: 0px;
   list-style-type: none;
+  padding: 0px;
+  margin: 0px 0px 74px 0px;
 }
 
 .container-products {
   display: flex;
+  position: relative;
   flex-direction: column;
   width: 700px;
 }
@@ -804,7 +801,6 @@ a {
 }
 
 /*для промоблока*/
-
 .offer .flag-new::after {
   content: "";
   position: absolute;
@@ -952,7 +948,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
   min-height: 145px;
   margin: 24px 20px 0px 0px;
   padding: 0px;
@@ -963,6 +958,16 @@ a {
 
 .brand-item.Bosh {
   margin: 29px 18px 0px 0px;
+  padding: 0px;
+}
+
+.brand-item.Hitachi {
+  margin: 23px 18px 0px 0px;
+  padding: 0px;
+}
+
+.brand-item.Metabo {
+  margin: 18px 17px 0px 0px;
   padding: 0px;
 }
 
@@ -978,10 +983,9 @@ a {
   opacity: 0.3;
   box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
 }
+
 /*Promo-block and items styles end*/
-
 /*About company styles start */
-
 .partners-list {
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
@@ -1015,8 +1019,8 @@ a {
 .map {
   display: inline-block;
 }
-/*Services-slider start*/
 
+/*Services-slider start*/
 .services {
   background-color: #f4f7f9;
 }
@@ -1037,7 +1041,7 @@ a {
 
 .services .services-title {
   margin: 0px;
-  padding: 0px 0px 23px 0px;
+  padding: 8px 0px 25px 0px;
   letter-spacing: -1px;
 }
 
@@ -1126,7 +1130,7 @@ a {
 .services-menu-item {
   display: block;
   margin: 0px;
-  padding: 18px 0px 16px 21px;
+  padding: 18px 0px 16px 24px;
   width: 220px;
   color: #ffffff;
   box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
@@ -1179,8 +1183,8 @@ a {
 .services-item3:checked~.credit {
   display: block;
 }
-/*Services-slider end*/
 
+/*Services-slider end*/
 .about {
   display: flex;
   padding: 82px 0px 78px 0px;
@@ -1249,10 +1253,9 @@ a {
   padding: 10px 0px 5px 0px;
   margin-bottom: 28px;
 }
+
 /*About company styles end */
-
 /* Footer styles start */
-
 .footer {
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
@@ -1471,10 +1474,9 @@ a {
 .copyright-span {
   display: block;
 }
+
 /* Footer styles end */
-
 /* Catalog styles start */
-
 .container-catalog {
   display: flex;
 }
@@ -1948,10 +1950,9 @@ a {
   text-transform: uppercase;
   padding: 10px 37px 10px 34px;
 }
+
 /* Catalog styles end */
-
 /*modal styles start*/
-
 .item-add-modal {
   display: none;
   position: fixed;
@@ -2031,10 +2032,9 @@ a {
   left: 81px;
   background: url("../img/modal-check.svg") no-repeat;
 }
+
 /*modal-item-add styles end*/
-
 /*letter-modal styles start*/
-
 .letter-modal {
   position: fixed;
   display: flex;
@@ -2131,8 +2131,8 @@ a {
   border-color: #ee3643;
   outline: none;
 }
-/*letter-modal styles end*/
 
+/*letter-modal styles end*/
 .button-more {
   min-width: 114px;
   padding: 13px 70px 13px 69px;
