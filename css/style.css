@@ -22,7 +22,7 @@ a {
 .container-index {
   width: 940px;
   margin: 0 auto;
-  padding: 62px 0px 46px 0px;
+  padding: 62px 0px 54px 0px;
 }
 
 .visually-hidden {
@@ -61,7 +61,7 @@ a {
 .menu-header-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   margin: 0 auto;
   padding: 0px;
@@ -122,20 +122,20 @@ a {
   display: block;
   position: relative;
   width: 150px;
-  padding: 12px 0px 12px 0px;
+  padding: 16px 0px 12px 0px;
   box-sizing: border-box;
 }
 
 .shopping-menu .header-bookmarks {
   display: inline-block;
-  padding: 9px 0px 13px 44px;
+  padding: 12px 0px 13px 44px;
   margin: 0px;
 }
 
 .header-bookmarks::before {
   content: "";
   position: absolute;
-  top: 9px;
+  top: 12px;
   left: 17px;
   width: 14px;
   height: 16px;
@@ -143,7 +143,7 @@ a {
 }
 
 .menu-header-container .header-basket {
-  padding: 11px 0px 12px 50px;
+  padding: 15px 0px 12px 50px;
 }
 
 .header-basket.added-to-basket {
@@ -153,7 +153,7 @@ a {
 .header-basket::before {
   content: "";
   position: absolute;
-  top: 12px;
+  top: 17px;
   left: 18px;
   width: 15px;
   height: 15px;
@@ -206,12 +206,13 @@ a {
 .search {
   display: flex;
   position: relative;
+  height: 42px;
   width: 270px;
 }
 
 .search-field {
   flex-grow: 1;
-  padding: 0px 50px 5px 48px;
+  padding: 12px 50px 12px 48px;
   font-size: 17px;
   font-weight: 400;
   line-height: 18px;
@@ -234,7 +235,7 @@ a {
 /*Цвет для плейсхолдера*/
 .search-svg {
   position: absolute;
-  top: -12px;
+  top: 0px;
   left: 6px;
   margin: 10px 0px 11px 11px;
   opacity: 0.3;
@@ -277,7 +278,7 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0px;
-  padding: 46px 0px 29px 0px;
+  padding: 46px 0px 28px 0px;
 }
 
 .main-title {
@@ -306,7 +307,7 @@ a {
 .contacts-header .phone {
   display: block;
   position: relative;
-  padding: 12px 45px 12px 68px;
+  padding: 8px 30px 12px 68px;
   width: 270px;
   text-align: left;
   font-size: 21px;
@@ -500,7 +501,7 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0px auto;
-  padding: 0px 22px 0px 22px;
+  padding: 0px 21px 0px 21px;
   min-height: 55px;
   width: 940px;
   box-sizing: border-box;
@@ -669,7 +670,7 @@ a {
 
 .product-item .product-old-price {
   min-height: 20px;
-  margin: 10px 0px 8px 3px;
+  margin: 14px 0px 8px 3px;
   font-size: 17px;
   font-weight: 700;
   line-height: 18px;
@@ -680,7 +681,7 @@ a {
 .product-item .product-new-price {
   position: relative;
   width: 80px;
-  margin: 0px 32px 19px 42px;
+  margin: 0px 32px 16px 42px;
   padding: 11px 31px 15px 29px;
   font-size: 17px;
   font-weight: 700;
@@ -699,8 +700,12 @@ a {
 
 .popular-section .button-more {
   padding: 12px 12px 11px 12px;
-  margin: 25px 23px;
+  margin: 22px 23px;
   min-width: 230px;
+}
+
+.popular-brands {
+  margin-top: 2px;
 }
 
 .popular-brands .button-more {
@@ -711,7 +716,7 @@ a {
 
 .popular-title {
   margin: 0px;
-  padding: 0px 0px 0px 28px;
+  padding: 0px 0px 0px 26px;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
   font-weight: 400;
@@ -738,7 +743,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 21px 0px 0px 0px;
+  margin: 23px 0px 0px 0px;
   padding: 0px;
   list-style-type: none;
 }
@@ -871,6 +876,10 @@ a {
   margin-right: 20px;
 }
 
+.offer .offer-item:last-child {
+  margin-right: 0;
+}
+
 .offer-title {
   margin: 0px;
   padding: 21px 0px 12px 22px;
@@ -989,7 +998,7 @@ a {
 .partners-list {
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
-  margin: 0px 0px 37px 0px;
+  margin: 0px 0px 34px 0px;
   padding: 0px;
   line-height: 20px;
   list-style-type: none;
@@ -1041,7 +1050,7 @@ a {
 
 .services .services-title {
   margin: 0px;
-  padding: 8px 0px 25px 0px;
+  padding: 8px 0px 28px 0px;
   letter-spacing: -1px;
 }
 
@@ -1106,7 +1115,7 @@ a {
 
 .services-menu {
   position: relative;
-  padding: 68px 0px 46px 0px;
+  padding: 67px 0px 46px 0px;
   margin: 0px 80px 0px 0px;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 21px;
@@ -1130,7 +1139,7 @@ a {
 .services-menu-item {
   display: block;
   margin: 0px;
-  padding: 18px 0px 16px 24px;
+  padding: 16px 0px 15px 24px;
   width: 220px;
   color: #ffffff;
   box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
@@ -1251,7 +1260,7 @@ a {
   width: 300px;
   height: 164px;
   padding: 10px 0px 5px 0px;
-  margin-bottom: 28px;
+  margin-bottom: 24px;
 }
 
 /*About company styles end */
@@ -1419,7 +1428,7 @@ a {
   align-items: center;
   justify-content: space-between;
   min-height: 39px;
-  padding: 30px 0px 25px 0px;
+  padding: 30px 0px 37px 0px;
 }
 
 .contacts-footer {
@@ -1436,6 +1445,11 @@ a {
   text-decoration: none;
 }
 
+.mail-contacts-footer,
+.dev-contacts-footer {
+    line-height: 20px;
+}
+
 .contacts-footer a,
 .dev-contacts-footer a {
   padding-bottom: 10px;
@@ -1445,9 +1459,9 @@ a {
 
 .dev-contacts-footer {
   display: inline-block;
-  width: 111px;
-  margin: 0px;
-  padding: 0px 6px 0px 0px;
+  width: 115px;
+  margin: 0px 6px 0px 0px;
+  padding: 0px;
 }
 
 .contacts-footer a:hover,
@@ -1503,12 +1517,19 @@ a {
   min-height: 57px;
   padding: 0px;
   margin: 0px;
+  color: #000000;
+  text-decoration-color: #000000;
   list-style-type: none;
 }
 
+.breadcrumbs a {
+    color: #000000;
+  }
+
+
 .breadcrumbs li {
   position: relative;
-  padding: 0px 10px 0px 26px;
+  padding: 10px 8px 0px 28px;
   margin: 0px;
   line-height: 18px;
   text-transform: uppercase;
@@ -1518,8 +1539,8 @@ a {
 .breadcrumbs li:not(first-child)::before {
   content: "";
   position: absolute;
-  top: 2px;
-  right: 0px;
+  top: 10px;
+  right: -9px;
   width: 8px;
   height: 12px;
   background: url("../img/icon-right-small.svg") no-repeat;
@@ -1528,7 +1549,7 @@ a {
 .breadcrumbs li:first-child::before {
   content: "";
   position: absolute;
-  top: -5px;
+  top: 0px;
   right: 0px;
   width: 8px;
   height: 12px;
@@ -1835,6 +1856,7 @@ a {
   padding: 0px;
   margin: 0px;
   color: rgba(0, 0, 0, 0.3);
+  line-height: 21px;
   border-bottom: 1px dotted #ee3643;
 }
 
@@ -1920,7 +1942,7 @@ a {
   display: flex;
   list-style-type: none;
   margin: 0px;
-  padding: 32px 0px 70px 0px;
+  padding: 37px 0px 70px 0px;
 }
 
 .pagination a {
@@ -2156,7 +2178,9 @@ a {
 .container-about-contacts .button-more {
   display: inline-block;
   vertical-align: bottom;
-  padding: 13px 59px 10px 64px;
+  padding: 13px 20px 10px 20px;
+  width: 300px;
+  box-sizing: border-box;
 }
 
 .button-more:hover {
