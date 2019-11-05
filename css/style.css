@@ -322,8 +322,7 @@ a {
 }
 
 .contacts-header .phone::before,
-.contacts-header-catalog .phone::before
- {
+.contacts-header-catalog .phone::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -1049,6 +1048,27 @@ a {
   vertical-align: middle;
 }
 
+.modal-map {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -280px;
+  margin-left: -470px;
+  z-index: 100;
+}
+
+.modal-map .modal-close:before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 21px;
+  height: 21px;
+  left: 915px;
+  top: -439px;
+  background: url("../img/modal-close.svg") no-repeat;
+}
+
 /*Services-slider start*/
 .services {
   background-color: #f4f7f9;
@@ -1720,7 +1740,7 @@ a {
 }
 
 .filter-brands label,
-.filter-power  label{
+.filter-power label {
   position: relative;
 }
 
