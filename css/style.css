@@ -1615,6 +1615,10 @@ a {
   background: url("../img/icon-home.svg") no-repeat;
 }
 
+.breadcrumbs li:last-child::before {
+  display: none;
+}
+
 .filter-form fieldset {
   padding: 0px;
   margin: 0px 2px 15px 2px;
