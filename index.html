@@ -369,6 +369,22 @@
       <span class="visually-hidden">Закрыть</span>
     </button>
   </section>
+  <script>
+  var link = document.querySelector(".write-to-us");
+  var popup = document.querySelector(".letter-modal");
+  var close = popup.querySelector(".modal-close");
+  var userfield = popup.querySelector(["name="user"]);
+  link.addEventListener("click", function (evt) {
+   evt.preventDefault();
+   popup.classList.add("modal-show");
+   userfield.focus();
+  });
+
+  close.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.remove("modal-show");
+  });
+</script>
 </body>
 
 </html>
